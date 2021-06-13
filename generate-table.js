@@ -1,14 +1,14 @@
 async function main() {
-    let data = await fetch("/lily-to-smufl.json")
+    let data = await fetch("./lily-to-smufl.json")
         .then(r => r.json());
 
-    let lilyCodes = await fetch("/lily-name-to-charcode.json")
+    let lilyCodes = await fetch("./lily-name-to-charcode.json")
         .then(r => r.json());
 
-    let glyphNames = await fetch("/smufl/glyphnames.json")
+    let glyphNames = await fetch("./smufl/glyphnames.json")
         .then(r => r.json());
 
-    let bravuraMetadata = await fetch("/bravura/bravura_metadata.json")
+    let bravuraMetadata = await fetch("./bravura/bravura_metadata.json")
         .then(r => r.json());
 
     let tablesDiv = document.getElementById("tables");

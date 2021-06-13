@@ -1,0 +1,57 @@
+table {
+    font-size: 18px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.first {
+    border-top: 1px solid black;
+}
+.lily-side {
+    background-color: white;
+}
+.new {
+    background-color: palegoldenrod;
+}
+.smufl-recommended {
+    background-color: lightgreen;
+}
+.optional-in-bravura {
+    background-color: lightgreen;
+}
+.new-to-smufl {
+    background-color: palegoldenrod;
+}
+.contentious {
+    background-color: lightcoral;
+}
+.contention {
+    background-color: white;
+    color: gray;
+    font-size: initial;
+    font-style: italic;
+}
+.bravura, .emmentaler {
+    font-size: 24px;
+    text-align: center;
+}
+.bravura {
+    font-family: "Bravura";
+}
+.emmentaler {
+    font-family: "Emmentaler";
+}
+@font-face
+{
+    font-family: "Bravura";
+    src: url("./bravura/bravura.otf");
+}
+@font-face
+{
+    font-family: "Bravura Text";
+    src: url("https://w3c.github.io/smufl/latest/media/BravuraText.woff")
+}
+@font-face
+{
+    font-family: "Emmentaler";
+    src: url("./emmentaler/emmentaler-20.otf");
+}

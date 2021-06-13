@@ -1,0 +1,308 @@
+[
+    {
+        "name": "Clef",
+        "glyphs": {
+            "clefs.C": "cClef",
+            "clefs.C_change": "cClefChange",
+            "clefs.varC": {
+                "name": "cClefFrench20C",
+                "altOf": "cClef"
+            },
+            "clefs.varC_change": {
+                "name": "cClefFrench20CChange",
+                "altOf": "cClefChange"
+            },
+            "clefs.F": "fClef",
+            "clefs.F_change": "fClefChange",
+            "clefs.G": "gClef",
+            "clefs.G_change": "gClefChange",
+            "clefs.GG": "gClef8vbOld",
+            "clefs.GG_change": {
+                "name": "gClef8vbOldChange",
+                "ligOf": [
+                    "gClef8vbOld",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.tenorG": "gClef8vbCClef",
+            "clefs.tenorG_change": {
+                "name": "gClef8vbCClefChange",
+                "ligOf": [
+                    "gClef8vbCClef",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.percussion": "unpitchedPercussionClef1",
+            "clefs.percussion_change": {
+                "name": "unpitchedPercussionClef1Change",
+                "ligOf": [
+                    "unpitchedPercussionClef1",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.varpercussion": "unpitchedPercussionClef2",
+            "clefs.varpercussion_change": {
+                "name": "unpitchedPercussionClef2Change",
+                "ligOf": [
+                    "unpitchedPercussionClef2",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.tab": [
+                {
+                    "name": "6stringTabClef",
+                    "contentious": true,
+                    "note": "SMuFL defines two tab clefs, one for a 4-line staff and one for 6. I plan to make them both aliases for clefs.tab. Objections?"
+                },
+                {
+                    "name": "4stringTabClef",
+                    "contentious": true
+                }
+            ],
+            "clefs.tab_change": [
+                {
+                    "name": "6stringTabClefChange",
+                    "ligOf": [
+                        "6stringTabClef",
+                        "clefChangeCombining"
+                    ]
+                },
+                {
+                    "name": "4stringTabClefChange",
+                    "ligOf": [
+                        "4stringTabClef",
+                        "clefChangeCombining"
+                    ]
+                }
+            ],
+            "clefs.change_combining": [
+                {
+                    "name": "clefChangeCombining",
+                    "note": "Emmentaler needs this combining glyph in order for the ligature clefs to work as expected."
+                }
+            ]
+        }
+    },
+    {
+        "name": "Time Signature",
+        "glyphs": {
+            "timesig.C44": "timeSigCommon",
+            "timesig.C22": "timeSigCutCommon"
+        }
+    },
+    {
+        "name": "Number",
+        "glyphs": {
+            "plus": [
+                {
+                    "name": "timeSigPlus",
+                    "contentious": true,
+                    "note": "SMuFL distinguishes timeSigPlus, which adds entire signatures together, from timeSigPlusSmall, which only adds numerators. I plan on making them both aliases of plus. Objections?"
+                },
+                {
+                    "name": "timeSigPlusSmall",
+                    "contentious": true
+                }
+            ],
+            "comma": "timeSigComma",
+            "hyphen": "timeSigMinus",
+            "period": [
+                {
+                    "name": "timeSigPeriod",
+                    "note": "Since most of the related symbols start with timeSig, I opted to call this timeSigPeriod for consistency. Thoughts?"
+                }
+            ],
+            "zero": [
+                {
+                    "name": "timeSig0",
+                    "note": "SMuFL specifies many different number sets; timeSigX seems to match ours the best. Other possibilities are figbassX and fingeringX. (In all cases, the digits 1-9 are same as 0.)"
+                },
+                {
+                    "name": "figbass0",
+                    "contentious": true,
+                    "note": "This number set's too small."
+                },
+                {
+                    "name": "fingering0",
+                    "contentious": true,
+                    "note": "So's this one."
+                }
+            ]
+        }
+    },
+    {
+        "name": "Accidental",
+        "glyphs": {
+            "accidentals.sharp": [
+                "accidentalSharp",
+                "accidentalWyschnegradsky6TwelfthsSharp",
+                "accidentalBakiyeSharp",
+                "accidentalSharpArabic"
+            ],
+            "accidentals.sharp.arrowup": [
+                "accidentalThreeQuarterTonesSharpArrowUp",
+                {
+                    "name": "accidentalSharpOneArrowUp",
+                    "contentious": true,
+                    "note": "The arrow is in a different place. This fact, along with the differing arrowhead style, leads me to think we shouldn't encode this accidental set or the Stockhausen set at all."
+                },
+                {
+                    "name": "accidentalSharpRaisedStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.sharp.arrowdown": [
+                "accidentalQuarterToneSharpArrowDown",
+                {
+                    "name": "accidentalSharpOneArrowDown",
+                    "contentious": true,
+                    "note": "See above."
+                },
+                {
+                    "name": "accidentalSharpLoweredStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.sharp.arrowboth": {
+                "name": "accidentalSharpArrowsUpAndDown",
+                "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+            },
+            "accidentals.sharp.slashslash.stem": [
+                "accidentalQuarterToneSharpStein",
+                {
+                    "name": "accidentalKomaSharp",
+                    "contentious": true,
+                    "note": "This one seems a tad wider than the others, but I don't see it as too much of a problem. Thoughts?"
+                },
+                "accidentalQuarterToneSharpArabic"
+            ],
+            "accidentals.sharp.slashslashslash.stemstem": [
+                "accidentalBuyukMucennebSharp",
+                {
+                    "name": "accidentalThreeQuarterTonesSharpStockhausen",
+                    "contentious": true,
+                    "note": "Resemblance is dubious. Besides, given our other Stockhausen troubles, I won't add any of them unless a Stockhausen user can help us out."
+                }
+            ],
+            "accidentals.sharp.slashslashslash.stem": "accidentalKucukMucennebSharp",
+            "accidentals.sharp.slash.stem": [
+                {
+                    "name": "accidentalRaiseOneUndecimalQuartertone",
+                    "contentious": true,
+                    "note": "Neither of these glyphs, at least as Bravura renders them, quite matches the Emmentaler glyph's proportions. I plan to map the glyph to accidentalRaiseOneUndecimalQuartertone, and, as above, abandon Stockhausen. Objections?"
+                },
+                {
+                    "name": "accidentalOneQuarterToneSharpStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.sharp.slashslash.stemstemstem": [
+                "accidentalThreeQuarterTonesSharpStein",
+                "accidentalWyschnegradsky9TwelfthsSharp",
+                "accidentalThreeQuarterTonesSharpArabic"
+            ],
+            "accidentals.doublesharp": [
+                "accidentalDoubleSharp",
+                "accidentalDoubleSharpArabic"
+            ],
+            "accidentals.natural": [
+                "accidentalNatural",
+                "accidentalNaturalArabic"
+            ],
+            "accidentals.natural.arrowup": [
+                "accidentalQuarterToneSharpNaturalArrowUp",
+                {
+                    "name": "accidentalNaturalOneArrowUp",
+                    "contentious": true,
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalNaturalRaisedStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.natural.arrowdown": [
+                "accidentalQuarterToneFlatNaturalArrowDown",
+                {
+                    "name": "accidentalNaturalOneArrowDown",
+                    "contentious": true,
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalNaturalLoweredStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.natural.arrowboth": [
+                {
+                    "name": "accidentalNaturalArrowsUpAndDown",
+                    "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+                }
+            ],
+            "accidentals.flat": [
+                "accidentalFlat",
+                "accidentalWyschnegradsky6TwelfthsFlat",
+                "accidentalKucukMucennebFlat",
+                "accidentalFlatArabic"
+            ],
+            "accidentals.flat.arrowup": [
+                "accidentalQuarterToneFlatArrowUp",
+                {
+                    "name": "accidentalFlatOneArrowUp",
+                    "contentious": true,
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalFlatRaisedStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.flat.arrowdown": [
+                "accidentalThreeQuarterTonesFlatArrowDown",
+                {
+                    "name": "accidentalFlatOneArrowDown",
+                    "contentious": true,
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalFlatLoweredStockhausen",
+                    "contentious": true
+                }
+            ],
+            "accidentals.flat.arrowboth": {
+                "name": "accidentalFlatArrowsUpAndDown",
+                "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+            },
+            "accidentals.flat.slash": [
+                "accidentalBakiyeFlat",
+                {
+                    "name": "accidentalOneQuarterToneFlatStockhausen",
+                    "contentious": true,
+                    "note": "Honestly, this one looks identical to the others. But if I'm not doing Stockhausen, I'm not doing Stockhausen."
+                },
+                "accidentalQuarterToneFlatArabic"
+            ],
+            "accidentals.flat.slashslash": "accidentalBuyukMucennebFlat",
+            "accidentals.mirroredflat.flat": "accidentalThreeQuarterTonesFlatCouper",
+            "accidentals.mirroredflat": [
+                "accidentalQuarterToneFlatStein",
+                "accidentalLowerOneUndecimalQuartertone",
+                "accidentalKomaFlat"
+            ],
+            "accidentals.mirroredflat.backslash": {
+                "name": "accidentalMirroredFlatSlash",
+                "note": "What accidental system uses this? Might inform our name choice."
+            },
+            "accidentals.flatflat": [
+                "accidentalDoubleFlat",
+                "accidentalDoubleFlatArabic"
+            ],
+            "accidentals.flatflat.slash": {
+                "name": "accidentalDoubleFlatSlash",
+                "note": "What accidental system uses this? Might inform our name choice."
+            },
+            "accidentals.rightparen": "accidentalParensRight",
+            "accidentals.leftparen": "accidentalParensLeft"
+        }
+    }
+]

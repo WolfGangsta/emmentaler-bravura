@@ -108,8 +108,8 @@
             "hyphen": "timeSigMinus",
             "period": [
                 {
-                    "name": "timeSigPeriod",
-                    "note": "Since most of the related symbols start with timeSig, I opted to call this timeSigPeriod for consistency. Thoughts?"
+                    "name": "timeSigDot",
+                    "note": "-Dot attested in keyboardPedalDot; -Period not present anywhere in SMuFL"
                 }
             ],
             "zero": [
@@ -290,7 +290,7 @@
                 "accidentalKomaFlat"
             ],
             "accidentals.mirroredflat.backslash": {
-                "name": "accidentalMirroredFlatSlash",
+                "name": "accidentalReversedFlatSlash",
                 "note": "What accidental system uses this? Might inform our name choice."
             },
             "accidentals.flatflat": [

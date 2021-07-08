@@ -139,30 +139,8 @@
                 "accidentalBakiyeSharp",
                 "accidentalSharpArabic"
             ],
-            "accidentals.sharp.arrowup": [
-                "accidentalThreeQuarterTonesSharpArrowUp",
-                {
-                    "name": "accidentalSharpOneArrowUp",
-                    "contentious": true,
-                    "note": "The arrow is in a different place. This fact, along with the differing arrowhead style, leads me to think we shouldn't encode this accidental set or the Stockhausen set at all."
-                },
-                {
-                    "name": "accidentalSharpRaisedStockhausen",
-                    "contentious": true
-                }
-            ],
-            "accidentals.sharp.arrowdown": [
-                "accidentalQuarterToneSharpArrowDown",
-                {
-                    "name": "accidentalSharpOneArrowDown",
-                    "contentious": true,
-                    "note": "See above."
-                },
-                {
-                    "name": "accidentalSharpLoweredStockhausen",
-                    "contentious": true
-                }
-            ],
+            "accidentals.sharp.arrowup": "accidentalThreeQuarterTonesSharpArrowUp",
+            "accidentals.sharp.arrowdown": "accidentalQuarterToneSharpArrowDown",
             "accidentals.sharp.arrowboth": {
                 "name": "accidentalSharpArrowsUpAndDown",
                 "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
@@ -172,28 +150,17 @@
                 {
                     "name": "accidentalKomaSharp",
                     "contentious": true,
-                    "note": "This one seems a tad wider than the others, but I don't see it as too much of a problem. Thoughts?"
+                    "note": "This one seems a tad wider than the others, but I don't see it as too much of a problem."
                 },
                 "accidentalQuarterToneSharpArabic"
             ],
-            "accidentals.sharp.slashslashslash.stemstem": [
-                "accidentalBuyukMucennebSharp",
-                {
-                    "name": "accidentalThreeQuarterTonesSharpStockhausen",
-                    "contentious": true,
-                    "note": "Resemblance is dubious. Besides, given our other Stockhausen troubles, I won't add any of them unless a Stockhausen user can help us out."
-                }
-            ],
+            "accidentals.sharp.slashslashslash.stemstem": "accidentalBuyukMucennebSharp",
             "accidentals.sharp.slashslashslash.stem": "accidentalKucukMucennebSharp",
             "accidentals.sharp.slash.stem": [
                 {
                     "name": "accidentalRaiseOneUndecimalQuartertone",
                     "contentious": true,
-                    "note": "Neither of these glyphs, at least as Bravura renders them, quite matches the Emmentaler glyph's proportions. I plan to map the glyph to accidentalRaiseOneUndecimalQuartertone, and, as above, abandon Stockhausen. Objections?"
-                },
-                {
-                    "name": "accidentalOneQuarterToneSharpStockhausen",
-                    "contentious": true
+                    "note": "The Bravura glyph doesn't quite match the Emmentaler glyph's proportions, but I don't see it as an issue."
                 }
             ],
             "accidentals.sharp.slashslash.stemstemstem": [
@@ -209,30 +176,8 @@
                 "accidentalNatural",
                 "accidentalNaturalArabic"
             ],
-            "accidentals.natural.arrowup": [
-                "accidentalQuarterToneSharpNaturalArrowUp",
-                {
-                    "name": "accidentalNaturalOneArrowUp",
-                    "contentious": true,
-                    "note": "See the above note on the arrowed sharps."
-                },
-                {
-                    "name": "accidentalNaturalRaisedStockhausen",
-                    "contentious": true
-                }
-            ],
-            "accidentals.natural.arrowdown": [
-                "accidentalQuarterToneFlatNaturalArrowDown",
-                {
-                    "name": "accidentalNaturalOneArrowDown",
-                    "contentious": true,
-                    "note": "See the above note on the arrowed sharps."
-                },
-                {
-                    "name": "accidentalNaturalLoweredStockhausen",
-                    "contentious": true
-                }
-            ],
+            "accidentals.natural.arrowup": "accidentalQuarterToneSharpNaturalArrowUp",
+            "accidentals.natural.arrowdown": "accidentalQuarterToneFlatNaturalArrowDown",
             "accidentals.natural.arrowboth": [
                 {
                     "name": "accidentalNaturalArrowsUpAndDown",
@@ -245,41 +190,14 @@
                 "accidentalKucukMucennebFlat",
                 "accidentalFlatArabic"
             ],
-            "accidentals.flat.arrowup": [
-                "accidentalQuarterToneFlatArrowUp",
-                {
-                    "name": "accidentalFlatOneArrowUp",
-                    "contentious": true,
-                    "note": "See the above note on the arrowed sharps."
-                },
-                {
-                    "name": "accidentalFlatRaisedStockhausen",
-                    "contentious": true
-                }
-            ],
-            "accidentals.flat.arrowdown": [
-                "accidentalThreeQuarterTonesFlatArrowDown",
-                {
-                    "name": "accidentalFlatOneArrowDown",
-                    "contentious": true,
-                    "note": "See the above note on the arrowed sharps."
-                },
-                {
-                    "name": "accidentalFlatLoweredStockhausen",
-                    "contentious": true
-                }
-            ],
+            "accidentals.flat.arrowup": "accidentalQuarterToneFlatArrowUp",
+            "accidentals.flat.arrowdown": "accidentalThreeQuarterTonesFlatArrowDown",
             "accidentals.flat.arrowboth": {
                 "name": "accidentalFlatArrowsUpAndDown",
                 "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
             },
             "accidentals.flat.slash": [
                 "accidentalBakiyeFlat",
-                {
-                    "name": "accidentalOneQuarterToneFlatStockhausen",
-                    "contentious": true,
-                    "note": "Honestly, this one looks identical to the others. But if I'm not doing Stockhausen, I'm not doing Stockhausen."
-                },
                 "accidentalQuarterToneFlatArabic"
             ],
             "accidentals.flat.slashslash": "accidentalBuyukMucennebFlat",
@@ -291,16 +209,13 @@
             ],
             "accidentals.mirroredflat.backslash": {
                 "name": "accidentalReversedFlatSlash",
-                "note": "What accidental system uses this? Might inform our name choice."
+                "note": "-Reversed is found often in SMuFL; -Mirrored is nonexistent."
             },
             "accidentals.flatflat": [
                 "accidentalDoubleFlat",
                 "accidentalDoubleFlatArabic"
             ],
-            "accidentals.flatflat.slash": {
-                "name": "accidentalDoubleFlatSlash",
-                "note": "What accidental system uses this? Might inform our name choice."
-            },
+            "accidentals.flatflat.slash": "accidentalDoubleFlatSlash",
             "accidentals.rightparen": "accidentalParensRight",
             "accidentals.leftparen": "accidentalParensLeft"
         }

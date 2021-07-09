@@ -115,17 +115,19 @@
             "zero": [
                 {
                     "name": "timeSig0",
-                    "note": "SMuFL specifies many different number sets; timeSigX seems to match ours the best. Other possibilities are figbassX and fingeringX. (In all cases, the digits 1-9 are same as 0.)"
-                },
+                    "note": "SMuFL specifies many different number sets; timeSigX seems to match ours the best. (1-9 are the same as 0.)"
+                }
+            ],
+            "zero.small": [
                 {
                     "name": "figbass0",
                     "contentious": true,
-                    "note": "This number set's too small."
+                    "note": "A xxx.small number set will probably need to be created in the future."
                 },
                 {
                     "name": "fingering0",
                     "contentious": true,
-                    "note": "So's this one."
+                    "note": ""
                 }
             ]
         }

@@ -120,11 +120,11 @@ async function main() {
                 }
                 if (ligOf) {
                     let ligI = document.createElement("i");
-                    let list = ligOf.join(" + ")
                     let ligSpan = document.createElement("span");
                     ligSpan.className = "alt-or-lig-name";
+                    let list = ligOf.join(" + ")
                     ligSpan.innerText = list;
-                    ligI.innerHTML = " (lig: " + ligSpan + ")";
+                    ligI.append(" (lig: ", ligSpan, ")");
                     bravEntry.append(ligI);
                 }
                 cell4.append(bravEntry);

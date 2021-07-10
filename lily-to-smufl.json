@@ -221,5 +221,511 @@
             "accidentals.rightparen": "accidentalParensRight",
             "accidentals.leftparen": "accidentalParensLeft"
         }
+    },
+    {
+        "name": "Default Notehead",
+        "glyphs": {
+            "noteheads.uM2": {
+                "name": "noteheadLongaUp",
+                "contentious": true,
+                "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's noteXxxxxxXxxxx glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving."
+            },
+            "noteheads.dM2": {
+                "name": "noteheadLongaDown",
+                "contentious": true,
+                "note": "It looks like we hardcoded the stems here to make sure they fit nicely with the sidebars. This is probably a discussion for elsewhere, but is that really the best solution? It would take some work, but perhaps we should refrain from encoding (single-bar) breve and longa glyphs, and instead draw their bars with primitives to match the stem."
+            },
+            "noteheads.sM1": {
+                "name": "noteheadDoubleWholeAlt",
+                "altOf": "noteheadDoubleWhole"
+            },
+            "noteheads.s0": "noteheadWhole",
+            "noteheads.s1": "noteheadHalf",
+            "noteheads.s2": "noteheadBlack"
+        }
+    },
+    {
+        "name": "Special Notehead",
+        "glyphs": {
+            "noteheads.sM1double": "noteheadDoubleWhole",
+            "noteheads.s0diamond": "noteheadDiamondWholeOld",
+            "noteheads.s1diamond": "noteheadDiamondHalfOld",
+            "noteheads.s2diamond": "noteheadDiamondBlackOld",
+            "noteheads.s0triangle": [
+                {
+                    "name": "noteheadTriangleDownWhole",
+                    "contentious": true,
+                    "note": "These matchups are highly debatable. One could argue that -Left- is a bit more similar than -Down-, but SMuFL doesn't define a whole note version of it. Might it be better just to define new glyph names for them, i.e. (the oddly unused) noteheadTriangleXxxxx?"
+                }
+            ],
+            "noteheads.s1triangle": [
+                {
+                    "name": "noteheadTriangleDownHalf",
+                    "contentious": true
+                },
+                {
+                    "name": "noteheadTriangleLeftWhite",
+                    "contentious": true
+                }
+            ],
+            "noteheads.s2triangle": [
+                {
+                    "name": "noteheadTriangleDownBlack",
+                    "contentious": true
+                },
+                {
+                    "name": "noteheadTriangleLeftBlack",
+                    "contentious": true
+                }
+            ],
+            "noteheads.s0slash": "noteheadSlashWhiteWhole",
+            "noteheads.s1slash": "noteheadSlashWhiteHalf",
+            "noteheads.s2slash": {
+                "name": "noteheadSlashHorizontalEnds",
+                "note": "For some reason Bravura includes a version with vertical line ends, which is why this glyph name specifies horizontal ends."
+            },
+            "noteheads.s0cross": "noteheadXWhole",
+            "noteheads.s1cross": "noteheadXHalf",
+            "noteheads.s2cross": "noteheadXBlack",
+            "noteheads.s2xcircle": [
+                {
+                    "name": "noteheadHalfWithX",
+                    "contentious": true,
+                    "note": "Yikes--a lot of options here. We could stick with -VoidWithX and -CircleX and ditch the rest, or maybe we just make them all aliases. Thoughts?"
+                },
+                {
+                    "name": "noteheadVoidWithX",
+                    "contentious": true
+                },
+                {
+                    "name": "noteheadCircleXWhole",
+                    "contentious": true
+                },
+                {
+                    "name": "noteheadCircleXHalf",
+                    "contentious": true
+                },
+                {
+                    "name": "noteheadCircleX",
+                    "contentious": true
+                }
+            ],
+            "noteheads.s0harmonic": [
+                {
+                    "name": "noteheadDiamondWhole",
+                    "note": "SMuFL-using programs will expect the -Diamond- set to be visually cohesive, so we should encode both -Whole and -Half as aliases for our -.s0harmonic."
+                },
+                "noteheadDiamondHalf"
+            ],
+            "noteheads.s2harmonic": "noteheadDiamondBlack"
+        }
+    },
+    {
+        "name": "Shape-note Notehead",
+        "glyphs": {
+            "noteheads.s0do": {
+                "name": "noteShapeTriangleUpWhite",
+                "note": "SMuFL's coverage of shape notes is rather poor, missing many inverted glyphs, so be warned: I've had to add quite a few new base glyph names throughout this section."
+            },
+            "noteheads.s1do": {
+                "name": "",
+                "contentious": true,
+                "note": "I think the reason to distinguish -.s1xx from -.s0xx disappeared with commit 2d460deb (Define notehead attachment points separately); indeed, I've found every pair's generating code to be functionally identical and not worth encoding twice. (Further -s1xx's in the Aiken and Funk sets will be omitted for brevity; see the Walker section for a small exception.)"
+            },
+            "noteheads.s2do": "noteShapeTriangleUpBlack",
+            "noteheads.s0doThin": {
+                "name": "noteShapeTriangleUpWhiteThin",
+                "altOf": "noteShapeTriangleUpWhite"
+            },
+            "noteheads.s2doThin": {
+                "name": "noteShapeTriangleUpBlackThin",
+                "altOf": "noteShapeTriangleUpBlack"
+            },
+
+            "noteheads.s0re": "noteShapeMoonWhite",
+            "noteheads.s2re": "noteShapeMoonBlack",
+            "noteheads.s0reThin": {
+                "name": "noteShapeMoonWhiteThin",
+                "altOf": "noteShapeMoonWhite"
+            },
+            "noteheads.s2reThin": {
+                "name": "noteShapeMoonBlackThin",
+                "altOf": "noteShapeMoonBlack"
+            },
+
+            "noteheads.s0mi": {
+                "name": "noteShapeDiamondWhiteReversed",
+                "altOf": "noteShapeDiamondWhite"
+            },
+            "noteheads.s2mi": {
+                "name": "noteShapeDiamondBlackReversed",
+                "altOf": "noteShapeDiamondBlack"
+            },
+            "noteheads.s0miMirror": "noteShapeDiamondWhite",
+            "noteheads.s2miMirror": "noteShapeDiamondBlack",
+            "noteheads.s0miThin": {
+                "name": "noteShapeDiamondWhiteThin",
+                "altOf": "noteShapeDiamondWhite"
+            },
+            "noteheads.s2miThin": {
+                "name": "noteShapeDiamondBlackThin",
+                "altOf": "noteShapeDiamondBlack"
+            },
+
+            "noteheads.u0fa": "noteShapeTriangleLeftWhite",
+            "noteheads.d0fa": "noteShapeTriangleRightWhite",
+            "noteheads.u2fa": "noteShapeTriangleLeftBlack",
+            "noteheads.d2fa": "noteShapeTriangleRightBlack",
+            "noteheads.u0faThin": {
+                "name": "noteShapeTriangleLeftWhiteThin",
+                "altOf": "noteShapeTriangleLeftWhite"
+            },
+            "noteheads.d0faThin": {
+                "name": "noteShapeTriangleRightWhiteThin",
+                "altOf": "noteShapeTriangleRightWhite"
+            },
+            "noteheads.u2faThin": {
+                "name": "noteShapeTriangleLeftBlackThin",
+                "altOf": "noteShapeTriangleLeftBlack"
+            },
+            "noteheads.d2faThin": {
+                "name": "noteShapeTriangleRightBlackThin",
+                "altOf": "noteShapeTriangleRightBlack"
+            },
+
+            "noteheads.s0sol": "noteShapeRoundWhite",
+            "noteheads.s2sol": "noteShapeRoundBlack",
+
+            "noteheads.s0la": "noteShapeSquareWhite",
+            "noteheads.s2la": "noteShapeSquareBlack",
+            "noteheads.s0laThin": {
+                "name": "noteShapeSquareWhiteThin",
+                "altOf": "noteShapeSquareWhite"
+            },
+            "noteheads.s2laThin": {
+                "name": "noteShapeSquareBlackThin",
+                "altOf": "noteShapeSquareBlack"
+            },
+
+            "noteheads.s0ti": "noteShapeTriangleRoundWhite",
+            "noteheads.s2ti": "noteShapeTriangleRoundBlack",
+            "noteheads.s0tiThin": {
+                "name": "noteShapeTriangleRoundWhiteThin",
+                "altOf": "noteShapeTriangleRoundWhite"
+            },
+            "noteheads.s2tiThin": {
+                "name": "noteShapeTriangleRoundBlackThin",
+                "altOf": "noteShapeTriangleRoundBlack"
+            },
+
+            "noteheads.u0doFunk": [
+                {
+                    "name": "noteShapeMoonRightWhite",
+                    "note": "SMuFL has only one set for all shape-note systems. For clarity, we should add suffixes to our non-Aiken sets and make them stylistic alternates of the unsuffixed glyphs. Our glyphs should also have unsuffixed aliases when not already defined in the Aiken set."
+                },
+                {
+                    "name": "noteShapeMoonRightWhiteFunk",
+                    "altOf": "noteShapeMoonRightWhite"
+                }
+            ],
+            "noteheads.d0doFunk": [
+                {
+                    "name": "noteShapeMoonLeftWhite",
+                    "note": ""
+                },
+                {
+                    "name": "noteShapeMoonLeftWhiteFunk",
+                    "altOf": "noteShapeMoonLeftWhite"
+                }
+            ],
+            "noteheads.u2doFunk": [
+                "noteShapeMoonRightBlack",
+                {
+                    "name": "noteShapeMoonRightBlackFunk",
+                    "altOf": "noteShapeMoonRightBlack"
+                }
+            ],
+            "noteheads.d2doFunk": [
+                "noteShapeMoonLeftBlack",
+                {
+                    "name": "noteShapeMoonLeftBlackFunk",
+                    "altOf": "noteShapeMoonLeftBlack"
+                }
+            ],
+
+            "noteheads.u0reFunk": [
+                "noteShapeArrowheadRightWhite",
+                {
+                    "name": "noteShapeArrowheadRightWhiteFunk",
+                    "altOf": "noteShapeArrowheadRightWhite"
+                }
+            ],
+            "noteheads.d0reFunk": [
+                "noteShapeArrowheadLeftWhite",
+                {
+                    "name": "noteShapeArrowheadLeftWhiteFunk",
+                    "altOf": "noteShapeArrowheadLeftWhite"
+                }
+            ],
+            "noteheads.u2reFunk": [
+                "noteShapeArrowheadRightBlack",
+                {
+                    "name": "noteShapeArrowheadRightBlackFunk",
+                    "altOf": "noteShapeArrowheadRightBlack"
+                }
+            ],
+            "noteheads.d2reFunk": [
+                "noteShapeArrowheadLeftBlack",
+                {
+                    "name": "noteShapeArrowheadLeftBlackFunk",
+                    "altOf": "noteShapeArrowheadLeftBlack"
+                }
+            ],
+
+            "noteheads.u0miFunk": {
+                "name": "noteShapeDiamondWhiteReversedFunk",
+                "altOf": "noteShapeDiamondWhite"
+            },
+            "noteheads.d0miFunk": {
+                "name": "noteShapeDiamondWhiteFunk",
+                "altOf": "noteShapeDiamondWhite"
+            },
+            "noteheads.s2miFunk": {
+                "name": "noteShapeDiamondBlackFunk",
+                "altOf": "noteShapeDiamondBlack"
+            },
+
+            "noteheads.u0faFunk": {
+                "name": "noteShapeTriangleLeftWhiteFunk",
+                "altOf": "noteShapeTriangleLeftWhite"
+            },
+            "noteheads.d0faFunk": {
+                "name": "noteShapeTriangleRightWhiteFunk",
+                "altOf": "noteShapeTriangleRightWhite"
+            },
+            "noteheads.u2faFunk": {
+                "name": "noteShapeTriangleLeftBlackFunk",
+                "altOf": "noteShapeTriangleLeftBlack"
+            },
+            "noteheads.d2faFunk": {
+                "name": "noteShapeTriangleRightBlackFunk",
+                "altOf": "noteShapeTriangleRightBlack"
+            },
+
+            "noteheads.s0solFunk": [
+                {
+                    "name": "noteShapeRoundWhiteFunk",
+                    "altOf": "noteShapeRoundWhite"
+                },
+                {
+                    "name": "noteShapeRoundWhiteWalker",
+                    "altOf": "noteShapeRoundWhite",
+                    "note": "-sXsolFunk is used in both our Funk set and our Walker set. It should receive aliases for both so that other programs don't get confused."
+                }
+            ],
+            "noteheads.s2solFunk": [
+                {
+                    "name": "noteShapeRoundBlackFunk",
+                    "altOf": "noteShapeRoundBlack"
+                },
+                {
+                    "name": "noteShapeRoundBlackWalker",
+                    "altOf": "noteShapeRoundBlack"
+                }
+            ],
+            
+            "noteheads.s0laFunk": {
+                "name": "noteShapeSquareWhiteFunk",
+                "altOf": "noteShapeSquareWhite"
+            },
+            "noteheads.s2laFunk": {
+                "name": "noteShapeSquareBlackFunk",
+                "altOf": "noteShapeSquareBlack"
+            },
+
+            "noteheads.u0tiFunk": [
+                "noteShapeTriangleRoundRightWhite",
+                {
+                    "name": "noteShapeTriangleRoundRightWhiteFunk",
+                    "altOf": "noteShapeTriangleRoundRightWhite"
+                }
+            ],
+            "noteheads.d0tiFunk": [
+                "noteShapeTriangleRoundLeftWhite",
+                {
+                    "name": "noteShapeTriangleRoundLeftWhiteFunk",
+                    "altOf": "noteShapeTriangleRoundLeftWhite"
+                }
+            ],
+            "noteheads.u2tiFunk": [
+                "noteShapeTriangleRoundRightBlack",
+                {
+                    "name": "noteShapeTriangleRoundRightBlackFunk",
+                    "altOf": "noteShapeTriangleRoundRightBlack"
+                }
+            ],
+            "noteheads.d2tiFunk": [
+                "noteShapeTriangleRoundLeftBlack",
+                {
+                    "name": "noteShapeTriangleRoundLeftBlackFunk",
+                    "altOf": "noteShapeTriangleRoundLeftBlack"
+                }
+            ],
+
+
+            "noteheads.s0doWalker": {
+                "name": "",
+                "contentious": true,
+                "note": "Our Walker glyphs distinguish whole from half notes in only one respect: whole notes appear to face downwards all the time. It seems to me that that sort of difference would be better defined within the \\walkerHeads command rather than in the font, which would allow us to remove more redundant glyphs. Thoughts? (From now on, -.s0xxWalker glyphs will be omitted for brevity.)"
+            },
+            "noteheads.u1doWalker": [
+                "noteShapeKeystoneWhite",
+                {
+                    "name": "noteShapeKeystoneWhiteWalker",
+                    "altOf": "noteShapeKeystoneWhite"
+                }
+            ],
+            "noteheads.d1doWalker": [
+                {
+                    "name": "noteShapeKeystoneUprightWhite",
+                    "contentious": true,
+                    "note": "SMuFL's description for -Keystone- states that it is an 'Inverted keystone'. Therefore, it seems natural to me to call this one -KeystoneUpright-."
+                },
+                {
+                    "name": "noteShapeKeystoneUprightWhiteWalker",
+                    "altOf": "noteShapeKeystoneUprightWhite",
+                    "contentious": true
+                }
+            ],
+            "noteheads.u2doWalker": [
+                "noteShapeKeystoneBlack",
+                {
+                    "name": "noteShapeKeystoneBlackWalker",
+                    "altOf": "noteShapeKeystoneBlack"
+                }
+            ],
+            "noteheads.d2doWalker": [
+                {
+                    "name": "noteShapeKeystoneUprightBlack",
+                    "contentious": true
+                },
+                {
+                    "name": "noteShapeKeystoneUprightBlackWalker",
+                    "altOf": "noteShapeKeystoneUprightBlack",
+                    "contentious": true
+                }
+            ],
+
+            "noteheads.u1reWalker": [
+                "noteShapeQuarterMoonWhite",
+                {
+                    "name": "noteShapeQuarterMoonWhiteWalker",
+                    "altOf": "noteShapeQuarterMoonWhite"
+                }
+            ],
+            "noteheads.d1reWalker": [
+                {
+                    "name": "noteShapeQuarterMoonLeftWalker",
+                    "contentious": true,
+                    "note": "This seems like the best naming option, even though SMuFL's -QuarterMoon- glyph names don't indicate -Right-."
+                },
+                {
+                    "name": "noteShapeQuarterMoonLeftWhiteWalker",
+                    "contentious": true,
+                    "altOf": "noteShapeQuarterMoonLeftWhite"
+                }
+            ],
+            "noteheads.u2reWalker": [
+                "noteShapeQuarterMoonBlack",
+                {
+                    "name": "noteShapeQuarterMoonBlackWalker",
+                    "altOf": "noteShapeQuarterMoonBlack"
+                }
+            ],
+            "noteheads.d2reWalker": [
+                {
+                    "name": "noteShapeQuarterMoonLeftBlack",
+                    "contentious": true
+                },
+                {
+                    "name": "noteShapeQuarterMoonLeftBlackWalker",
+                    "contentious": true,
+                    "altOf": "noteShapeQuarterMoonLeftBlack"
+                }
+            ],
+
+            "noteheads.s1miWalker": {
+                "name": "noteShapeDiamondWhiteWalker",
+                "altOf": "noteShapeDiamondWhite"
+            },
+            "noteheads.s2miWalker": {
+                "name": "noteShapeDiamondBlackWalker",
+                "altOf": "noteShapeDiamondBlack"
+            },
+
+            "noteheads.u1faWalker": {
+                "name": "noteShapeTriangleLeftWhiteWalker",
+                "altOf": "noteShapeTriangleLeftWhite"
+            },
+            "noteheads.d1faWalker": {
+                "name": "noteShapeTriangleRightWhiteWalker",
+                "altOf": "noteShapeTriangleRightWhite"
+            },
+            "noteheads.u2faWalker": {
+                "name": "noteShapeTriangleLeftBlackWalker",
+                "altOf": "noteShapeTriangleLeftBlack"
+            },
+            "noteheads.d2faWalker": {
+                "name": "noteShapeTriangleRightBlackWalker",
+                "altOf": "noteShapeTriangleRightBlack"
+            },
+
+            "noteheads.s1laWalker": {
+                "name": "noteShapeSquareWhiteWalker",
+                "altOf": "noteShapeSquareWhite"
+            },
+            "noteheads.s2laWalker": {
+                "name": "noteShapeSquareBlackWalker",
+                "altOf": "noteShapeSquareBlack"
+            },
+
+            "noteheads.u1tiWalker": [
+                {
+                    "name": "noteShapeIsoscelesTriangleRightWhite",
+                    "contentious": true
+                },
+                {
+                    "name": "noteShapeIsoscelesTriangleRightWhiteWalker",
+                    "altOf": "noteShapeIsoscelesTriangleRightWhite",
+                    "contentious": true,
+                    "note": "See above regarding -.d1reWalker."
+                }
+            ],
+            "noteheads.d1tiWalker": [
+                "noteShapeIsoscelesTriangleWhite",
+                {
+                    "name": "noteShapeIsoscelesTriangleWhiteWalker",
+                    "altOf": "noteShapeIsoscelesTriangleWhite"
+                }
+            ],
+            "noteheads.u2tiWalker": [
+                {
+                    "name": "noteShapeIsoscelesTriangleRightBlack",
+                    "contentious": true
+                },
+                {
+                    "name": "noteShapeIsoscelesTriangleRightBlackWalker",
+                    "altOf": "noteShapeIsoscelesTriangleRightBlack",
+                    "contentious": true
+                }
+            ],
+            "noteheads.d2tiWalker": [
+                "noteShapeIsoscelesTriangleBlack",
+                {
+                    "name": "noteShapeIsoscelesTriangleBlackWalker",
+                    "altOf": "noteShapeIsoscelesTriangleBlack"
+                }
+            ]
+        }
     }
 ]

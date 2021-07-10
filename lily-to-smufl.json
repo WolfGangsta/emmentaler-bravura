@@ -51,13 +51,9 @@
             "clefs.tab": [
                 {
                     "name": "6stringTabClef",
-                    "contentious": true,
-                    "note": "SMuFL defines two tab clefs, one for a 4-line staff and one for 6. I plan to make them both aliases for clefs.tab. Objections?"
+                    "note": "SMuFL defines two tab clefs, one for a 4-line staff and one for 6. I plan to make them both aliases for clefs.tab."
                 },
-                {
-                    "name": "4stringTabClef",
-                    "contentious": true
-                }
+                "4stringTabClef"
             ],
             "clefs.tab_change": [
                 {
@@ -96,20 +92,16 @@
             "plus": [
                 {
                     "name": "timeSigPlus",
-                    "contentious": true,
-                    "note": "SMuFL distinguishes timeSigPlus, which adds entire signatures together, from timeSigPlusSmall, which only adds numerators. I plan on making them both aliases of plus. Objections?"
+                    "note": "SMuFL distinguishes timeSigPlus, which adds entire signatures together, from timeSigPlusSmall, which only adds numerators. I plan on making them both aliases of plus."
                 },
-                {
-                    "name": "timeSigPlusSmall",
-                    "contentious": true
-                }
+                "timeSigPlusSmall"
             ],
             "comma": "timeSigComma",
             "hyphen": "timeSigMinus",
             "period": [
                 {
                     "name": "timeSigDot",
-                    "note": "-Dot attested in keyboardPedalDot; -Period not present anywhere in SMuFL"
+                    "note": "-Dot is attested in keyboardPedalDot; -Period is not attested anywhere in SMuFL"
                 }
             ],
             "zero": [
@@ -151,7 +143,6 @@
                 "accidentalQuarterToneSharpStein",
                 {
                     "name": "accidentalKomaSharp",
-                    "contentious": true,
                     "note": "This one seems a tad wider than the others, but I don't see it as too much of a problem."
                 },
                 "accidentalQuarterToneSharpArabic"
@@ -161,7 +152,6 @@
             "accidentals.sharp.slash.stem": [
                 {
                     "name": "accidentalRaiseOneUndecimalQuartertone",
-                    "contentious": true,
                     "note": "The Bravura glyph doesn't quite match the Emmentaler glyph's proportions, but I don't see it as an issue."
                 }
             ],
@@ -313,7 +303,7 @@
             "noteheads.s0harmonic": [
                 {
                     "name": "noteheadDiamondWhole",
-                    "note": "SMuFL-using programs will expect the -Diamond- set to be visually cohesive, so we should encode both -Whole and -Half as aliases for our -.s0harmonic."
+                    "note": "SMuFL-using programs will expect the -Diamond- set to be visually cohesive, so we should encode both -Whole and -Half as aliases for -.s0harmonic."
                 },
                 "noteheadDiamondHalf"
             ],

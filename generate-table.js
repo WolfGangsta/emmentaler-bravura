@@ -44,14 +44,14 @@ async function main() {
 
             // Add first column (Lily name)
             let col1 = document.createElement("td");
-            col1.className = "first lily-side";
+            col1.className = "first lily-side glyph-name";
             if (code === 0) col1.className += " new";
 
             let emmenEntry = document.createElement("span");
             emmenEntry.className = "glyph-entry";
-            let bravNameSpan = document.createElement("span");
-            bravNameSpan.innerHTML = emmenName;
-            emmenEntry.append(bravNameSpan);
+            let bravInfoSpan = document.createElement("span");
+            bravInfoSpan.innerHTML = emmenName;
+            emmenEntry.append(bravInfoSpan);
             col1.append(emmenEntry);
 
             // Second column (Emmentaler glyph)
@@ -103,18 +103,28 @@ async function main() {
 
                 let bravEntry = document.createElement("span");
                 bravEntry.className = "glyph-entry";
-                bravNameSpan = document.createElement("span");
-                bravNameSpan.innerText = bravName;
-                bravEntry.append(bravNameSpan);
+                bravInfoSpan = document.createElement("span");
+                let bravNameSpan = document.createElement("span");
+                bravNameSpan.className = "glyph-name";
+                bravNameSpan.innerHTML = bravName;
+                bravInfoSpan.append(bravNameSpan);
+                bravEntry.append(bravInfoSpan);
+
                 if (altOf) {
                     let altI = document.createElement("i");
-                    altI.innerText = " (alternate of " + altOf + ")";
+                    let altSpan = document.createElement("span");
+                    altSpan.className = "alt-or-lig-name";
+                    altSpan.innerText = altOf;
+                    altI.append(" (alt. of ", altSpan, ")");
                     bravEntry.append(altI);
                 }
                 if (ligOf) {
                     let ligI = document.createElement("i");
                     let list = ligOf.join(" + ")
-                    ligI.innerText = " (ligature: " + list + ")";
+                    let ligSpan = document.createElement("span");
+                    ligSpan.className = "alt-or-lig-name";
+                    ligSpan.innerText = list;
+                    ligI.innerHTML = " (lig: " + ligSpan + ")";
                     bravEntry.append(ligI);
                 }
                 cell4.append(bravEntry);

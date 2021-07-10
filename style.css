@@ -1,10 +1,20 @@
 table {
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid black;
     border-collapse: collapse;
 }
+td {
+    height: 100px;
+}
 .first {
     border-top: 1px solid black;
+}
+.glyph-name {
+    font-family: monospace;
+    font-weight: bold;
+}
+.alt-or-lig-name {
+    font-family: monospace;
 }
 .lily-side {
     background-color: white;

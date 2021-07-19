@@ -615,7 +615,7 @@
             ],
             "noteheads.d1reWalker": [
                 {
-                    "name": "noteShapeQuarterMoonLeftWalker",
+                    "name": "noteShapeQuarterMoonLeftWhite",
                     "status": "contentious",
                     "note": "This seems like the best naming option, even though SMuFL's -QuarterMoon- glyph names don't indicate -Right-."
                 },

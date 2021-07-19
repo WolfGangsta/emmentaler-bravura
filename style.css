@@ -34,7 +34,10 @@ td {
 .contentious {
     background-color: lightcoral;
 }
-.contention {
+.rejected {
+    background-color: lightslategray;
+}
+.note {
     background-color: white;
     color: gray;
     font-size: initial;

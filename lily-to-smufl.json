@@ -113,12 +113,12 @@
             "zero.small": [
                 {
                     "name": "figbass0",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "A xxx.small number set will probably need to be created in the future."
                 },
                 {
                     "name": "fingering0",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": ""
                 }
             ]
@@ -217,12 +217,12 @@
         "glyphs": {
             "noteheads.uM2": {
                 "name": "noteheadLongaUp",
-                "contentious": true,
+                "status": "contentious",
                 "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's noteXxxxxxXxxxx glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving."
             },
             "noteheads.dM2": {
                 "name": "noteheadLongaDown",
-                "contentious": true,
+                "status": "contentious",
                 "note": "It looks like we hardcoded the stems here to make sure they fit nicely with the sidebars. This is probably a discussion for elsewhere, but is that really the best solution? It would take some work, but perhaps we should refrain from encoding (single-bar) breve and longa glyphs, and instead draw their bars with primitives to match the stem."
             },
             "noteheads.sM1": {
@@ -244,28 +244,28 @@
             "noteheads.s0triangle": [
                 {
                     "name": "noteheadTriangleDownWhole",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "These matchups are highly debatable. One could argue that -Left- is a bit more similar than -Down-, but SMuFL doesn't define a whole note version of it. Might it be better just to define new glyph names for them, i.e. (the oddly unused) noteheadTriangleXxxxx?"
                 }
             ],
             "noteheads.s1triangle": [
                 {
                     "name": "noteheadTriangleDownHalf",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteheadTriangleLeftWhite",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
             "noteheads.s2triangle": [
                 {
                     "name": "noteheadTriangleDownBlack",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteheadTriangleLeftBlack",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
             "noteheads.s0slash": "noteheadSlashWhiteWhole",
@@ -280,24 +280,24 @@
             "noteheads.s2xcircle": [
                 {
                     "name": "noteheadHalfWithX",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "Yikes--a lot of options here. We could stick with -VoidWithX and -CircleX and ditch the rest, or maybe we just make them all aliases. Thoughts?"
                 },
                 {
                     "name": "noteheadVoidWithX",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteheadCircleXWhole",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteheadCircleXHalf",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteheadCircleX",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
             "noteheads.s0harmonic": [
@@ -319,7 +319,7 @@
             },
             "noteheads.s1do": {
                 "name": "",
-                "contentious": true,
+                "status": "contentious",
                 "note": "I think the reason to distinguish -.s1xx from -.s0xx disappeared with commit 2d460deb (Define notehead attachment points separately); indeed, I've found every pair's generating code to be functionally identical and not worth encoding twice. (Further -s1xx's in the Aiken and Funk sets will be omitted for brevity; see the Walker section for a small exception.)"
             },
             "noteheads.s2do": "noteShapeTriangleUpBlack",
@@ -565,7 +565,7 @@
 
             "noteheads.s0doWalker": {
                 "name": "",
-                "contentious": true,
+                "status": "contentious",
                 "note": "Our Walker glyphs distinguish whole from half notes in only one respect: whole notes appear to face downwards all the time. It seems to me that that sort of difference would be better defined within the \\walkerHeads command rather than in the font, which would allow us to remove more redundant glyphs. Thoughts? (From now on, -.s0xxWalker glyphs will be omitted for brevity.)"
             },
             "noteheads.u1doWalker": [
@@ -578,13 +578,13 @@
             "noteheads.d1doWalker": [
                 {
                     "name": "noteShapeKeystoneUprightWhite",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "SMuFL's description for -Keystone- states that it is an 'Inverted keystone'. Therefore, it seems natural to me to call this one -KeystoneUpright-."
                 },
                 {
                     "name": "noteShapeKeystoneUprightWhiteWalker",
                     "altOf": "noteShapeKeystoneUprightWhite",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
             "noteheads.u2doWalker": [
@@ -597,12 +597,12 @@
             "noteheads.d2doWalker": [
                 {
                     "name": "noteShapeKeystoneUprightBlack",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteShapeKeystoneUprightBlackWalker",
                     "altOf": "noteShapeKeystoneUprightBlack",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
 
@@ -616,12 +616,12 @@
             "noteheads.d1reWalker": [
                 {
                     "name": "noteShapeQuarterMoonLeftWalker",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "This seems like the best naming option, even though SMuFL's -QuarterMoon- glyph names don't indicate -Right-."
                 },
                 {
                     "name": "noteShapeQuarterMoonLeftWhiteWalker",
-                    "contentious": true,
+                    "status": "contentious",
                     "altOf": "noteShapeQuarterMoonLeftWhite"
                 }
             ],
@@ -635,11 +635,11 @@
             "noteheads.d2reWalker": [
                 {
                     "name": "noteShapeQuarterMoonLeftBlack",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteShapeQuarterMoonLeftBlackWalker",
-                    "contentious": true,
+                    "status": "contentious",
                     "altOf": "noteShapeQuarterMoonLeftBlack"
                 }
             ],
@@ -682,12 +682,12 @@
             "noteheads.u1tiWalker": [
                 {
                     "name": "noteShapeIsoscelesTriangleRightWhite",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteShapeIsoscelesTriangleRightWhiteWalker",
                     "altOf": "noteShapeIsoscelesTriangleRightWhite",
-                    "contentious": true,
+                    "status": "contentious",
                     "note": "See above regarding -.d1reWalker."
                 }
             ],
@@ -701,12 +701,12 @@
             "noteheads.u2tiWalker": [
                 {
                     "name": "noteShapeIsoscelesTriangleRightBlack",
-                    "contentious": true
+                    "status": "contentious"
                 },
                 {
                     "name": "noteShapeIsoscelesTriangleRightBlackWalker",
                     "altOf": "noteShapeIsoscelesTriangleRightBlack",
-                    "contentious": true
+                    "status": "contentious"
                 }
             ],
             "noteheads.d2tiWalker": [

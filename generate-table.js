@@ -66,10 +66,10 @@ async function main() {
 
             for (let i = 0; i < bravuraNames.length; i++) {
                 let bravName = bravuraNames[i];
-                let note, contentious, altOf, ligOf;
+                let note, status, altOf, ligOf;
                 if (typeof bravName === "object") {
                     note = bravName.note;
-                    contentious = bravName.contentious;
+                    status = bravName.status;
                     altOf = bravName.altOf;
                     ligOf = bravName.ligOf;
 
@@ -134,13 +134,13 @@ async function main() {
                 // Put notes here
                 if (note) {
                     let noteCell = document.createElement("td");
-                    noteCell.className = "contention";
+                    noteCell.className = "note";
                     noteCell.innerHTML = note;
                     row.append(noteCell);
                 }
-                // Contentious?
-                if (contentious) {
-                    row.className = "contentious";
+                // If contentious or rejected, say so
+                if (status) {
+                    row.className = status;
                 }
 
                 if (i < bravuraNames.length - 1) {

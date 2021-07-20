@@ -101,7 +101,13 @@
             "period": [
                 {
                     "name": "timeSigDot",
-                    "note": "-Dot is attested in keyboardPedalDot; -Period is not attested anywhere in SMuFL"
+                    "note": "Since most of the related symbols begin with timeSig-, I opted to do the same here."
+                },
+                {
+                    "name": "timeSigPeriod",
+                    "status": "rejected",
+                    "note": "-Dot is attested in SMuFL (keyboardPedalDot); -Period is not.",
+                    "ref": "https://lists.w3.org/Archives/Public/public-music-notation/2021Jun/0024.html"
                 }
             ],
             "zero": [
@@ -114,7 +120,11 @@
                 {
                     "name": "figbass0",
                     "status": "contentious",
-                    "note": "A xxx.small number set will probably need to be created in the future."
+                    "note": "A xxx.small number set will probably need to be created in the future.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-06/msg00035.html",
+                        "threaded": true
+                    }
                 },
                 {
                     "name": "fingering0",
@@ -133,11 +143,33 @@
                 "accidentalBakiyeSharp",
                 "accidentalSharpArabic"
             ],
-            "accidentals.sharp.arrowup": "accidentalThreeQuarterTonesSharpArrowUp",
-            "accidentals.sharp.arrowdown": "accidentalQuarterToneSharpArrowDown",
+            "accidentals.sharp.arrowup": [
+                "accidentalThreeQuarterTonesSharpArrowUp",
+                {
+                    "name": "accidentalSharpOneArrowUp",
+                    "status": "rejected",
+                    "note": "The arrow is in a different place. This fact, along with the differing arrowhead style, suggests we shouldn't encode this accidental set or the Stockhausen set at all."
+                },
+                {
+                    "name": "accidentalSharpRaisedStockhausen",
+                    "status": "rejected"
+                }
+            ],
+            "accidentals.sharp.arrowdown": [
+                "accidentalQuarterToneSharpArrowDown",
+                {
+                    "name": "accidentalSharpOneArrowDown",
+                    "status": "rejected",
+                    "note": "See above."
+                },
+                {
+                    "name": "accidentalSharpLoweredStockhausen",
+                    "status": "rejected"
+                }
+            ],
             "accidentals.sharp.arrowboth": {
                 "name": "accidentalSharpArrowsUpAndDown",
-                "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+                "note": "We could name it -TwoArrows or -BothArrows, but I think this is fine."
             },
             "accidentals.sharp.slashslash.stem": [
                 "accidentalQuarterToneSharpStein",
@@ -147,12 +179,24 @@
                 },
                 "accidentalQuarterToneSharpArabic"
             ],
-            "accidentals.sharp.slashslashslash.stemstem": "accidentalBuyukMucennebSharp",
+            "accidentals.sharp.slashslashslash.stemstem": [
+                "accidentalBuyukMucennebSharp",
+                {
+                    "name": "accidentalThreeQuarterTonesSharpStockhausen",
+                    "status": "rejected",
+                    "note": "Resemblance is dubious. Besides, given our other Stockhausen troubles, it's probably best not to bother."
+                }
+            ],
             "accidentals.sharp.slashslashslash.stem": "accidentalKucukMucennebSharp",
             "accidentals.sharp.slash.stem": [
                 {
                     "name": "accidentalRaiseOneUndecimalQuartertone",
-                    "note": "The Bravura glyph doesn't quite match the Emmentaler glyph's proportions, but I don't see it as an issue."
+                    "note": "Doesn't quite match the Emmentaler glyph's proportions, but it doesn't seem like too much of a problem to me."
+                },
+                {
+                    "name": "accidentalOneQuarterToneSharpStockhausen",
+                    "status": "rejected",
+                    "note": "Doesn't match the Emmentaler glyph's proportions; plus, it's Stockhausen."
                 }
             ],
             "accidentals.sharp.slashslash.stemstemstem": [
@@ -168,12 +212,34 @@
                 "accidentalNatural",
                 "accidentalNaturalArabic"
             ],
-            "accidentals.natural.arrowup": "accidentalQuarterToneSharpNaturalArrowUp",
-            "accidentals.natural.arrowdown": "accidentalQuarterToneFlatNaturalArrowDown",
+            "accidentals.natural.arrowup": [
+                "accidentalQuarterToneSharpNaturalArrowUp",
+                {
+                    "name": "accidentalNaturalOneArrowUp",
+                    "status": "rejected",
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalNaturalRaisedStockhausen",
+                    "status": "rejected"
+                }
+            ],
+            "accidentals.natural.arrowdown": [
+                "accidentalQuarterToneFlatNaturalArrowDown",
+                {
+                    "name": "accidentalNaturalOneArrowDown",
+                    "status": "rejected",
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalNaturalLoweredStockhausen",
+                    "status": "rejected"
+                }
+            ],
             "accidentals.natural.arrowboth": [
                 {
                     "name": "accidentalNaturalArrowsUpAndDown",
-                    "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+                    "note": "We could name it -TwoArrows or -BothArrows, but I think this is fine."
                 }
             ],
             "accidentals.flat": [
@@ -182,14 +248,41 @@
                 "accidentalKucukMucennebFlat",
                 "accidentalFlatArabic"
             ],
-            "accidentals.flat.arrowup": "accidentalQuarterToneFlatArrowUp",
-            "accidentals.flat.arrowdown": "accidentalThreeQuarterTonesFlatArrowDown",
+            "accidentals.flat.arrowup": [
+                "accidentalQuarterToneFlatArrowUp",
+                {
+                    "name": "accidentalFlatOneArrowUp",
+                    "status": "rejected",
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalFlatRaisedStockhausen",
+                    "status": "rejected"
+                }
+            ],
+            "accidentals.flat.arrowdown": [
+                "accidentalThreeQuarterTonesFlatArrowDown",
+                {
+                    "name": "accidentalFlatOneArrowDown",
+                    "status": "rejected",
+                    "note": "See the above note on the arrowed sharps."
+                },
+                {
+                    "name": "accidentalFlatLoweredStockhausen",
+                    "status": "rejected"
+                }
+            ],
             "accidentals.flat.arrowboth": {
                 "name": "accidentalFlatArrowsUpAndDown",
-                "note": "We could name it -TwoArrows or -BothArrows but, sans objections, I'll stick with this."
+                "note": "We could name it -TwoArrows or -BothArrows, but I think this is fine."
             },
             "accidentals.flat.slash": [
                 "accidentalBakiyeFlat",
+                {
+                    "name": "accidentalOneQuarterToneFlatStockhausen",
+                    "status": "rejected",
+                    "note": "Honestly, this one looks identical to the others. But if I'm not doing Stockhausen, I'm not doing Stockhausen."
+                },
                 "accidentalQuarterToneFlatArabic"
             ],
             "accidentals.flat.slashslash": "accidentalBuyukMucennebFlat",
@@ -199,15 +292,26 @@
                 "accidentalLowerOneUndecimalQuartertone",
                 "accidentalKomaFlat"
             ],
-            "accidentals.mirroredflat.backslash": {
-                "name": "accidentalReversedFlatSlash",
-                "note": "-Reversed is found often in SMuFL; -Mirrored is nonexistent."
-            },
+            "accidentals.mirroredflat.backslash": [
+                {
+                    "name": "accidentalReversedFlatSlash",
+                    "note": "What accidental system uses this? Might inform our name choice."
+                },
+                {
+                    "name": "accidentalMirroredFlatSlash",
+                    "status": "rejected",
+                    "note": "-Reversed- is attested in SMuFL (e.g. accidentalReversedFlatArrowUp); -Mirrored- is not.",
+                    "ref": "https://lists.w3.org/Archives/Public/public-music-notation/2021Jun/0024.html"
+                }
+            ],
             "accidentals.flatflat": [
                 "accidentalDoubleFlat",
                 "accidentalDoubleFlatArabic"
             ],
-            "accidentals.flatflat.slash": "accidentalDoubleFlatSlash",
+            "accidentals.flatflat.slash": {
+                "name": "accidentalDoubleFlatSlash",
+                "note": "What accidental system uses this? Might inform our name choice."
+            },
             "accidentals.rightparen": "accidentalParensRight",
             "accidentals.leftparen": "accidentalParensLeft"
         }
@@ -218,12 +322,16 @@
             "noteheads.uM2": {
                 "name": "noteheadLongaUp",
                 "status": "contentious",
-                "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's noteXxxxxxXxxxx glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving."
+                "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's \"Individual notes\" glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving."
             },
             "noteheads.dM2": {
                 "name": "noteheadLongaDown",
                 "status": "contentious",
-                "note": "It looks like we hardcoded the stems here to make sure they fit nicely with the sidebars. This is probably a discussion for elsewhere, but is that really the best solution? It would take some work, but perhaps we should refrain from encoding (single-bar) breve and longa glyphs, and instead draw their bars with primitives to match the stem."
+                "note": "It looks like we hardcoded the stems here to make sure they fit nicely with the sidebars. This is probably a discussion for elsewhere, but is that really the best solution? It would take some work, but perhaps we should refrain from encoding (single-bar) breve and longa glyphs, and instead draw their bars with primitives to match the stem.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-07/msg00029.html",
+                    "threaded": true
+                }
             },
             "noteheads.sM1": {
                 "name": "noteheadDoubleWholeAlt",

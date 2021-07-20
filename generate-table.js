@@ -66,12 +66,13 @@ async function main() {
 
             for (let i = 0; i < bravuraNames.length; i++) {
                 let bravName = bravuraNames[i];
-                let note, status, altOf, ligOf;
+                let status, altOf, ligOf, note, ref;
                 if (typeof bravName === "object") {
-                    note = bravName.note;
                     status = bravName.status;
                     altOf = bravName.altOf;
                     ligOf = bravName.ligOf;
+                    note = bravName.note;
+                    ref = bravName.ref;
 
                     bravName = bravName.name;
                 }
@@ -132,10 +133,48 @@ async function main() {
                 row.append(cell3, cell4);
 
                 // Put notes here
-                if (note) {
+                if (note || ref) {
                     let noteCell = document.createElement("td");
                     noteCell.className = "note";
-                    noteCell.innerHTML = note;
+                    if (note) {
+                        noteCell.innerHTML = note;
+                    }
+                    if (ref) {
+                        if (noteCell.innerHTML !== "") {
+                            noteCell.append(" ");
+                        }
+                        let refSpan = document.createElement("span");
+                        refSpan.append("See");
+                        if (!Array.isArray(ref)) {
+                            ref = [ref];
+                        }
+                        for (let i in ref) {
+                            let r = ref[i];
+                            let threaded = false;
+                            if (typeof r === "string") {
+                                url = r;
+                            } else {
+                                url = r.url;
+                                threaded = r.threaded;
+                            }
+                            let a = document.createElement("a");
+                            a.innerHTML = "here";
+                            a.href = url;
+                            refSpan.append(" ");
+                            if (ref.length > 1 && i == ref.length - 1) {
+                                refSpan.append("and ");
+                            }
+                            refSpan.append(a);
+                            if (threaded) {
+                                refSpan.append(" (and the subsequent thread)")
+                            }
+                            if (ref.length > 2 && i < ref.length - 1) {
+                                refSpan.append(",");
+                            }
+                        }
+                        refSpan.append(".");
+                        noteCell.append(refSpan);
+                    }
                     row.append(noteCell);
                 }
                 // If contentious or rejected, say so

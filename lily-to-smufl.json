@@ -391,25 +391,13 @@
             "noteheads.s2xcircle": [
                 {
                     "name": "noteheadHalfWithX",
-                    "status": "contentious",
-                    "note": "Yikes--a lot of options here. We could stick with -VoidWithX and -CircleX and ditch the rest, or maybe we just make them all aliases. Thoughts?"
+                    "note": "A lot of options here. It seems that mapping them all should work just fine.",
+                    "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-07/msg00029.html"
                 },
-                {
-                    "name": "noteheadVoidWithX",
-                    "status": "contentious"
-                },
-                {
-                    "name": "noteheadCircleXWhole",
-                    "status": "contentious"
-                },
-                {
-                    "name": "noteheadCircleXHalf",
-                    "status": "contentious"
-                },
-                {
-                    "name": "noteheadCircleX",
-                    "status": "contentious"
-                }
+                "noteheadVoidWithX",
+                "noteheadCircleXWhole",
+                "noteheadCircleXHalf",
+                "noteheadCircleX"
             ],
             "noteheads.s0harmonic": [
                 {
@@ -431,7 +419,8 @@
             "noteheads.s1do": {
                 "name": "",
                 "status": "contentious",
-                "note": "I think the reason to distinguish -.s1xx from -.s0xx disappeared with commit 2d460deb (Define notehead attachment points separately); indeed, I've found every pair's generating code to be functionally identical and not worth encoding twice. (Further -s1xx's in the Aiken and Funk sets will be omitted for brevity; see the Walker section for a small exception.)"
+                "note": "I think the reason to distinguish -.s1xx from -.s0xx disappeared with commit 2d460deb (Define notehead attachment points separately); indeed, I've found every pair's generating code to be functionally identical and not worth encoding twice. (Further -s1xx's in the Aiken and Funk sets will be omitted for brevity; see the Walker section for a small exception.)",
+                "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-07/msg00034.html"
             },
             "noteheads.s2do": "noteShapeTriangleUpBlack",
             "noteheads.s0doThin": {
@@ -677,7 +666,8 @@
             "noteheads.s0doWalker": {
                 "name": "",
                 "status": "contentious",
-                "note": "Our Walker glyphs distinguish whole from half notes in only one respect: whole notes appear to face downwards all the time. It seems to me that that sort of difference would be better defined within the \\walkerHeads command rather than in the font, which would allow us to remove more redundant glyphs. Thoughts? (From now on, -.s0xxWalker glyphs will be omitted for brevity.)"
+                "note": "Our Walker glyphs distinguish whole from half notes in only one respect: whole notes appear to face downwards all the time. It seems to me that that sort of difference would be better defined within the \\walkerHeads command rather than in the font, which would allow us to remove more redundant glyphs. Thoughts? (From now on, -.s0xxWalker glyphs will be omitted for brevity.)",
+                "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-07/msg00034.html"
             },
             "noteheads.u1doWalker": [
                 "noteShapeKeystoneWhite",

@@ -139,7 +139,11 @@
         "glyphs": {
             "accidentals.sharp": [
                 "accidentalSharp",
-                "accidentalWyschnegradsky6TwelfthsSharp",
+                {
+                    "name": "accidentalWyschnegradsky6TwelfthsSharp",
+                    "status": "contentious",
+                    "note": "I wonder if it's fair to users if we claim to support Wyschnegradsky accidentals if we only really have three of the full set of 22."
+                },
                 "accidentalBakiyeSharp",
                 "accidentalSharpArabic"
             ],
@@ -201,7 +205,11 @@
             ],
             "accidentals.sharp.slashslash.stemstemstem": [
                 "accidentalThreeQuarterTonesSharpStein",
-                "accidentalWyschnegradsky9TwelfthsSharp",
+                {
+                    "name": "accidentalWyschnegradsky9TwelfthsSharp",
+                    "status": "contentious",
+                    "note": "See above on Wyschnegradsky accidentals."
+                },
                 "accidentalThreeQuarterTonesSharpArabic"
             ],
             "accidentals.doublesharp": [
@@ -244,7 +252,11 @@
             ],
             "accidentals.flat": [
                 "accidentalFlat",
-                "accidentalWyschnegradsky6TwelfthsFlat",
+                {
+                    "name": "accidentalWyschnegradsky6TwelfthsFlat",
+                    "status": "contentious",
+                    "note": "See above on Wyschnegradsky accidentals."
+                },
                 "accidentalKucukMucennebFlat",
                 "accidentalFlatArabic"
             ],

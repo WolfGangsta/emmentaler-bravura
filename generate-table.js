@@ -12,13 +12,23 @@ async function main() {
         .then(r => r.json());
 
     let tablesDiv = document.getElementById("tables");
+    let select = document.getElementById("selector");
 
     for (let category of data) {
+        let option = document.createElement("option");
+        option.value = category.name;
+        option.innerText = category.name + " glyphs";
+        select.append(option);
+
+        let categoryDiv = document.createElement("div");
+        categoryDiv.value = category.name;
+
         let header = document.createElement("h2");
         header.innerText = category.name + " glyphs";
-        tablesDiv.append(header);
+        categoryDiv.append(header);
 
         let table = document.createElement("table");
+
         let tr = document.createElement("tr");
         for (let header of ["LilyPond name", "Emmentaler glyph", "Bravura glyph", "Proposed SMuFL name"]) {
             let th = document.createElement("th");
@@ -191,7 +201,35 @@ async function main() {
             table.append(row);
         }
 
-        tablesDiv.append(table);
+        categoryDiv.append(table);
+
+        tablesDiv.append(categoryDiv);
+    }
+
+    select.onchange = function(e) {
+        if (e.target.value === "All") {
+            showAll();
+        } else {
+            showOnlyTable(e.target.value);
+        }
+    };
+}
+
+function showAll() {
+    let tablesDiv = document.getElementById("tables");
+    for (let categoryDiv of tablesDiv.children) {
+        categoryDiv.style.display = "block";
+    }
+}
+
+function showOnlyTable(category) {
+    let tablesDiv = document.getElementById("tables");
+    for (let categoryDiv of tablesDiv.children) {
+        if (categoryDiv.value === category) {
+            categoryDiv.style.display = "block";
+        } else {
+            categoryDiv.style.display = "none";
+        }
     }
 }
 

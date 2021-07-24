@@ -350,30 +350,33 @@
             "noteheads.s1diamond": "noteheadDiamondHalfOld",
             "noteheads.s2diamond": "noteheadDiamondBlackOld",
             "noteheads.s0triangle": [
+                "noteheadTriangleWhole",
                 {
                     "name": "noteheadTriangleDownWhole",
-                    "status": "contentious",
-                    "note": "These matchups are highly debatable. One could argue that -Left- is a bit more similar than -Down-, but SMuFL doesn't define a whole note version of it. Might it be better just to define new glyph names for them, i.e. (the oddly unused) noteheadTriangleXxxxx?"
+                    "status": "rejected",
+                    "note": "This and the following matchups are highly debatable, so I opted to define a new notehead group instead."
                 }
             ],
             "noteheads.s1triangle": [
+                "noteheadTriangleHalf",
                 {
                     "name": "noteheadTriangleDownHalf",
-                    "status": "contentious"
+                    "status": "rejected"
                 },
                 {
                     "name": "noteheadTriangleLeftWhite",
-                    "status": "contentious"
+                    "status": "rejected"
                 }
             ],
             "noteheads.s2triangle": [
+                "noteheadTriangleHalf",
                 {
                     "name": "noteheadTriangleDownBlack",
-                    "status": "contentious"
+                    "status": "rejected"
                 },
                 {
                     "name": "noteheadTriangleLeftBlack",
-                    "status": "contentious"
+                    "status": "rejected"
                 }
             ],
             "noteheads.s0slash": "noteheadSlashWhiteWhole",

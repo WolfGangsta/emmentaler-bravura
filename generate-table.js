@@ -13,9 +13,9 @@ async function main() {
 
     let tablesDiv = document.getElementById("tables");
 
-    for (let entry of data) {
+    for (let category of data) {
         let header = document.createElement("h2");
-        header.innerText = entry.name + " glyphs";
+        header.innerText = category.name + " glyphs";
         tablesDiv.append(header);
 
         let table = document.createElement("table");
@@ -28,8 +28,8 @@ async function main() {
         }
         table.append(tr);
 
-        for (let emmenName in entry.glyphs) {
-            let bravuraNames = entry.glyphs[emmenName];
+        for (let emmenName in category.glyphs) {
+            let bravuraNames = category.glyphs[emmenName];
             if (typeof bravuraNames === "string" || !Array.isArray(bravuraNames)) {
                 bravuraNames = [bravuraNames];
             }

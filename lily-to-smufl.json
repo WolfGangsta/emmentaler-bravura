@@ -113,7 +113,7 @@
             "zero": [
                 {
                     "name": "timeSig0",
-                    "note": "SMuFL specifies many different number sets; timeSigX seems to match ours the best. (1-9 are the same as 0.)"
+                    "note": "SMuFL specifies three distinct number sets; timeSigX seems to match ours the best. (1-9 are the same as 0.)"
                 }
             ],
             "zero.small": [
@@ -142,7 +142,7 @@
                 {
                     "name": "accidentalWyschnegradsky6TwelfthsSharp",
                     "status": "contentious",
-                    "note": "I wonder if it's fair to users if we claim to support Wyschnegradsky accidentals if we only really have three of the full set of 22."
+                    "note": "I wonder if it's fair to users if we claim to support Wyschnegradsky accidentals if we only really have three of SMuFL's full set of 22."
                 },
                 "accidentalBakiyeSharp",
                 "accidentalSharpArabic"

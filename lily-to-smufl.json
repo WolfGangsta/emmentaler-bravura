@@ -381,7 +381,7 @@
                 }
             ],
             "noteheads.s2triangle": [
-                "noteheadTriangleHalf",
+                "noteheadTriangleBlack",
                 {
                     "name": "noteheadTriangleDownBlack",
                     "status": "rejected"

@@ -971,6 +971,7 @@
             "scripts.varsegno": "segnoSerpent1",
             "scripts.coda": "coda",
             "scripts.varcoda": "codaSquare",
+
             "scripts.rcomma": [
                 "breathMarkComma",
                 "chantVirgula"
@@ -996,6 +997,7 @@
                 "status": "contentious",
                 "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice."
             },
+
             "scripts.arpeggio": [
                 {
                     "name": "wiggleArpeggiatoUp",
@@ -1007,11 +1009,18 @@
                     "status": "contentious"
                 }
             ],
-            "scripts.trill_element": {
-                "name": "ornamentZigZagLineWithRightEnd",
-                "status": "contentious",
-                "note": "This and scripts.trillelement seem to correspond roughly to the ornamentZigZagLine- glyphs."
-            },
+            "scripts.trill_element": [
+                {
+                    "name": "ornamentZigZagLineNoRightEnd",
+                    "status": "contentious",
+                    "note": "LilyPond uses trill_element, not trillelement, for trills, right?"
+                },
+                {
+                    "name": "ornamentZigZagLineWithRightEnd",
+                    "status": "contentious",
+                    "note": "SMuFL places this variant at the right end of a trill; since LilyPond just repeats the same trill_element throughout, it'll just be another alias of trill_element."
+                }
+            ],
             "scripts.arpeggio.arrow.M1": {
                 "name": "wiggleArpeggiatoDownArrow",
                 "status": "contentious"
@@ -1021,8 +1030,9 @@
                 "status": "contentious"
             },
             "scripts.trillelement": {
-                "name": "ornamentZigZagLineNoRightEnd",
-                "status": "contentious"
+                "name": "ornamentZigZagLineShortened",
+                "status": "contentious",
+                "note": "Does LilyPond use this glyph? What for?"
             },
             "scripts.prall": "ornamentShortTrill",
             "scripts.mordent": "ornamentMordent",
@@ -1066,10 +1076,13 @@
                 "name": "ornamentLineTrill",
                 "status": "contentious"
             },
+
             "scripts.caesura.curved": "caesuraCurved",
             "scripts.caesura.straight": "caesura",
             "scripts.tickmark": "breathMarkTick",
+
             "scripts.snappizzicato": "pluckedSnapPizzicatoAbove",
+
             "scripts.ictus": [
                 "chantIctusAbove",
                 "chantIctusBelow"
@@ -1083,6 +1096,7 @@
                 "chantCirculusBelow"
             ],
             "scripts.augmentum": "chantAugmentum",
+
             "scripts.usignumcongruentiae": "mensuralSignumUp",
             "scripts.dsignumcongruentiae": {
                 "name": "mensuralSignumDown",

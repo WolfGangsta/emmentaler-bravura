@@ -896,5 +896,198 @@
             "s": "dynamicSforzando",
             "z": "dynamicZ"
         }
+    },
+    {
+        "name": "Script",
+        "glyphs": {
+            "scripts.ufermata": "fermataAbove",
+            "scripts.dfermata": "fermataBelow",
+
+            "scripts.uhenzeshortfermata": "fermataShortHenzeAbove",
+            "scripts.dhenzeshortfermata": "fermataShortHenzeBelow",
+            "scripts.uhenzelongfermata": "fermataLongHenzeAbove",
+            "scripts.dhenzelongfermata": "fermataLongHenzeBelow",
+
+            "scripts.ushortfermata": "fermataShortAbove",
+            "scripts.dshortfermata": "fermataShortBelow",
+            "scripts.uveryshortfermata": "fermataVeryShortAbove",
+            "scripts.dveryshortfermata": "fermataVeryShortBelow",
+
+            "scripts.ulongfermata": "fermataLongAbove",
+            "scripts.dlongfermata": "fermataLongBelow",
+            "scripts.uverylongfermata": "fermataVeryLongAbove",
+            "scripts.dverylongfermata": "fermataVeryLongBelow",
+
+            "scripts.thumb": "stringsThumbPosition",
+
+            "scripts.sforzato": [
+                "articAccentAbove",
+                "articAccentBelow"
+            ],
+            "scripts.espr": [
+                "articSoftAccentAbove",
+                "articSoftAccentBelow"
+            ],
+            "scripts.staccato": [
+                "articStaccatoAbove",
+                "articStaccatoBelow"
+            ],
+            "scripts.ustaccatissimo": "articStaccatissimoAbove",
+            "scripts.dstaccatissimo": "articStaccatissimoBelow",
+            "scripts.tenuto": [
+                "articTenutoAbove",
+                "articTenutoBelow"
+            ],
+            "scripts.uportato": "articTenutoStaccatoBelow",
+            "scripts.dportato": "articTenutoStaccatoAbove",
+            "scripts.umarcato": "articMarcatoAbove",
+            "scripts.dmarcato": "articMarcatoBelow",
+
+            "scripts.open": "brassMuteOpen",
+            "scripts.halfopen": "brassMuteHalfClosed",
+            "scripts.halfopenvertical": {
+                "name": "brassMuteHalfClosedVertical",
+                "altOf": "brassMuteHalfClosed"
+            },
+            "scripts.stopped": "brassMuteClosed",
+
+            "scripts.upbow": "stringsUpBow",
+            "scripts.downbow": "stringsDownBow",
+
+            "scripts.reverseturn": "ornamentTurnInverted",
+            "scripts.turn": "ornamentTurn",
+            "scripts.slashturn": "ornamentTurnSlash",
+            "scripts.haydnturn": "ornamentHaydn",
+            "scripts.trill": "ornamentTrill",
+
+            "scripts.upedalheel": "keyboardPedalHeel1",
+            "scripts.dpedalheel": "keyboardPedalHeel2",
+            "scripts.upedaltoe": "keyboardPedalToe1",
+            "scripts.dpedaltoe": "keyboardPedalToe2",
+
+            "scripts.flageolet": "stringsHarmonic",
+
+            "scripts.segno": "segno",
+            "scripts.varsegno": "segnoSerpent1",
+            "scripts.coda": "coda",
+            "scripts.varcoda": "codaSquare",
+            "scripts.rcomma": [
+                "breathMarkComma",
+                "chantVirgula"
+            ],
+            "scripts.lcomma": {
+                "name": "breathMarkCommaInverted",
+                "altOf": "breathMarkComma",
+                "status": "contentious",
+                "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice."
+            },
+            "scripts.rvarcomma": [
+                {
+                    "name": "breathMarkCommaStraight",
+                    "altOf": "breathMarkComma",
+                    "status": "contentious",
+                    "note": "If anyone at all uses this thing for actual breath marks and not just chant, I say we add this name."
+                },
+                "chantCaesura"
+            ],
+            "scripts.lvarcomma": {
+                "name": "breathMarkCommaStraightInverted",
+                "altOf": "breathMarkComma",
+                "status": "contentious",
+                "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice."
+            },
+            "scripts.arpeggio": [
+                {
+                    "name": "wiggleArpeggiatoUp",
+                    "status": "contentious",
+                    "note": "It looks like these glyphs are rotated in SMuFL. I'm thinking we create new glyphs according to their specs, while preserving our own for backwards compatibility."
+                },
+                {
+                    "name": "wiggleArpeggiatoDown",
+                    "status": "contentious"
+                }
+            ],
+            "scripts.trill_element": {
+                "name": "ornamentZigZagLineWithRightEnd",
+                "status": "contentious",
+                "note": "This and scripts.trillelement seem to correspond roughly to the ornamentZigZagLine- glyphs."
+            },
+            "scripts.arpeggio.arrow.M1": {
+                "name": "wiggleArpeggiatoDownArrow",
+                "status": "contentious"
+            },
+            "scripts.arpeggio.arrow.1": {
+                "name": "wiggleArpeggiatoUpArrow",
+                "status": "contentious"
+            },
+            "scripts.trillelement": {
+                "name": "ornamentZigZagLineNoRightEnd",
+                "status": "contentious"
+            },
+            "scripts.prall": "ornamentShortTrill",
+            "scripts.mordent": "ornamentMordent",
+            "scripts.prallprall": "ornamentTremblement",
+            "scripts.prallmordent": {
+                "name": "ornamentTrillMordent",
+                "ligOf": [
+                    "ornamentZigZagLineWithRightEnd",
+                    "ornamentMiddleVerticalStroke",
+                    "ornamentZigZagLineNoRightEnd"
+                ],
+                "status": "contentious",
+                "note": "This and the following ornaments can be described as ligatures of the SMuFL 'Combining strokes for trills and mordents' glyphs--something for the bucket list.",
+                "ref": "https://w3c.github.io/smufl/latest/tables/combining-strokes-for-trills-and-mordents.html"
+            },
+            "scripts.upprall": {
+                "name": "ornamentUpTrill",
+                "status": "contentious"
+            },
+            "scripts.upmordent": {
+                "name": "ornamentUpMordent",
+                "status": "contentious"
+            },
+            "scripts.prallup": {
+                "name": "ornamentTrillUp",
+                "status": "contentious"
+            },
+            "scripts.downprall": {
+                "name": "ornamentDownTrill",
+                "status": "contentious"
+            },
+            "scripts.downmordent": {
+                "name": "ornamentDownMordent",
+                "status": "contentious"
+            },
+            "scripts.pralldown": {
+                "name": "ornamentTrillDown",
+                "status": "contentious"
+            },
+            "scripts.lineprall": {
+                "name": "ornamentLineTrill",
+                "status": "contentious"
+            },
+            "scripts.caesura.curved": "caesuraCurved",
+            "scripts.caesura.straight": "caesura",
+            "scripts.tickmark": "breathMarkTick",
+            "scripts.snappizzicato": "pluckedSnapPizzicatoAbove",
+            "scripts.ictus": [
+                "chantIctusAbove",
+                "chantIctusBelow"
+            ],
+            "scripts.uaccentus": "chantAccentusAbove",
+            "scripts.daccentus": "chantAccentusBelow",
+            "scripts.usemicirculus": "chantSemicirculusAbove",
+            "scripts.dsemicirculus": "chantSemicirculusBelow",
+            "scripts.circulus": [
+                "chantCirculusAbove",
+                "chantCirculusBelow"
+            ],
+            "scripts.augmentum": "chantAugmentum",
+            "scripts.usignumcongruentiae": "mensuralSignumUp",
+            "scripts.dsignumcongruentiae": {
+                "name": "mensuralSignumDown",
+                "note": "These symbols appear to be mirrored, but it doesn't seem like much of an issue to me."
+            }
+        }
     }
 ]

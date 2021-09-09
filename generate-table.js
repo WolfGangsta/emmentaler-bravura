@@ -93,8 +93,10 @@ async function main() {
                         let str = bravuraMetadata.optionalGlyphs[bravName].codepoint;
                         code = Number.parseInt(str.slice(2), 16);
                         row.className = "optional-in-bravura";
-                    } else {
+                    } else if (bravName) {
                         row.className = "new-to-smufl";
+                    } else {
+                        row.className = "contentious";
                     }
                 } else {
                     let str = glyphNames[bravName].codepoint;

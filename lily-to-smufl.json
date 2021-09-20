@@ -1037,45 +1037,89 @@
             "scripts.prall": "ornamentShortTrill",
             "scripts.mordent": "ornamentMordent",
             "scripts.prallprall": "ornamentTremblement",
-            "scripts.prallmordent": {
+            "scripts.prallmordent": [
+                {
+                    "name": "ornamentPrecompTrillWithMordent"
+                },
+                {
                 "name": "ornamentTrillMordent",
                 "ligOf": [
                     "ornamentZigZagLineWithRightEnd",
                     "ornamentMiddleVerticalStroke",
                     "ornamentZigZagLineNoRightEnd"
                 ],
-                "status": "contentious",
+                    "status": "rejected",
                 "note": "This and the following ornaments can be described as ligatures of the SMuFL 'Combining strokes for trills and mordents' glyphs--something for the bucket list.",
                 "ref": "https://w3c.github.io/smufl/latest/tables/combining-strokes-for-trills-and-mordents.html"
+                }
+            ],
+            "scripts.upprall": [
+                {
+                    "name": "ornamentPrecompSlideTrillDAnglebert"
             },
-            "scripts.upprall": {
+                {
                 "name": "ornamentUpTrill",
-                "status": "contentious"
+                    "status": "rejected",
+                    "note": "Never mind. I missed that SMuFL already has all these guys!",
+                    "ref": "https://w3c.github.io/smufl/latest/tables/precomposed-trills-and-mordents.html"
+                }
+            ],
+            "scripts.upmordent": [
+                {
+                    "name": "ornamentPrecompSlideTrillBach"
             },
-            "scripts.upmordent": {
+                {
                 "name": "ornamentUpMordent",
-                "status": "contentious"
+                    "status": "rejected"
+                }
+            ],
+            "scripts.prallup": [
+                {
+                    "name": "ornamentPrecompTrillSuffixDandrieu"
             },
-            "scripts.prallup": {
+                {
                 "name": "ornamentTrillUp",
-                "status": "contentious"
+                    "status": "rejected"
+                }
+            ],
+            "scripts.downprall": [
+                {
+                    "name": "ornamentPrecompMordentUpperPrefix"
             },
-            "scripts.downprall": {
+                {
                 "name": "ornamentDownTrill",
-                "status": "contentious"
+                    "status": "rejected"
+                }
+            ],
+            "scripts.downmordent": [
+                {
+                    "name": "ornamentPrecompInvertedMordentUpperPrefix"
             },
-            "scripts.downmordent": {
+                {
                 "name": "ornamentDownMordent",
-                "status": "contentious"
+                    "status": "rejected"
+                }
+            ],
+            "scripts.pralldown": [
+                {
+                    "name": "ornamentPrecompTrillLowerSuffix",
+                    "status": "contentious",
+                    "note": "LilyPond's glyph has three trill element repetitions, while this SMuFL glyph, the closest analog I could find, only has 2. Would it be worth it to give our glyph a new SMuFL name instead of this one?"
             },
-            "scripts.pralldown": {
+                {
                 "name": "ornamentTrillDown",
-                "status": "contentious"
+                    "status": "rejected"
+                }
+            ],
+            "scripts.lineprall": [
+                {
+                    "name": "ornamentPrecompAppoggTrill"
             },
-            "scripts.lineprall": {
+                {
                 "name": "ornamentLineTrill",
-                "status": "contentious"
-            },
+                    "status": "rejected"
+                }
+            ],
 
             "scripts.caesura.curved": "caesuraCurved",
             "scripts.caesura.straight": "caesura",
@@ -1096,7 +1140,6 @@
                 "chantCirculusBelow"
             ],
             "scripts.augmentum": "chantAugmentum",
-
             "scripts.usignumcongruentiae": "mensuralSignumUp",
             "scripts.dsignumcongruentiae": {
                 "name": "mensuralSignumDown",

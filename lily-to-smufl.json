@@ -1002,7 +1002,11 @@
                 {
                     "name": "wiggleArpeggiatoUp",
                     "status": "contentious",
-                    "note": "It looks like these glyphs are rotated in SMuFL. I'm thinking we create new glyphs according to their specs, while preserving our own for backwards compatibility."
+                    "note": "It looks like these glyphs are rotated in SMuFL. I'm thinking we create new glyphs according to their specs, while preserving our own for backwards compatibility.",
+                    "ref": [
+                        "https://lists.gnu.org/archive/html/lilypond-devel/2021-09/msg00047.html",
+                        "https://lists.w3.org/Archives/Public/public-music-notation/2021Sep/0000.html"
+                    ]
                 },
                 {
                     "name": "wiggleArpeggiatoDown",
@@ -1012,12 +1016,11 @@
             "scripts.trill_element": [
                 {
                     "name": "ornamentZigZagLineNoRightEnd",
-                    "status": "contentious",
-                    "note": "LilyPond uses trill_element, not trillelement, for trills, right?"
+                    "note": "LilyPond uses trill_element, not trillelement, for trills, right? Edit: Yes.",
+                    "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-09/msg00047.html"
                 },
                 {
                     "name": "ornamentZigZagLineWithRightEnd",
-                    "status": "contentious",
                     "note": "SMuFL places this variant at the right end of a trill; since LilyPond just repeats the same trill_element throughout, it'll just be another alias of trill_element."
                 }
             ],
@@ -1032,7 +1035,8 @@
             "scripts.trillelement": {
                 "name": "ornamentZigZagLineShortened",
                 "status": "contentious",
-                "note": "Does LilyPond use this glyph? What for?"
+                "note": "Does LilyPond use this glyph? What for? Edit: seems to be an old, unused trill_element. I'm making up a SMuFL name for it, but if we delete it there obviously won't be need for one.",
+                "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-09/msg00047.html"
             },
             "scripts.prall": "ornamentShortTrill",
             "scripts.mordent": "ornamentMordent",
@@ -1143,7 +1147,8 @@
             "scripts.usignumcongruentiae": "mensuralSignumUp",
             "scripts.dsignumcongruentiae": {
                 "name": "mensuralSignumDown",
-                "note": "These symbols appear to be mirrored, but it doesn't seem like much of an issue to me."
+                "note": "These symbols appear to be mirrored, but it doesn't seem like much of an issue to me.",
+                "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-09/msg00047.html"
             }
         }
     }

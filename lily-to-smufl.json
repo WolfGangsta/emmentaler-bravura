@@ -1151,5 +1151,76 @@
                 "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-09/msg00047.html"
             }
         }
+    },
+    {
+        "name": "Arrowhead",
+        "glyphs": {
+            "arrowheads.open.01": "arrowheadOpenRight",
+            "arrowheads.open.0M1": "arrowheadOpenLeft",
+            "arrowheads.open.11": "arrowheadOpenUp",
+            "arrowheads.open.1M1": "arrowheadOpenDown",
+            "arrowheads.close.01": "arrowheadBlackRight",
+            "arrowheads.close.0M1": "arrowheadBlackLeft",
+            "arrowheads.close.11": "arrowheadBlackUp",
+            "arrowheads.close.1M1": "arrowheadBlackDown"
+        }
+    },
+    {
+        "name": "Bracket-tip",
+        "glyphs": {
+            "brackettips.up": "bracketTop",
+            "brackettips.down": "bracketBottom"
+        }
+    },
+    {
+        "name": "Pedal",
+        "glyphs": {
+            "pedal.*": "keyboardPedalUp",
+            "pedal.M": "keyboardPedalHyphen",
+            "pedal..": "keyboardPedalDot",
+            "pedal.P": "keyboardPedalP",
+            "pedal.d": "keyboardPedalD",
+            "pedal.e": "keyboardPedalE",
+            "pedal.Ped": [
+                {
+                    "name": "keyboardPedalPed",
+                    "status": "contentious",
+                    "note": "This is a base glyph in SMuFL. I wonder if there's any way to map a SMuFL base name to a sequence of Emmentaler glyphs..."
+                },
+                {
+                    "name": "keyboardPedalPedNoDot",
+                    "altOf": "keyboardPedalPed",
+                    "note": "This is a recommended stylistic alternate."
+                }
+            ]
+        }
+    },
+    {
+        "name": "Accordion",
+        "glyphs": {
+            "accordion.discant": "accdnCombRH3RanksEmpty",
+            "accordion.dot": "accdnCombDot",
+            "accordion.freebass": "accdnCombLH2RanksEmpty",
+            "accordion.stdbass": "accdnCombRH4RanksEmpty",
+            "accordion.bayanbass": "accdnCombLH3RanksEmptySquare",
+            "accordion.oldEE": {
+                "name": "accdnOld88",
+                "status": "contentious",
+                "note": "I can't figure out what this is. -OldEE is a holdover from another way we used to encode accordion symbols, almost all eradicated by 2004. The E's stand for 8' stops (as opposed to 2' [T], 4' [F], or 16' [S]), so it might be an old version of the violin or musette register for the 3-rank system. However, I haven't found it used in any actual sheet music on the internet. Not even my accordionist friend knows what to make of it! Linked are SMuFL's accordion page and a notation guide I found, neither of which have the symbol:",
+                "ref": [
+                    "https://www.w3.org/2019/03/smufl13/tables/accordion.html",
+                    "http://www.ameraccord.com/artwork/2016/Feb16/Composersguidetotheaccordion.pdf"
+                ]
+            },
+            "accordion.push": "accdnPush",
+            "accordion.pull": "accdnPull"
+        }
+    },
+    {
+        "name": "Tie",
+        "glyphs": {
+            "ties.lyric.short": "lyricsElisionNarrow",
+            "ties.lyric.default": "lyricsElision"
+        }
     }
 ]

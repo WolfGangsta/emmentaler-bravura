@@ -1309,8 +1309,7 @@
                 "ligOf": [
                     "chantConnectingLineAsc3rd",
                     "chantAuctumDesc"
-                ],
-                "note": "This is a ligature in SMuFL."
+                ]
             },
             "noteheads.svaticana.quilisma": "chantQuilisma"
         }

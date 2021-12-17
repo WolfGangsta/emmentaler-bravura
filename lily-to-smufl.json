@@ -1143,7 +1143,11 @@
                 "chantCirculusAbove",
                 "chantCirculusBelow"
             ],
-            "scripts.augmentum": "chantAugmentum",
+            "scripts.augmentum": {
+                "name": "chantAugmentum",
+                "status": "contentious",
+                "note": "dots.dotvaticana already fills this function; it appears that this glyph has remained unused since its creation. I think this one should be deleted."
+            },
             "scripts.usignumcongruentiae": "mensuralSignumUp",
             "scripts.dsignumcongruentiae": {
                 "name": "mensuralSignumDown",
@@ -1221,6 +1225,249 @@
         "glyphs": {
             "ties.lyric.short": "lyricsElisionNarrow",
             "ties.lyric.default": "lyricsElision"
+        }
+    },
+    {
+        "name": "Vaticana",
+        "glyphs": {
+            "clefs.vaticana.do": "chantCclef",
+            "clefs.vaticana.do_change": {
+                "name": "chantCclefChange",
+                "ligOf": [
+                    "chantCclef",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.vaticana.fa": "chantFclef",
+            "clefs.vaticana.fa_change": {
+                "name": "chantFclefChange",
+                "ligOf": [
+                    "chantFclef",
+                    "clefChangeCombining"
+                ]
+            },
+            "custodes.vaticana.u0": {
+                "name": "chantCustosStemUpPosSpace",
+                "altOf": "chantCustosStemUpPosMiddle",
+                "note": "SMuFL defines six variants of a Custos: StemUpPos[Middle/Low/Lowest] and StemDownPos[Middle/High/Highest]. We use a different system, where 0 = space, 1 = line, and 2 = anywhere."
+            },
+            "custodes.vaticana.u1": {
+                "name": "chantCustosStemUpPosLine",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.vaticana.u2": "chantCustosStemUpPosMiddle",
+            "custodes.vaticana.d0": {
+                "name": "chantCustosStemDownPosSpace",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.vaticana.d1": {
+                "name": "chantCustosStemDownPosLine",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.vaticana.d2": "chantCustosStemDownPosMiddle",
+            "accidentals.vaticanaM1": "medRenFlatSoftB",
+            "accidentals.vaticana0": "medRenNatural",
+            "dots.dotvaticana": "chantAugmentum",
+            "noteheads.svaticana.punctum": "chantPunctum",
+            "noteheads.svaticana.punctum.cavum": "chantPunctumCavum",
+            "noteheads.svaticana.linea.punctum": "chantPunctumLinea",
+            "noteheads.svaticana.linea.punctum.cavum": "chantPunctumLineaCavum",
+            "noteheads.svaticana.inclinatum": "chantPunctumInclinatum",
+            "noteheads.svaticana.lpes": "chantPodatusLower",
+            "noteheads.svaticana.vlpes": {
+                "name": "chantPodatusLowerAdjacent",
+                "altOf": "chantPodatusLower",
+                "note": "This is a LilyPond-only variant for when the upper and lower notes of a pes (AKA podatus) are adjacent to one another and need to be modified to prevent collision."
+            },
+            "noteheads.svaticana.upes": "chantPodatusUpper",
+            "noteheads.svaticana.vupes": {
+                "name": "chantPodatusUpperAdjacent",
+                "altOf": "chantPodatusUpper",
+                "note": "See above."
+            },
+            "noteheads.svaticana.plica": "chantDeminutumUpper",
+            "noteheads.svaticana.vplica": {
+                "name": "chantDeminutumUpperAdjacent",
+                "altOf": "chantDeminutumUpper",
+                "note": "See above."
+            },
+            "noteheads.svaticana.epiphonus": "chantAuctumAsc",
+            "noteheads.svaticana.vepiphonus": {
+                "name": "chantAuctumAscAdjacent",
+                "altOf": "chantAuctumAsc",
+                "note": "See above."
+            },
+            "noteheads.svaticana.reverse.plica": "chantDeminutumLower",
+            "noteheads.svaticana.reverse.vplica": {
+                "name": "chantDeminutumLowerAdjacent",
+                "altOf": "chantDeminutumLower",
+                "note": "See above."
+            },
+            "noteheads.svaticana.inner.cephalicus": "chantAuctumDesc",
+            "noteheads.svaticana.cephalicus": {
+                "name": "chantCephalicus",
+                "ligOf": [
+                    "chantConnectingLineAsc3rd",
+                    "chantAuctumDesc"
+                ],
+                "note": "This is a ligature in SMuFL."
+            },
+            "noteheads.svaticana.quilisma": "chantQuilisma"
+        }
+    },
+    {
+        "name": "Medicaea",
+        "glyphs": {
+            "clefs.medicaea.do": {
+                "name": "chantCclefMedicaea",
+                "altOf": "chantCclef"
+            },
+            "clefs.medicaea.do_change": {
+                "name": "chantCclefMedicaeaChange",
+                "ligOf": [
+                    "chantCclefMedicaea",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.medicaea.fa": {
+                "name": "chantFclefMedicaea",
+                "altOf": "chantFclef"
+            },
+            "clefs.medicaea.fa_change": {
+                "name": "chantFclefMedicaeaChange",
+                "ligOf": [
+                    "chantFclefMedicaea",
+                    "clefChangeCombining"
+                ]
+            },
+            "custodes.medicaea.u0": {
+                "name": "chantCustosStemUpPosSpaceMedicaea",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.medicaea.u1": {
+                "name": "chantCustosStemUpPosLineMedicaea",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.medicaea.u2": {
+                "name": "chantCustosStemUpPosMiddleMedicaea",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.medicaea.d0": {
+                "name": "chantCustosStemDownPosSpaceMedicaea",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.medicaea.d1": {
+                "name": "chantCustosStemDownPosLineMedicaea",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.medicaea.d2": {
+                "name": "chantCustosStemDownPosMiddleMedicaea",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "accidentals.medicaeaM1": {
+                "name": "medRenFlatSoftBMedicaea",
+                "altOf": "medRenFlatSoftB"
+            },
+            "noteheads.smedicaea.inclinatum": {
+                "name": "chantPunctumInclinatumMedicaea",
+                "altOf": "chantPunctumInclinatum"
+            },
+            "noteheads.smedicaea.punctum": {
+                "name": "chantPunctumMedicaea",
+                "altOf": "chantPunctum"
+            },
+            "noteheads.smedicaea.rvirga": {
+                "name": "chantPunctumVirgaReversedMedicaea",
+                "status": "contentious",
+                "note": "SMuFL has vaticana-style glyphs called chantPunctumVirga(Reversed), but they aren't the same orientation as these Medicaea ones. (We don't have Vaticana virga glyphs anyway--we make ours with a punctum and stem.) Perhaps a better naming scheme is in order?"
+            },
+            "noteheads.smedicaea.virga": {
+                "name": "chantPunctumVirgaMedicaea",
+                "status": "contentious"
+            }
+        }
+    },
+    {
+        "name": "Hufnagel",
+        "glyphs": {
+            "clefs.hufnagel.do": {
+                "name": "chantCclefHufnagel",
+                "altOf": "chantCclef"
+            },
+            "clefs.hufnagel.do_change": {
+                "name": "chantCclefHufnagelChange",
+                "ligOf": [
+                    "chantCclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.hufnagel.fa": {
+                "name": "chantFclefHufnagel",
+                "altOf": "chantFclef"
+            },
+            "clefs.hufnagel.fa_change": {
+                "name": "chantFclefHufnagelChange",
+                "ligOf": [
+                    "chantFclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.hufnagel.do.fa": {
+                "name": "chantCFclefHufnagel",
+                "altOf": "chantCclef",
+                "note": "I'm calling this an alternate of the C clef because its center is defined in parmesan-clefs.mf as the center of the C clef part."
+            },
+            "clefs.hufnagel.do.fa_change": {
+                "name": "chantCFclefHufnagelChange",
+                "ligOf": [
+                    "chantCFclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            },
+            "custodes.hufnagel.u0": {
+                "name": "chantCustosStemUpPosSpaceHufnagel",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.hufnagel.u1": {
+                "name": "chantCustosStemUpPosLineHufnagel",
+                "altOf": "chantCustosStemUpPosMiddle"
+            },
+            "custodes.hufnagel.u2": [
+                "mensuralCustosCheckmark",
+                {
+                    "name": "chantCustosStemUpPosMiddleHufnagel",
+                    "altOf": "chantCustosStemUpPosMiddle"
+                }
+            ],
+            "custodes.hufnagel.d0": {
+                "name": "chantCustosStemDownPosSpaceHufnagel",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.hufnagel.d1": {
+                "name": "chantCustosStemDownPosLineHufnagel",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "custodes.hufnagel.d2": {
+                "name": "chantCustosStemDownPosMiddleHufnagel",
+                "altOf": "chantCustosStemDownPosMiddle"
+            },
+            "accidentals.hufnagelM1": {
+                "name": "medRenFlatSoftBHufnagel",
+                "altOf": "medRenFlatSoftB"
+            },
+            "noteheads.shufnagel.punctum": {
+                "name": "chantPunctumHufnagel",
+                "altOf": "chantPunctum"
+            },
+            "noteheads.shufnagel.virga": {
+                "name": "chantPunctumVirgaHufnagel",
+                "status": "contentious",
+                "note": "It seems we ought to add chantPunctumVirga(Reversed) to our Vaticana set, even if it's only used by non-LilyPond programs. That way we can make this and the Medicaea variants proper alternates of expected SMuFL glyphs."
+            },
+            "noteheads.shufnagel.lpes": {
+                "name": "chantPodatusLowerHufnagel",
+                "altOf": "chantPodatusLower"
+            }
         }
     }
 ]

@@ -1189,7 +1189,8 @@
                 {
                     "name": "keyboardPedalPed",
                     "status": "contentious",
-                    "note": "This is a base glyph in SMuFL. I wonder if there's any way to map a SMuFL base name to a sequence of Emmentaler glyphs..."
+                    "note": "This is a base glyph in SMuFL. I wonder if there's any way to map a SMuFL base name to a sequence of Emmentaler glyphs...",
+                    "ref": "https://lists.gnu.org/archive/html/lilypond-devel/2021-10/msg00082.html"
                 },
                 {
                     "name": "keyboardPedalPedNoDot",

@@ -6,6 +6,9 @@ table {
 td {
     height: 100px;
 }
+.key {
+    height: 50px;
+}
 .first {
     border-top: 1px solid black;
 }

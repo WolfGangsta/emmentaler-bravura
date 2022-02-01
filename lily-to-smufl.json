@@ -334,7 +334,11 @@
             "noteheads.uM2": {
                 "name": "noteheadLongaUp",
                 "status": "contentious",
-                "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's \"Individual notes\" glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving."
+                "note": "No analog found in Bravura. Because of their hardcoded stems, these glyphs look more like Bravura's \"Individual notes\" glyphs (i.e. noteHalfUp). However, those glyphs are not meant for direct music engraving.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                    "threaded": true
+                }
             },
             "noteheads.dM2": {
                 "name": "noteheadLongaDown",
@@ -979,24 +983,41 @@
             "scripts.lcomma": {
                 "name": "breathMarkCommaInverted",
                 "altOf": "breathMarkComma",
-                "status": "contentious",
-                "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice."
+                "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice. EDIT: it's modern notation.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                    "threaded": true
+                }
             },
             "scripts.rvarcomma": [
                 {
                     "name": "breathMarkCommaStraight",
                     "altOf": "breathMarkComma",
-                    "status": "contentious",
-                    "note": "If anyone at all uses this thing for actual breath marks and not just chant, I say we add this name."
+                    "status": "rejected",
+                    "note": "If anyone at all uses this thing for actual breath marks and not just chant, I say we add this name. EDIT: Turns out it's only chant.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                        "threaded": true
+                    }
                 },
                 "chantCaesura"
             ],
-            "scripts.lvarcomma": {
-                "name": "breathMarkCommaStraightInverted",
-                "altOf": "breathMarkComma",
-                "status": "contentious",
-                "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice."
-            },
+            "scripts.lvarcomma": [
+                {
+                    "name": "chantCaesuraInverted",
+                    "note": "This glyph was added for parity, and has no actual use in chant. Still, it remains a chant glyph.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                        "threaded": true
+                    }
+                },
+                {
+                    "name": "breathMarkCommaStraightInverted",
+                    "altOf": "breathMarkComma",
+                    "status": "rejected",
+                    "note": "Is this primarily a chant thing or a modern notation thing? Might inform our name choice. EDIT: See directly above."
+                }
+            ],
 
             "scripts.arpeggio": [
                 {
@@ -1146,7 +1167,11 @@
             "scripts.augmentum": {
                 "name": "chantAugmentum",
                 "status": "contentious",
-                "note": "dots.dotvaticana already fills this function; it appears that this glyph has remained unused since its creation. I think this one should be deleted."
+                "note": "dots.dotvaticana already fills this function; it appears that this glyph has remained unused since its creation. I think it should be deleted.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                    "threaded": true
+                }
             },
             "scripts.usignumcongruentiae": "mensuralSignumUp",
             "scripts.dsignumcongruentiae": {
@@ -1250,7 +1275,11 @@
             "custodes.vaticana.u0": {
                 "name": "chantCustosStemUpPosSpace",
                 "altOf": "chantCustosStemUpPosMiddle",
-                "note": "SMuFL defines six variants of a Custos: StemUpPos[Middle/Low/Lowest] and StemDownPos[Middle/High/Highest]. We use a different system, where 0 = space, 1 = line, and 2 = anywhere."
+                "note": "SMuFL defines six variants of a Custos: StemUpPos[Middle/Low/Lowest] and StemDownPos[Middle/High/Highest]. We use a different (more correct) system, where 0 = space, 1 = line, and 2 = anywhere.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                    "threaded": true
+                }
             },
             "custodes.vaticana.u1": {
                 "name": "chantCustosStemUpPosLine",
@@ -1376,11 +1405,21 @@
                 "name": "chantPunctumMedicaea",
                 "altOf": "chantPunctum"
             },
-            "noteheads.smedicaea.rvirga": {
-                "name": "chantPunctumVirgaReversedMedicaea",
-                "status": "contentious",
-                "note": "SMuFL has vaticana-style glyphs called chantPunctumVirga(Reversed), but they aren't the same orientation as these Medicaea ones. (We don't have Vaticana virga glyphs anyway--we make ours with a punctum and stem.) Perhaps a better naming scheme is in order?"
-            },
+            "noteheads.smedicaea.rvirga": [
+                {
+                    "name": "chantPunctumVirgaInvertedMedicaea",
+                    "note": "'Inverted' is attested in SMuFL as a flip on the horizontal axis (or a 180-degree rotation), and so is better suited to this glyph than 'Reversed', which in SMuFL indicates merely a left-right reversal."
+                },
+                {
+                    "name": "chantPunctumVirgaReversedMedicaea",
+                    "status": "rejected",
+                    "note": "SMuFL has vaticana-style glyphs called chantPunctumVirga(Reversed), but they aren't the same orientation as these Medicaea ones. (We don't have Vaticana virga glyphs anyway--we make ours with a punctum and stem.) Perhaps a better naming scheme is in order? EDIT: See above for a solution.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                        "threaded": true
+                    }
+                }
+            ],
             "noteheads.smedicaea.virga": {
                 "name": "chantPunctumVirgaMedicaea",
                 "status": "contentious"
@@ -1461,9 +1500,12 @@
             },
             "noteheads.shufnagel.virga": {
                 "name": "chantPunctumVirgaHufnagel",
-                "status": "contentious",
-                "note": "It seems we ought to add chantPunctumVirga(Reversed) to our Vaticana set, even if it's only used by non-LilyPond programs. That way we can make this and the Medicaea variants proper alternates of expected SMuFL glyphs."
-            },
+                "note": "It seems we ought to add chantPunctumVirga(Reversed) to our Vaticana set, even if it's only used by non-LilyPond programs. That way we can make this and the Medicaea variants proper alternates of expected SMuFL glyphs. EDIT: No, we shouldn't. This is way too niche.",
+                "ref": {
+                    "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
+                    "threaded": true
+                }
+        },
             "noteheads.shufnagel.lpes": {
                 "name": "chantPodatusLowerHufnagel",
                 "altOf": "chantPodatusLower"

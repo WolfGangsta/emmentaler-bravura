@@ -119,7 +119,6 @@
             "zero.small": [
                 {
                     "name": "figbass0",
-                    "status": "contentious",
                     "note": "A xxx.small number set will probably need to be created in the future.",
                     "ref": {
                         "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-06/msg00035.html",
@@ -128,7 +127,6 @@
                 },
                 {
                     "name": "fingering0",
-                    "status": "contentious",
                     "note": ""
                 }
             ]
@@ -141,7 +139,7 @@
                 "accidentalSharp",
                 {
                     "name": "accidentalWyschnegradsky6TwelfthsSharp",
-                    "status": "contentious",
+                    "status": "rejected",
                     "note": "I wonder if it's fair to users if we claim to support Wyschnegradsky accidentals if we only really have three of SMuFL's full set of 22."
                 },
                 "accidentalBakiyeSharp",
@@ -207,7 +205,7 @@
                 "accidentalThreeQuarterTonesSharpStein",
                 {
                     "name": "accidentalWyschnegradsky9TwelfthsSharp",
-                    "status": "contentious",
+                    "status": "rejected",
                     "note": "See above on Wyschnegradsky accidentals."
                 },
                 "accidentalThreeQuarterTonesSharpArabic"
@@ -254,7 +252,7 @@
                 "accidentalFlat",
                 {
                     "name": "accidentalWyschnegradsky6TwelfthsFlat",
-                    "status": "contentious",
+                    "status": "rejected",
                     "note": "See above on Wyschnegradsky accidentals."
                 },
                 "accidentalKucukMucennebFlat",

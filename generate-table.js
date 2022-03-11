@@ -14,6 +14,20 @@ async function main() {
     let tablesDiv = document.getElementById("tables");
     let select = document.getElementById("selector");
 
+    function bravCodeOf(bravName) {
+        let code = 0;
+
+        if (glyphNames[bravName]) {
+            let str = glyphNames[bravName].codepoint;
+            code = Number.parseInt(str.slice(2), 16);
+        } else if (bravuraMetadata.optionalGlyphs[bravName]) {
+            let str = bravuraMetadata.optionalGlyphs[bravName].codepoint;
+            code = Number.parseInt(str.slice(2), 16);
+        }
+
+        return code;
+    }
+
     for (let category of data) {
         let option = document.createElement("option");
         option.value = category.name;
@@ -59,14 +73,12 @@ async function main() {
 
             let emmenEntry = document.createElement("span");
             emmenEntry.className = "glyph-entry";
-            let bravInfoSpan = document.createElement("span");
-            bravInfoSpan.innerHTML = emmenName;
-            emmenEntry.append(bravInfoSpan);
+            emmenEntry.innerHTML = emmenName;
             col1.append(emmenEntry);
 
             // Second column (Emmentaler glyph)
             let col2 = document.createElement("td");
-            col2.className = "first lily-side emmentaler";
+            col2.className = "first lily-side emmentaler glyph";
             if (code === 0) col2.className += " new";
 
             col2.innerHTML = String.fromCodePoint(code);
@@ -74,6 +86,7 @@ async function main() {
             col1.rowSpan = col2.rowSpan = bravuraNames.length;
             row.append(col1, col2);
 
+            // Third & fourth columns
             for (let i = 0; i < bravuraNames.length; i++) {
                 let bravName = bravuraNames[i];
                 let status, altOf, ligOf, note, ref;
@@ -87,30 +100,88 @@ async function main() {
                     bravName = bravName.name;
                 }
 
-                let code = 0;
-                if (!glyphNames[bravName]) {
-                    if (bravuraMetadata.optionalGlyphs[bravName]) {
-                        let str = bravuraMetadata.optionalGlyphs[bravName].codepoint;
-                        code = Number.parseInt(str.slice(2), 16);
-                        row.className = "optional-in-bravura";
-                    } else if (bravName) {
-                        row.className = "new-to-smufl";
-                    } else {
-                        row.className = "contentious";
-                    }
-                } else {
-                    let str = glyphNames[bravName].codepoint;
-                    code = Number.parseInt(str.slice(2), 16);
+                if (glyphNames[bravName]) {
                     row.className = "smufl-recommended";
+                } else if (bravuraMetadata.optionalGlyphs[bravName]) {
+                    row.className = "optional-in-bravura";
+                } else if (bravName) {
+                    row.className = "new-to-smufl";
+                } else {
+                    row.className = "contentious";
                 }
 
                 // Third column (Bravura glyph)
                 let cell3 = document.createElement("td");
-                cell3.className = "bravura";
+                cell3.className = "glyph";
                 if (i === 0) cell3.className += " first";
-                cell3.innerHTML = String.fromCodePoint(code);
 
-                // Fourth column (SMuFL name)
+                let code = bravCodeOf(bravName);
+
+                if (code) {
+                    // Add an asterisk if the glyph is one of Bravura's "Additional Glyphs"
+                    if (code >= 0xF400) {
+                        cell3.append("* ");
+                    }
+
+                    let bravSpan = document.createElement("span");
+                    bravSpan.className = "bravura";
+                    bravSpan.innerHTML = String.fromCodePoint(code);
+                    cell3.append(bravSpan);
+                }
+
+                // If the glyph is an alternate, print the base glyph
+                if (altOf) {
+                    cell3.append(" (alt. ");
+
+                    code = bravCodeOf(altOf);
+
+                    if (code) {
+                        // Add an asterisk if the glyph is one of Bravura's "Additional Glyphs"
+                        if (code >= 0xF400) {
+                            cell3.append("* ");
+                        }
+
+                        let altSpan = document.createElement("span");
+                        altSpan.className = "bravura";
+                        altSpan.innerHTML = String.fromCodePoint(code);
+                        cell3.append(altSpan);
+                    } else {
+                        cell3.append("*");
+                    }
+                    cell3.append(" )");
+                }
+
+                // If the glyph is a ligature, print the components
+                if (ligOf) {
+                    let ligSpans = document.createElement("span");
+                    for (elem of ligOf) {
+                        if (ligSpans.innerHTML) {
+                            ligSpans.append(" + ");
+                        } else {
+                            ligSpans.append(" [ ");
+                        }
+
+                        code = bravCodeOf(elem);
+
+                        if (code) {
+                            // Add an asterisk if the glyph is one of Bravura's "Additional Glyphs"
+                            if (code >= 0xF400) {
+                                ligSpans.append("* ");
+                            }
+
+                            let ligSpan = document.createElement("span");
+                            ligSpan.className = "bravura";
+                            ligSpan.innerHTML = String.fromCodePoint(code);
+                            ligSpans.append(ligSpan);
+                        } else {
+                            ligSpans.append("*");
+                        }
+                    }
+                    ligSpans.append(" ]");
+                    cell3.append(ligSpans);
+                }
+
+                    // Fourth column (SMuFL name)
                 let cell4 = document.createElement("td");
                 if (i === 0) cell4.className = "first";
 
@@ -144,7 +215,7 @@ async function main() {
 
                 row.append(cell3, cell4);
 
-                // Put notes here
+                // Notes column
                 if (note || ref) {
                     let noteCell = document.createElement("td");
                     noteCell.className = "note";
@@ -208,7 +279,7 @@ async function main() {
         tablesDiv.append(categoryDiv);
     }
 
-    select.onchange = function(e) {
+    select.onchange = function (e) {
         if (e.target.value === "All") {
             showAll();
         } else {

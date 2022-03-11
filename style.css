@@ -5,6 +5,7 @@ table {
 }
 td {
     height: 100px;
+    min-width: 120px;
 }
 .key {
     height: 50px;
@@ -46,15 +47,16 @@ td {
     font-size: initial;
     font-style: italic;
 }
-.bravura, .emmentaler {
-    font-size: 24px;
-    text-align: center;
-}
 .bravura {
     font-family: "Bravura";
+    font-size: 24px;
 }
 .emmentaler {
     font-family: "Emmentaler";
+    font-size: 24px;
+}
+.glyph {
+    text-align: center;
 }
 @font-face
 {

@@ -1005,6 +1005,7 @@
             "scripts.lvarcomma": [
                 {
                     "name": "chantCaesuraInverted",
+                    "altOf": "chantCaesura",
                     "note": "This glyph was added for parity, and has no actual use in chant. Still, it remains a chant glyph.",
                     "ref": {
                         "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
@@ -1273,25 +1274,25 @@
                 ]
             },
             "custodes.vaticana.u0": {
-                "name": "chantCustosStemUpPosSpace",
+                "name": "chantCustosStemUpStaffSpace",
                 "altOf": "chantCustosStemUpPosMiddle",
-                "note": "SMuFL defines six variants of a Custos: StemUpPos[Middle/Low/Lowest] and StemDownPos[Middle/High/Highest]. We use a different (more correct) system, where 0 = space, 1 = line, and 2 = anywhere.",
+                "note": "SMuFL defines six variants of a Custos: StemUpPos[Middle/Low/Lowest] and StemDownPos[Middle/High/Highest]. We use a different (more correct) system, where 0 = space, 1 = line, and 2 = anywhere. Update 16 Mar '22: changed every instance of PosSpace and PosLine to StaffSpace and StaffLine for consistency with SMuFL's existing kievanNoteHalfStaff[Line/Space] glyphs.",
                 "ref": {
                     "url": "https://lists.gnu.org/archive/html/lilypond-devel/2021-12/msg00120.html",
                     "threaded": true
                 }
             },
             "custodes.vaticana.u1": {
-                "name": "chantCustosStemUpPosLine",
+                "name": "chantCustosStemUpStaffLine",
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.vaticana.u2": "chantCustosStemUpPosMiddle",
             "custodes.vaticana.d0": {
-                "name": "chantCustosStemDownPosSpace",
+                "name": "chantCustosStemDownStaffSpace",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.vaticana.d1": {
-                "name": "chantCustosStemDownPosLine",
+                "name": "chantCustosStemDownStaffLine",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.vaticana.d2": "chantCustosStemDownPosMiddle",
@@ -1321,25 +1322,52 @@
                 "altOf": "chantDeminutumUpper",
                 "note": "See above."
             },
-            "noteheads.svaticana.epiphonus": "chantAuctumAsc",
-            "noteheads.svaticana.vepiphonus": {
-                "name": "chantAuctumAscAdjacent",
-                "altOf": "chantAuctumAsc",
-                "note": "See above."
-            },
+            "noteheads.svaticana.epiphonus": [
+                {
+                    "name": "chantEpiphonus",
+                    "status": "contentious",
+                    "note": "SMuFL recommends an epiphonus be constructed with chantAuctumAsc, but we have a separate glyph. It might be worth making this an alt of chantAuctumAsc."
+                },
+                {
+                    "name": "chantAuctumAsc",
+                    "status": "rejected",
+                    "note": "Correction: the ascending and descending aucta are found in Emmentaler elsewhere: noteheads.ssolesmes.auct.[asc/desc]."
+                }
+            ],
+            "noteheads.svaticana.vepiphonus": [
+                {
+                    "name": "chantEpiphonusAdjacent",
+                    "status": "contentious",
+                    "note": "See above."
+                },
+                {
+                    "name": "chantAuctumAscAdjacent",
+                    "altOf": "chantAuctumAsc",
+                    "status": "rejected",
+                    "note": "See above."
+                }
+            ],
             "noteheads.svaticana.reverse.plica": "chantDeminutumLower",
             "noteheads.svaticana.reverse.vplica": {
                 "name": "chantDeminutumLowerAdjacent",
                 "altOf": "chantDeminutumLower",
                 "note": "See above."
             },
-            "noteheads.svaticana.inner.cephalicus": "chantAuctumDesc",
+            "noteheads.svaticana.inner.cephalicus": [
+                {
+                    "name": "chantCephalicusInner",
+                    "status": "contentious",
+                    "note": "I chose 'Inner' to mirror Lily's naming system. This could be an alt of chantAuctumDesc; is it worth it?"
+                },
+                {
+                    "name": "chantAuctumDesc",
+                    "status": "rejected",
+                    "note": "See above."
+                }
+            ],
             "noteheads.svaticana.cephalicus": {
                 "name": "chantCephalicus",
-                "ligOf": [
-                    "chantConnectingLineAsc3rd",
-                    "chantAuctumDesc"
-                ]
+                "note": "Removed ligature [chantConnectingLineAsc3rd + chantAuctumDesc]; see above."
             },
             "noteheads.svaticana.quilisma": "chantQuilisma"
         }
@@ -1370,11 +1398,11 @@
                 ]
             },
             "custodes.medicaea.u0": {
-                "name": "chantCustosStemUpPosSpaceMedicaea",
+                "name": "chantCustosStemUpStaffSpaceMedicaea",
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.medicaea.u1": {
-                "name": "chantCustosStemUpPosLineMedicaea",
+                "name": "chantCustosStemUpStaffLineMedicaea",
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.medicaea.u2": {
@@ -1382,11 +1410,11 @@
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.medicaea.d0": {
-                "name": "chantCustosStemDownPosSpaceMedicaea",
+                "name": "chantCustosStemDownStaffSpaceMedicaea",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.medicaea.d1": {
-                "name": "chantCustosStemDownPosLineMedicaea",
+                "name": "chantCustosStemDownStaffLineMedicaea",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.medicaea.d2": {
@@ -1464,11 +1492,11 @@
                 ]
             },
             "custodes.hufnagel.u0": {
-                "name": "chantCustosStemUpPosSpaceHufnagel",
+                "name": "chantCustosStemUpStaffSpaceHufnagel",
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.hufnagel.u1": {
-                "name": "chantCustosStemUpPosLineHufnagel",
+                "name": "chantCustosStemUpStaffLineHufnagel",
                 "altOf": "chantCustosStemUpPosMiddle"
             },
             "custodes.hufnagel.u2": [
@@ -1479,11 +1507,11 @@
                 }
             ],
             "custodes.hufnagel.d0": {
-                "name": "chantCustosStemDownPosSpaceHufnagel",
+                "name": "chantCustosStemDownStaffSpaceHufnagel",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.hufnagel.d1": {
-                "name": "chantCustosStemDownPosLineHufnagel",
+                "name": "chantCustosStemDownStaffLineHufnagel",
                 "altOf": "chantCustosStemDownPosMiddle"
             },
             "custodes.hufnagel.d2": {
@@ -1510,6 +1538,599 @@
                 "name": "chantPodatusLowerHufnagel",
                 "altOf": "chantPodatusLower"
             }
+        }
+    },
+    {
+        "name": "Mensural",
+        "glyphs": {
+            "rests.M3mensural": "mensuralRestLongaPerfecta",
+            "rests.M2mensural": "mensuralRestLongaImperfecta",
+            "rests.M1mensural": "mensuralRestBrevis",
+            "rests.0mensural": "mensuralRestSemibrevis",
+            "rests.1mensural": "mensuralRestMinima",
+            "rests.2mensural": "mensuralRestSemiminima",
+            "rests.3mensural": "mensuralRestFusa",
+            "rests.4mensural": "mensuralRestSemifusa",
+
+            "clefs.mensural.c": {
+                "name": "mensuralCclefVoid",
+                "altOf": "mensuralCclef"
+            },
+            "clefs.mensural.c_change": [
+                {
+                    "name": "mensuralCclefVoidChange",
+                    "ligOf": [
+                        "mensuralCclefVoid",
+                        "clefChangeCombining"
+                    ]
+                }
+            ],
+            "clefs.blackmensural.c": {
+                "name": "mensuralCclefBlack",
+                "altOf": "mensuralCclef"
+            },
+            "clefs.blackmensural.c_change": {
+                "name": "mensuralCclefBlackChange",
+                "ligOf": [
+                    "mensuralCclefBlack",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.mensural.f": "mensuralFclef",
+            "clefs.mensural.f_change": {
+                "name": "mensuralFclefChange",
+                "ligOf": [
+                    "mensuralFclef",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.mensural.g": {
+                "name": "mensuralGclef",
+                "note": "Emmentaler has a known issue where the G clef looks identical to the Petrucci G clef."
+            },
+            "clefs.mensural.g_change": {
+                "name": "mensuralGclefChange",
+                "ligOf": [
+                    "mensuralGclef",
+                    "clefChangeCombining"
+                ]
+            },
+
+            "custodes.mensural.u0": {
+                "name": "mensuralCustosUpStaffSpace",
+                "altOf": "mensuralCustosUp"
+            },
+            "custodes.mensural.u1": {
+                "name": "mensuralCustosUpStaffLine",
+                "altOf": "mensuralCustosUp"
+            },
+            "custodes.mensural.u2": "mensuralCustosUp",
+            "custodes.mensural.d0": {
+                "name": "mensuralCustosDownStaffSpace",
+                "altOf": "mensuralCustosDown"
+            },
+            "custodes.mensural.d1": {
+                "name": "mensuralCustosDownStaffLine",
+                "altOf": "mensuralCustosDown"
+            },
+            "custodes.mensural.d2": "mensuralCustosDown",
+
+            "accidentals.mensural1": "medRenSharpCroix",
+            "accidentals.mensuralM1": {
+                "name": "medRenFlatSoftBOld",
+                "altOf": "medRenFlatSoftB"
+            },
+
+            "flags.mensuralu03": {
+                "name": "mensuralFlag8thUpStaffSpace",
+                "altOf": "flag8thUp"
+            },
+            "flags.mensuralu13": {
+                "name": "mensuralFlag8thUpStaffLine",
+                "altOf": "flag8thUp"
+            },
+            "flags.mensuralu23": {
+                "name": "mensuralFlag8thUp",
+                "altOf": "flag8thUp"
+            },
+            "flags.mensurald03": {
+                "name": "mensuralFlag8thDownStaffSpace",
+                "altOf": "flag8thDown"
+            },
+            "flags.mensurald13": {
+                "name": "mensuralFlag8thDownStaffLine",
+                "altOf": "flag8thDown"
+            },
+            "flags.mensurald23": {
+                "name": "mensuralFlag8thDown",
+                "altOf": "flag8thDown"
+            },
+            "flags.mensuralu04": {
+                "name": "mensuralFlag16thUpStaffSpace",
+                "altOf": "flag16thUp"
+            },
+            "flags.mensuralu14": {
+                "name": "mensuralFlag16thUpStaffLine",
+                "altOf": "flag16thUp"
+            },
+            "flags.mensuralu24": {
+                "name": "mensuralFlag16thUp",
+                "altOf": "flag16thUp"
+            },
+            "flags.mensurald04": {
+                "name": "mensuralFlag16thDownStaffSpace",
+                "altOf": "flag16thDown"
+            },
+            "flags.mensurald14": {
+                "name": "mensuralFlag16thDownStaffLine",
+                "altOf": "flag16thDown"
+            },
+            "flags.mensurald24": {
+                "name": "mensuralFlag16thDown",
+                "altOf": "flag16thDown"
+            },
+            "flags.mensuralu05": {
+                "name": "mensuralFlag32ndUpStaffSpace",
+                "altOf": "flag32ndUp"
+            },
+            "flags.mensuralu15": {
+                "name": "mensuralFlag32ndUpStaffLine",
+                "altOf": "flag32ndUp"
+            },
+            "flags.mensuralu25": {
+                "name": "mensuralFlag32ndUp",
+                "altOf": "flag32ndUp"
+            },
+            "flags.mensurald05": {
+                "name": "mensuralFlag32ndDownStaffSpace",
+                "altOf": "flag32ndDown"
+            },
+            "flags.mensurald15": {
+                "name": "mensuralFlag32ndDownStaffLine",
+                "altOf": "flag32ndDown"
+            },
+            "flags.mensurald25": {
+                "name": "mensuralFlag32ndDown",
+                "altOf": "flag32ndDown"
+            },
+            "flags.mensuralu06": {
+                "name": "mensuralFlag64thUpStaffSpace",
+                "altOf": "flag64thUp"
+            },
+            "flags.mensuralu16": {
+                "name": "mensuralFlag64thUpStaffLine",
+                "altOf": "flag64thUp"
+            },
+            "flags.mensuralu26": {
+                "name": "mensuralFlag64thUp",
+                "altOf": "flag64thUp"
+            },
+            "flags.mensurald06": {
+                "name": "mensuralFlag64thDownStaffSpace",
+                "altOf": "flag64thDown"
+            },
+            "flags.mensurald16": {
+                "name": "mensuralFlag64thDownStaffLine",
+                "altOf": "flag64thDown"
+            },
+            "flags.mensurald26": {
+                "name": "mensuralFlag64thDown",
+                "altOf": "flag64thDown"
+            },
+
+            "timesig.mensural44": "mensuralProlation6",
+            "timesig.mensural22": "mensuralProlation9",
+            "timesig.mensural32": "mensuralProlation2",
+            "timesig.mensural64": "mensuralProlation5",
+            "timesig.mensural94": "mensuralProlation1",
+            "timesig.mensural34": "mensuralProlation3",
+            "timesig.mensural68": "mensuralProlation8",
+            "timesig.mensural98": "mensuralProlation4",
+            "timesig.mensural48": "mensuralProlation7",
+            "timesig.mensural68alt": "mensuralProlation11",
+            "timesig.mensural24": "mensuralProlation10",
+
+            "noteheads.uM3mensural": {
+                "name": "mensuralMaximaVoidStemUpRight",
+                "note": "In SMuFL this glyph and the next three glyphs with stems are encoded as ligatures using stem characters we don't have."
+            },
+            "noteheads.dM3mensural": {
+                "name": "mensuralMaximaVoidStemDownRight"
+            },
+            "noteheads.sM3ligmensural": "mensuralNoteheadMaximaVoid",
+            "noteheads.uM2mensural": {
+                "name": "mensuralLongaVoidStemUpRight"
+            },
+            "noteheads.dM2mensural": {
+                "name": "mensuralLongaVoidStemDownRight"
+            },
+            "noteheads.sM2ligmensural": "mensuralLongaVoidLigature",
+            "noteheads.sM1mensural": "mensuralNoteheadLongaVoid",
+
+            "noteheads.urM3mensural": {
+                "name": "mensuralMaximaVoidStemUpRightStaffSpace",
+                "altOf": "mensuralMaximaVoidStemUpRight",
+                "note": "Reduced-hole noteheads: LP uses these noteheads for spaces rather than lines.<br><br>I haven't seen precedent for declaring a stylistic alternate of a non-base glyph, but I don't think it will break anything."
+            },
+            "noteheads.drM3mensural": {
+                "name": "mensuralMaximaVoidStemDownRightStaffSpace",
+                "altOf": "mensuralMaximaVoidStemDownRight"
+            },
+            "noteheads.srM3ligmensural": {
+                "name": "mensuralNoteheadMaximaVoidStaffSpace",
+                "altOf": "mensuralNoteheadMaximaVoid"
+            },
+            "noteheads.urM2mensural": {
+                "name": "mensuralLongaVoidStemUpRightStaffSpace",
+                "altOf": "mensuralLongaVoidStemUpRight"
+            },
+            "noteheads.drM2mensural": {
+                "name": "mensuralLongaVoidStemDownRightStaffSpace",
+                "altOf": "mensuralLongaVoidStemDownRight"
+            },
+            "noteheads.srM2ligmensural": {
+                "name": "mensuralLongaVoidLigatureStaffSpace",
+                "altOf": "mensuralLongaVoidLigature",
+                "note": "This is the first time I've felt tempted to declare a stylistic alternate of a glyph SMuFL doesn't have at all. Might prompt me to revisit how I declare alternates."
+            },
+            "noteheads.srM1mensural": {
+                "name": "mensuralNoteheadLongaVoidStaffSpace",
+                "altOf": "mensuralNoteheadLongaVoid"
+            },
+
+            "noteheads.uM3semimensural": {
+                "name": "mensuralMaximaBlackVoidStemUpRight"
+            },
+            "noteheads.dM3semimensural": {
+                "name": "mensuralMaximaBlackVoidStemDownRight"
+            },
+            "noteheads.sM3semiligmensural": "mensuralNoteheadMaximaBlackVoid",
+            "noteheads.uM2semimensural": {
+                "name": "mensuralLongaBlackVoidStemUpRight"
+            },
+            "noteheads.dM2semimensural": {
+                "name": "mensuralLongaBlackVoidStemDownRight"
+            },
+            "noteheads.sM2semiligmensural": "mensuralLongaBlackVoidLigature",
+            "noteheads.sM1semimensural": "mensuralNoteheadLongaBlackVoid",
+
+            "noteheads.urM3semimensural": {
+                "name": "mensuralMaximaBlackVoidStemUpRightStaffSpace",
+                "altOf": "mensuralMaximaBlackVoidStemUpRight"
+            },
+            "noteheads.drM3semimensural": {
+                "name": "mensuralMaximaBlackVoidStemDownRightStaffSpace",
+                "altOf": "mensuralMaximaBlackVoidStemDownRight"
+            },
+            "noteheads.srM3semiligmensural": {
+                "name": "mensuralNoteheadMaximaBlackVoidStaffSpace",
+                "altOf": "mensuralNoteheadMaximaBlackVoid"
+            },
+            "noteheads.urM2semimensural": {
+                "name": "mensuralLongaBlackVoidStemUpRightStaffSpace",
+                "altOf": "mensuralLongaBlackVoidStemUpRight"
+            },
+            "noteheads.drM2semimensural": {
+                "name": "mensuralLongaBlackVoidStemDownRightStaffSpace",
+                "altOf": "mensuralLongaBlackVoidStemDownRight"
+            },
+            "noteheads.srM2semiligmensural": {
+                "name": "mensuralLongaBlackVoidLigatureStaffSpace",
+                "altOf": "mensuralLongaBlackVoidLigature"
+            },
+            "noteheads.srM1semimensural": {
+                "name": "mensuralNoteheadLongaBlackVoidStaffSpace",
+                "altOf": "mensuralNoteheadLongaBlackVoid"
+            },
+
+            "noteheads.uM3blackmensural": {
+                "name": "mensuralMaximaBlackStemUpRight"
+            },
+            "noteheads.dM3blackmensural": {
+                "name": "mensuralMaximaBlackStemDownRight"
+            },
+            "noteheads.sM3blackligmensural": "mensuralNoteheadMaximaBlack",
+            "noteheads.uM2blackmensural": {
+                "name": "mensuralLongaBlackStemUpRight"
+            },
+            "noteheads.dM2blackmensural": {
+                "name": "mensuralLongaBlackStemDownRight"
+            },
+            "noteheads.sM2blackligmensural": "mensuralNoteheadLongaBlackLigature",
+            "noteheads.sM1blackmensural": "mensuralNoteheadLongaBlack",
+
+            "noteheads.s0mensural": "mensuralNoteheadSemibrevisVoid",
+            "noteheads.s1mensural": "mensuralNoteheadMinimaWhite",
+            "noteheads.s2mensural": "mensuralNoteheadSemiminimaWhite",
+            "noteheads.s0blackmensural": "mensuralNoteheadSemibrevisBlack"
+        }
+    },
+    {
+        "name": "Neomensural",
+        "glyphs": {
+            "rests.M3neomensural": {
+                "name": "neomensuralRestLongaPerfecta",
+                "note": "SMuFL's mensuralLongaPerfecta looks different--one full-stave bar instead of two half-stave bars. But it means the same thing, right?",
+                "altOf": "mensuralRestLongaPerfecta"
+            },
+            "rests.M2neomensural": {
+                "name": "neomensuralRestLongaImperfecta",
+                "altOf": "mensuralRestLongaImperfecta"
+            },
+            "rests.M1neomensural": {
+                "name": "neomensuralRestBrevis",
+                "altOf": "mensuralRestBrevis"
+            },
+            "rests.0neomensural": {
+                "name": "neomensuralRestSemibrevis",
+                "altOf": "mensuralRestSemibrevis"
+            },
+            "rests.1neomensural": {
+                "name": "neomensuralRestMinima",
+                "altOf": "mensuralRestMinima"
+            },
+            "rests.2neomensural": {
+                "name": "neomensuralRestSemiminima",
+                "altOf": "mensuralRestSemiminima"
+            },
+            "rests.3neomensural": {
+                "name": "neomensuralRestFusa",
+                "altOf": "mensuralRestFusa"
+            },
+            "rests.4neomensural": {
+                "name": "neomensuralRestSemifusa",
+                "altOf": "mensuralRestSemifusa"
+            },
+
+            "clefs.neomensural.c": "mensuralCclef",
+            "clefs.neomensural.c_change": {
+                "name": "mensuralCclefChange",
+                "ligOf": [
+                    "mensuralCclef",
+                    "clefChangeCombining"
+                ]
+            },
+
+            "timesig.neomensural44": {
+                "name": "neomensuralProlation6",
+                "altOf": "mensuralProlation6"
+            },
+            "timesig.neomensural22": {
+                "name": "neomensuralProlation9",
+                "altOf": "mensuralProlation9"
+            },
+
+            "timesig.neomensural32": {
+                "name": "neomensuralProlation2",
+                "altOf": "mensuralProlation2"
+            },
+            "timesig.neomensural64": {
+                "name": "neomensuralProlation5",
+                "altOf": "mensuralProlation5"
+            },
+            "timesig.neomensural94": {
+                "name": "neomensuralProlation1",
+                "altOf": "mensuralProlation1"
+            },
+
+            "timesig.neomensural34": {
+                "name": "neomensuralProlation3",
+                "altOf": "mensuralProlation3"
+            },
+            "timesig.neomensural68": {
+                "name": "neomensuralProlation8",
+                "altOf": "mensuralProlation8"
+            },
+            "timesig.neomensural98": {
+                "name": "neomensuralProlation4",
+                "altOf": "mensuralProlation4"
+            },
+
+            "timesig.neomensural48": {
+                "name": "neomensuralProlation7",
+                "altOf": "mensuralProlation7"
+            },
+            "timesig.neomensural68alt": {
+                "name": "neomensuralProlation11",
+                "altOf": "mensuralProlation11"
+            },
+            "timesig.neomensural24": {
+                "name": "neomensuralProlation10",
+                "altOf": "mensuralProlation10"
+            },
+
+            "noteheads.uM3neomensural": {
+                "name": "neomensuralMaximaVoidStemUpRight",
+                "altOf": "mensuralMaximaVoidStemUpRight"
+            },
+            "noteheads.dM3neomensural": {
+                "name": "neomensuralMaximaVoidStemDownRight",
+                "altOf": "mensuralMaximaVoidStemDownRight"
+            },
+            "noteheads.uM2neomensural": {
+                "name": "neomensuralLongaVoidStemUpRight",
+                "altOf": "mensuralLongaVoidStemUpRight"
+            },
+            "noteheads.dM2neomensural": {
+                "name": "neomensuralLongaVoidStemDownRight",
+                "altOf": "mensuralLongaVoidStemDownRight"
+            },
+            "noteheads.sM1neomensural": {
+                "name": "neomensuralNoteheadLongaVoid",
+                "altOf": "mensuralNoteheadLongaVoid"
+            },
+
+            "noteheads.urM3neomensural": {
+                "name": "neomensuralMaximaVoidStemUpRightStaffSpace",
+                "altOf": "mensuralMaximaVoidStemUpRight",
+                "status": "contentious",
+                "note": "It may be more helpful to label double alternates like these as alternates of both the neomensural- and the -StaffSpace variants, rather than of the base glyphs included in Bravura."
+            },
+            "noteheads.drM3neomensural": {
+                "name": "neomensuralMaximaVoidStemDownRightStaffSpace",
+                "altOf": "mensuralMaximaVoidStemDownRight",
+                "status": "contentious"
+            },
+            "noteheads.urM2neomensural": {
+                "name": "neomensuralLongaVoidStemUpRightStaffSpace",
+                "altOf": "mensuralLongaVoidStemUpRight",
+                "status": "contentious"
+            },
+            "noteheads.drM2neomensural": {
+                "name": "neomensuralLongaVoidStemDownRightStaffSpace",
+                "altOf": "mensuralLongaVoidStemDownRight",
+                "status": "contentious"
+            },
+            "noteheads.srM1neomensural": {
+                "name": "neomensuralNoteheadLongaVoidStaffSpace",
+                "altOf": "mensuralNoteheadLongaVoid",
+                "status": "contentious"
+            },
+
+            "noteheads.s0neomensural": {
+                "name": "neomensuralNoteheadSemibrevisVoid",
+                "altOf": "mensuralNoteheadSemibrevisVoid"
+            },
+            "noteheads.s1neomensural": {
+                "name": "neomensuralNoteheadMinimaWhite",
+                "altOf": "mensuralNoteheadMinimaWhite"
+            },
+            "noteheads.s2neomensural": {
+                "name": "neomensuralNoteheadSemiminimaWhite",
+                "altOf": "mensuralNoteheadSemiminimaWhite"
+            }
+        }
+    },
+    {
+        "name": "Petrucci",
+        "glyphs": {
+            "clefs.petrucci.c1": "mensuralCclefPetrucciPosLowest",
+            "clefs.petrucci.c1_change": {
+                "name": "mensuralCclefPetrucciPosLowestChange",
+                "ligOf": [
+                    "mensuralCclefPetrucciPosLowest",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.c2": "mensuralCclefPetrucciPosLow",
+            "clefs.petrucci.c2_change": {
+                "name": "mensuralCclefPetrucciPosLowChange",
+                "ligOf": [
+                    "mensuralCclefPetrucciPosLow",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.c3": "mensuralCclefPetrucciPosMiddle",
+            "clefs.petrucci.c3_change": {
+                "name": "mensuralCclefPetrucciPosMiddleChange",
+                "ligOf": [
+                    "mensuralCclefPetrucciPosMiddle",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.c4": "mensuralCclefPetrucciPosHigh",
+            "clefs.petrucci.c4_change": {
+                "name": "mensuralCclefPetrucciPosHighChange",
+                "ligOf": [
+                    "mensuralCclefPetrucciPosHigh",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.c5": "mensuralCclefPetrucciPosHighest",
+            "clefs.petrucci.c5_change": {
+                "name": "mensuralCclefPetrucciPosHighestChange",
+                "ligOf": [
+                    "mensuralCclefPetrucciPosHighest",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.f": "mensuralFclefPetrucci",
+            "clefs.petrucci.f_change": {
+                "name": "mensuralFclefPetrucciChange",
+                "ligOf": [
+                    "mensuralFclefPetrucci",
+                    "clefChangeCombining"
+                ]
+            },
+            "clefs.petrucci.g": "mensuralGclefPetrucci",
+            "clefs.petrucci.g_change": {
+                "name": "mensuralGclefPetrucciChange",
+                "ligOf": [
+                    "mensuralGclefPetrucci",
+                    "clefChangeCombining"
+                ]
+            },
+
+            "noteheads.s0petrucci": {
+                "name": "mensuralNoteheadSemibrevisVoidPetrucci",
+                "altOf": "mensuralNoteheadSemibrevisVoid"
+            },
+            "noteheads.s1petrucci": {
+                "name": "mensuralNoteheadMinimaWhitePetrucci",
+                "altOf": "mensuralNoteheadMinimaWhite"
+            },
+            "noteheads.s2petrucci": {
+                "name": "mensuralNoteheadSemiminimaWhitePetrucci",
+                "altOf": "mensuralNoteheadSemiminimaWhite"
+            },
+
+            "noteheads.s0blackpetrucci": {
+                "name": "mensuralNoteheadSemibrevisBlackPetrucci",
+                "altOf": "mensuralNoteheadSemibrevisBlack"
+            },
+            "noteheads.s1blackpetrucci": {
+                "name": "mensuralNoteheadMinimaBlackPetrucci",
+                "note": "This and the following glyph do not have regular mensural base glyphs in SMuFL."
+            },
+            "noteheads.s2blackpetrucci": {
+                "name": "mensuralNoteheadSemiminimaBlackPetrucci"
+            }
+        }
+    },
+    {
+        "name": "Solesmes",
+        "glyphs": {
+            "noteheads.ssolesmes.incl.parvum": "chantPunctumInclinatumDeminutum",
+
+            "noteheads.ssolesmes.auct.asc": "chantAuctumAsc",
+            "noteheads.ssolesmes.auct.desc": "chantAuctumDesc",
+
+            "noteheads.ssolesmes.incl.auctum": "chantPunctumInclinatumAuctum",
+
+            "noteheads.ssolesmes.stropha": "chantStrophicus",
+            "noteheads.ssolesmes.stropha.aucta": "chantStrophicusAuctus",
+
+            "noteheads.ssolesmes.oriscus": "chantOriscusAscending"
+        }
+    },
+    {
+        "name": "Kievan",
+        "glyphs": {
+            "clefs.kievan.do": "kievanCClef",
+            "clefs.kievan.do_change": {
+                "name": "kievanCClefChange",
+                "ligOf": [
+                    "kievanCClef",
+                    "clefChangeCombining"
+                ]
+            },
+
+            "accidentals.kievan1": "kievanAccidentalSharp",
+            "accidentals.kievanM1": "kievanAccidentalFlat",
+
+            "scripts.barline.kievan": "kievanEndingSymbol",
+
+            "dots.dotkievan": "kievanAugmentationDot",
+
+            "noteheads.sM2kievan": "kievanNoteWholeFinal",
+            "noteheads.sM1kievan": "kievanNoteReciting",
+            "noteheads.s0kievan": "kievanNoteWhole",
+            "noteheads.d2kievan": "kievanNoteQuarterStemDown",
+            "noteheads.u2kievan": "kievanNoteQuarterStemUp",
+            "noteheads.s1kievan": "kievanNoteHalfStaffLine",
+            "noteheads.sr1kievan": "kievanNoteHalfStaffSpace",
+            "noteheads.d3kievan": "kievanNote8thStemDown",
+            "noteheads.u3kievan": "kievanNote8thStemUp"
         }
     }
 ]

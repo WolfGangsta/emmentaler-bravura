@@ -74,7 +74,12 @@
             "clefs.change_combining": [
                 {
                     "name": "clefChangeCombining",
-                    "note": "Emmentaler needs this combining glyph in order for the ligature clefs to work as expected."
+                    "status": "rejected",
+                    "note": "Emmentaler needs this combining glyph in order for the ligature clefs to work as expected. Edit 20 Mar '22: It doesn't.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2022-03/msg00066.html",
+                        "threaded": true
+                    }
                 }
             ]
         }
@@ -1848,11 +1853,25 @@
     {
         "name": "Neomensural",
         "glyphs": {
-            "rests.M3neomensural": {
-                "name": "neomensuralRestLongaPerfecta",
-                "note": "SMuFL's mensuralLongaPerfecta looks different--one full-stave bar instead of two half-stave bars. But it means the same thing, right?",
-                "altOf": "mensuralRestLongaPerfecta"
-            },
+            "rests.M3neomensural": [
+                {
+                    "name": "neomensuralRestMaxima",
+                    "ligOf": [
+                        "neomensuralRestLongaImperfecta",
+                        "neomensuralRestLongaImperfecta"
+                    ]
+                },
+                {
+                    "name": "neomensuralRestLongaPerfecta",
+                    "status": "rejected",
+                    "note": "SMuFL's mensuralLongaPerfecta looks different--one full-stave bar instead of two half-stave bars. But it means the same thing, right? Edit 20 Mar '22: It doesn't.",
+                    "ref": {
+                        "url": "https://lists.gnu.org/archive/html/lilypond-devel/2022-03/msg00055.html",
+                        "threaded": true
+                    },
+                    "altOf": "mensuralRestLongaPerfecta"
+                }
+            ],
             "rests.M2neomensural": {
                 "name": "neomensuralRestLongaImperfecta",
                 "altOf": "mensuralRestLongaImperfecta"

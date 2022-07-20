@@ -1,0 +1,2992 @@
+{
+    "emmentaler_version": "0.0.1",
+    "smufl_version": "1.4",
+    "glyphs": {
+        "clefs.C": [
+            {
+                "name": "cClef"
+            }
+        ],
+        "clefs.C_change": [
+            {
+                "name": "cClefChange"
+            }
+        ],
+        "clefs.varC": [
+            {
+                "name": "cClefFrench20C",
+                "alternate_of": "cClef"
+            }
+        ],
+        "clefs.varC_change": [
+            {
+                "name": "cClefFrench20CChange",
+                "alternate_of": "cClefChange"
+            }
+        ],
+        "clefs.F": [
+            {
+                "name": "fClef"
+            }
+        ],
+        "clefs.F_change": [
+            {
+                "name": "fClefChange"
+            }
+        ],
+        "clefs.G": [
+            {
+                "name": "gClef"
+            }
+        ],
+        "clefs.G_change": [
+            {
+                "name": "gClefChange"
+            }
+        ],
+        "clefs.GG": [
+            {
+                "name": "gClef8vbOld"
+            }
+        ],
+        "clefs.GG_change": [
+            {
+                "name": "gClef8vbOldChange",
+                "ligature_of": [
+                    "gClef8vbOld",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.tenorG": [
+            {
+                "name": "gClef8vbCClef"
+            }
+        ],
+        "clefs.tenorG_change": [
+            {
+                "name": "gClef8vbCClefChange",
+                "ligature_of": [
+                    "gClef8vbCClef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.percussion": [
+            {
+                "name": "unpitchedPercussionClef1"
+            }
+        ],
+        "clefs.percussion_change": [
+            {
+                "name": "unpitchedPercussionClef1Change",
+                "ligature_of": [
+                    "unpitchedPercussionClef1",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.varpercussion": [
+            {
+                "name": "unpitchedPercussionClef2"
+            }
+        ],
+        "clefs.varpercussion_change": [
+            {
+                "name": "unpitchedPercussionClef2Change",
+                "ligature_of": [
+                    "unpitchedPercussionClef2",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.tab": [
+            {
+                "name": "6stringTabClef"
+            },
+            {
+                "name": "4stringTabClef"
+            }
+        ],
+        "clefs.tab_change": [
+            {
+                "name": "6stringTabClefChange",
+                "ligature_of": [
+                    "6stringTabClef",
+                    "clefChangeCombining"
+                ]
+            },
+            {
+                "name": "4stringTabClefChange",
+                "ligature_of": [
+                    "4stringTabClef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "timesig.C44": [
+            {
+                "name": "timeSigCommon"
+            }
+        ],
+        "timesig.C22": [
+            {
+                "name": "timeSigCutCommon"
+            }
+        ],
+        "plus": [
+            {
+                "name": "timeSigPlus"
+            },
+            {
+                "name": "timeSigPlusSmall"
+            }
+        ],
+        "comma": [
+            {
+                "name": "timeSigComma"
+            }
+        ],
+        "hyphen": [
+            {
+                "name": "timeSigMinus"
+            }
+        ],
+        "period": [
+            {
+                "name": "timeSigDot"
+            }
+        ],
+        "zero": [
+            {
+                "name": "timeSig0"
+            }
+        ],
+        "accidentals.sharp": [
+            {
+                "name": "accidentalSharp"
+            },
+            {
+                "name": "accidentalBakiyeSharp"
+            },
+            {
+                "name": "accidentalSharpArabic"
+            }
+        ],
+        "accidentals.sharp.arrowup": [
+            {
+                "name": "accidentalThreeQuarterTonesSharpArrowUp"
+            }
+        ],
+        "accidentals.sharp.arrowdown": [
+            {
+                "name": "accidentalQuarterToneSharpArrowDown"
+            }
+        ],
+        "accidentals.sharp.arrowboth": [
+            {
+                "name": "accidentalSharpArrowsUpAndDown"
+            }
+        ],
+        "accidentals.sharp.slashslash.stem": [
+            {
+                "name": "accidentalQuarterToneSharpStein"
+            },
+            {
+                "name": "accidentalKomaSharp"
+            },
+            {
+                "name": "accidentalQuarterToneSharpArabic"
+            }
+        ],
+        "accidentals.sharp.slashslashslash.stemstem": [
+            {
+                "name": "accidentalBuyukMucennebSharp"
+            }
+        ],
+        "accidentals.sharp.slashslashslash.stem": [
+            {
+                "name": "accidentalKucukMucennebSharp"
+            }
+        ],
+        "accidentals.sharp.slash.stem": [
+            {
+                "name": "accidentalRaiseOneUndecimalQuartertone"
+            }
+        ],
+        "accidentals.sharp.slashslash.stemstemstem": [
+            {
+                "name": "accidentalThreeQuarterTonesSharpStein"
+            },
+            {
+                "name": "accidentalThreeQuarterTonesSharpArabic"
+            }
+        ],
+        "accidentals.doublesharp": [
+            {
+                "name": "accidentalDoubleSharp"
+            },
+            {
+                "name": "accidentalDoubleSharpArabic"
+            }
+        ],
+        "accidentals.natural": [
+            {
+                "name": "accidentalNatural"
+            },
+            {
+                "name": "accidentalNaturalArabic"
+            }
+        ],
+        "accidentals.natural.arrowup": [
+            {
+                "name": "accidentalQuarterToneSharpNaturalArrowUp"
+            }
+        ],
+        "accidentals.natural.arrowdown": [
+            {
+                "name": "accidentalQuarterToneFlatNaturalArrowDown"
+            }
+        ],
+        "accidentals.natural.arrowboth": [
+            {
+                "name": "accidentalNaturalArrowsUpAndDown"
+            }
+        ],
+        "accidentals.flat": [
+            {
+                "name": "accidentalFlat"
+            },
+            {
+                "name": "accidentalKucukMucennebFlat"
+            },
+            {
+                "name": "accidentalFlatArabic"
+            }
+        ],
+        "accidentals.flat.arrowup": [
+            {
+                "name": "accidentalQuarterToneFlatArrowUp"
+            }
+        ],
+        "accidentals.flat.arrowdown": [
+            {
+                "name": "accidentalThreeQuarterTonesFlatArrowDown"
+            }
+        ],
+        "accidentals.flat.arrowboth": [
+            {
+                "name": "accidentalFlatArrowsUpAndDown"
+            }
+        ],
+        "accidentals.flat.slash": [
+            {
+                "name": "accidentalBakiyeFlat"
+            },
+            {
+                "name": "accidentalQuarterToneFlatArabic"
+            }
+        ],
+        "accidentals.flat.slashslash": [
+            {
+                "name": "accidentalBuyukMucennebFlat"
+            }
+        ],
+        "accidentals.mirroredflat.flat": [
+            {
+                "name": "accidentalThreeQuarterTonesFlatCouper"
+            }
+        ],
+        "accidentals.mirroredflat": [
+            {
+                "name": "accidentalQuarterToneFlatStein"
+            },
+            {
+                "name": "accidentalLowerOneUndecimalQuartertone"
+            },
+            {
+                "name": "accidentalKomaFlat"
+            }
+        ],
+        "accidentals.mirroredflat.backslash": [
+            {
+                "name": "accidentalReversedFlatSlash"
+            }
+        ],
+        "accidentals.flatflat": [
+            {
+                "name": "accidentalDoubleFlat"
+            },
+            {
+                "name": "accidentalDoubleFlatArabic"
+            }
+        ],
+        "accidentals.flatflat.slash": [
+            {
+                "name": "accidentalDoubleFlatSlash"
+            }
+        ],
+        "accidentals.rightparen": [
+            {
+                "name": "accidentalParensRight"
+            }
+        ],
+        "accidentals.leftparen": [
+            {
+                "name": "accidentalParensLeft"
+            }
+        ],
+        "noteheads.sM1": [
+            {
+                "name": "noteheadDoubleWholeAlt",
+                "alternate_of": "noteheadDoubleWhole"
+            }
+        ],
+        "noteheads.s0": [
+            {
+                "name": "noteheadWhole"
+            }
+        ],
+        "noteheads.s1": [
+            {
+                "name": "noteheadHalf"
+            }
+        ],
+        "noteheads.s2": [
+            {
+                "name": "noteheadBlack"
+            }
+        ],
+        "noteheads.sM1double": [
+            {
+                "name": "noteheadDoubleWhole"
+            }
+        ],
+        "noteheads.s0diamond": [
+            {
+                "name": "noteheadDiamondWholeOld"
+            }
+        ],
+        "noteheads.s1diamond": [
+            {
+                "name": "noteheadDiamondHalfOld"
+            }
+        ],
+        "noteheads.s2diamond": [
+            {
+                "name": "noteheadDiamondBlackOld"
+            }
+        ],
+        "noteheads.s0triangle": [
+            {
+                "name": "noteheadTriangleWhole"
+            }
+        ],
+        "noteheads.s1triangle": [
+            {
+                "name": "noteheadTriangleHalf"
+            }
+        ],
+        "noteheads.s2triangle": [
+            {
+                "name": "noteheadTriangleBlack"
+            }
+        ],
+        "noteheads.s0slash": [
+            {
+                "name": "noteheadSlashWhiteWhole"
+            }
+        ],
+        "noteheads.s1slash": [
+            {
+                "name": "noteheadSlashWhiteHalf"
+            }
+        ],
+        "noteheads.s2slash": [
+            {
+                "name": "noteheadSlashHorizontalEnds"
+            }
+        ],
+        "noteheads.s0cross": [
+            {
+                "name": "noteheadXWhole"
+            }
+        ],
+        "noteheads.s1cross": [
+            {
+                "name": "noteheadXHalf"
+            }
+        ],
+        "noteheads.s2cross": [
+            {
+                "name": "noteheadXBlack"
+            }
+        ],
+        "noteheads.s2xcircle": [
+            {
+                "name": "noteheadHalfWithX"
+            },
+            {
+                "name": "noteheadVoidWithX"
+            },
+            {
+                "name": "noteheadCircleXWhole"
+            },
+            {
+                "name": "noteheadCircleXHalf"
+            },
+            {
+                "name": "noteheadCircleX"
+            }
+        ],
+        "noteheads.s0harmonic": [
+            {
+                "name": "noteheadDiamondWhole"
+            },
+            {
+                "name": "noteheadDiamondHalf"
+            }
+        ],
+        "noteheads.s2harmonic": [
+            {
+                "name": "noteheadDiamondBlack"
+            }
+        ],
+        "noteheads.s0do": [
+            {
+                "name": "noteShapeTriangleUpWhite"
+            }
+        ],
+        "noteheads.s2do": [
+            {
+                "name": "noteShapeTriangleUpBlack"
+            }
+        ],
+        "noteheads.s0doThin": [
+            {
+                "name": "noteShapeTriangleUpWhiteThin",
+                "alternate_of": "noteShapeTriangleUpWhite"
+            }
+        ],
+        "noteheads.s2doThin": [
+            {
+                "name": "noteShapeTriangleUpBlackThin",
+                "alternate_of": "noteShapeTriangleUpBlack"
+            }
+        ],
+        "noteheads.s0re": [
+            {
+                "name": "noteShapeMoonWhite"
+            }
+        ],
+        "noteheads.s2re": [
+            {
+                "name": "noteShapeMoonBlack"
+            }
+        ],
+        "noteheads.s0reThin": [
+            {
+                "name": "noteShapeMoonWhiteThin",
+                "alternate_of": "noteShapeMoonWhite"
+            }
+        ],
+        "noteheads.s2reThin": [
+            {
+                "name": "noteShapeMoonBlackThin",
+                "alternate_of": "noteShapeMoonBlack"
+            }
+        ],
+        "noteheads.s0mi": [
+            {
+                "name": "noteShapeDiamondWhiteReversed",
+                "alternate_of": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.s2mi": [
+            {
+                "name": "noteShapeDiamondBlackReversed",
+                "alternate_of": "noteShapeDiamondBlack"
+            }
+        ],
+        "noteheads.s0miMirror": [
+            {
+                "name": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.s2miMirror": [
+            {
+                "name": "noteShapeDiamondBlack"
+            }
+        ],
+        "noteheads.s0miThin": [
+            {
+                "name": "noteShapeDiamondWhiteThin",
+                "alternate_of": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.s2miThin": [
+            {
+                "name": "noteShapeDiamondBlackThin",
+                "alternate_of": "noteShapeDiamondBlack"
+            }
+        ],
+        "noteheads.u0fa": [
+            {
+                "name": "noteShapeTriangleLeftWhite"
+            }
+        ],
+        "noteheads.d0fa": [
+            {
+                "name": "noteShapeTriangleRightWhite"
+            }
+        ],
+        "noteheads.u2fa": [
+            {
+                "name": "noteShapeTriangleLeftBlack"
+            }
+        ],
+        "noteheads.d2fa": [
+            {
+                "name": "noteShapeTriangleRightBlack"
+            }
+        ],
+        "noteheads.u0faThin": [
+            {
+                "name": "noteShapeTriangleLeftWhiteThin",
+                "alternate_of": "noteShapeTriangleLeftWhite"
+            }
+        ],
+        "noteheads.d0faThin": [
+            {
+                "name": "noteShapeTriangleRightWhiteThin",
+                "alternate_of": "noteShapeTriangleRightWhite"
+            }
+        ],
+        "noteheads.u2faThin": [
+            {
+                "name": "noteShapeTriangleLeftBlackThin",
+                "alternate_of": "noteShapeTriangleLeftBlack"
+            }
+        ],
+        "noteheads.d2faThin": [
+            {
+                "name": "noteShapeTriangleRightBlackThin",
+                "alternate_of": "noteShapeTriangleRightBlack"
+            }
+        ],
+        "noteheads.s0sol": [
+            {
+                "name": "noteShapeRoundWhite"
+            }
+        ],
+        "noteheads.s2sol": [
+            {
+                "name": "noteShapeRoundBlack"
+            }
+        ],
+        "noteheads.s0la": [
+            {
+                "name": "noteShapeSquareWhite"
+            }
+        ],
+        "noteheads.s2la": [
+            {
+                "name": "noteShapeSquareBlack"
+            }
+        ],
+        "noteheads.s0laThin": [
+            {
+                "name": "noteShapeSquareWhiteThin",
+                "alternate_of": "noteShapeSquareWhite"
+            }
+        ],
+        "noteheads.s2laThin": [
+            {
+                "name": "noteShapeSquareBlackThin",
+                "alternate_of": "noteShapeSquareBlack"
+            }
+        ],
+        "noteheads.s0ti": [
+            {
+                "name": "noteShapeTriangleRoundWhite"
+            }
+        ],
+        "noteheads.s2ti": [
+            {
+                "name": "noteShapeTriangleRoundBlack"
+            }
+        ],
+        "noteheads.s0tiThin": [
+            {
+                "name": "noteShapeTriangleRoundWhiteThin",
+                "alternate_of": "noteShapeTriangleRoundWhite"
+            }
+        ],
+        "noteheads.s2tiThin": [
+            {
+                "name": "noteShapeTriangleRoundBlackThin",
+                "alternate_of": "noteShapeTriangleRoundBlack"
+            }
+        ],
+        "noteheads.u0doFunk": [
+            {
+                "name": "noteShapeMoonRightWhite"
+            },
+            {
+                "name": "noteShapeMoonRightWhiteFunk",
+                "alternate_of": "noteShapeMoonRightWhite"
+            }
+        ],
+        "noteheads.d0doFunk": [
+            {
+                "name": "noteShapeMoonLeftWhite"
+            },
+            {
+                "name": "noteShapeMoonLeftWhiteFunk",
+                "alternate_of": "noteShapeMoonLeftWhite"
+            }
+        ],
+        "noteheads.u2doFunk": [
+            {
+                "name": "noteShapeMoonRightBlack"
+            },
+            {
+                "name": "noteShapeMoonRightBlackFunk",
+                "alternate_of": "noteShapeMoonRightBlack"
+            }
+        ],
+        "noteheads.d2doFunk": [
+            {
+                "name": "noteShapeMoonLeftBlack"
+            },
+            {
+                "name": "noteShapeMoonLeftBlackFunk",
+                "alternate_of": "noteShapeMoonLeftBlack"
+            }
+        ],
+        "noteheads.u0reFunk": [
+            {
+                "name": "noteShapeArrowheadRightWhite"
+            },
+            {
+                "name": "noteShapeArrowheadRightWhiteFunk",
+                "alternate_of": "noteShapeArrowheadRightWhite"
+            }
+        ],
+        "noteheads.d0reFunk": [
+            {
+                "name": "noteShapeArrowheadLeftWhite"
+            },
+            {
+                "name": "noteShapeArrowheadLeftWhiteFunk",
+                "alternate_of": "noteShapeArrowheadLeftWhite"
+            }
+        ],
+        "noteheads.u2reFunk": [
+            {
+                "name": "noteShapeArrowheadRightBlack"
+            },
+            {
+                "name": "noteShapeArrowheadRightBlackFunk",
+                "alternate_of": "noteShapeArrowheadRightBlack"
+            }
+        ],
+        "noteheads.d2reFunk": [
+            {
+                "name": "noteShapeArrowheadLeftBlack"
+            },
+            {
+                "name": "noteShapeArrowheadLeftBlackFunk",
+                "alternate_of": "noteShapeArrowheadLeftBlack"
+            }
+        ],
+        "noteheads.u0miFunk": [
+            {
+                "name": "noteShapeDiamondWhiteReversedFunk",
+                "alternate_of": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.d0miFunk": [
+            {
+                "name": "noteShapeDiamondWhiteFunk",
+                "alternate_of": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.s2miFunk": [
+            {
+                "name": "noteShapeDiamondBlackFunk",
+                "alternate_of": "noteShapeDiamondBlack"
+            }
+        ],
+        "noteheads.u0faFunk": [
+            {
+                "name": "noteShapeTriangleLeftWhiteFunk",
+                "alternate_of": "noteShapeTriangleLeftWhite"
+            }
+        ],
+        "noteheads.d0faFunk": [
+            {
+                "name": "noteShapeTriangleRightWhiteFunk",
+                "alternate_of": "noteShapeTriangleRightWhite"
+            }
+        ],
+        "noteheads.u2faFunk": [
+            {
+                "name": "noteShapeTriangleLeftBlackFunk",
+                "alternate_of": "noteShapeTriangleLeftBlack"
+            }
+        ],
+        "noteheads.d2faFunk": [
+            {
+                "name": "noteShapeTriangleRightBlackFunk",
+                "alternate_of": "noteShapeTriangleRightBlack"
+            }
+        ],
+        "noteheads.s0solFunk": [
+            {
+                "name": "noteShapeRoundWhiteFunk",
+                "alternate_of": "noteShapeRoundWhite"
+            },
+            {
+                "name": "noteShapeRoundWhiteWalker",
+                "alternate_of": "noteShapeRoundWhite"
+            }
+        ],
+        "noteheads.s2solFunk": [
+            {
+                "name": "noteShapeRoundBlackFunk",
+                "alternate_of": "noteShapeRoundBlack"
+            },
+            {
+                "name": "noteShapeRoundBlackWalker",
+                "alternate_of": "noteShapeRoundBlack"
+            }
+        ],
+        "noteheads.s0laFunk": [
+            {
+                "name": "noteShapeSquareWhiteFunk",
+                "alternate_of": "noteShapeSquareWhite"
+            }
+        ],
+        "noteheads.s2laFunk": [
+            {
+                "name": "noteShapeSquareBlackFunk",
+                "alternate_of": "noteShapeSquareBlack"
+            }
+        ],
+        "noteheads.u0tiFunk": [
+            {
+                "name": "noteShapeTriangleRoundRightWhite"
+            },
+            {
+                "name": "noteShapeTriangleRoundRightWhiteFunk",
+                "alternate_of": "noteShapeTriangleRoundRightWhite"
+            }
+        ],
+        "noteheads.d0tiFunk": [
+            {
+                "name": "noteShapeTriangleRoundLeftWhite"
+            },
+            {
+                "name": "noteShapeTriangleRoundLeftWhiteFunk",
+                "alternate_of": "noteShapeTriangleRoundLeftWhite"
+            }
+        ],
+        "noteheads.u2tiFunk": [
+            {
+                "name": "noteShapeTriangleRoundRightBlack"
+            },
+            {
+                "name": "noteShapeTriangleRoundRightBlackFunk",
+                "alternate_of": "noteShapeTriangleRoundRightBlack"
+            }
+        ],
+        "noteheads.d2tiFunk": [
+            {
+                "name": "noteShapeTriangleRoundLeftBlack"
+            },
+            {
+                "name": "noteShapeTriangleRoundLeftBlackFunk",
+                "alternate_of": "noteShapeTriangleRoundLeftBlack"
+            }
+        ],
+        "noteheads.u1doWalker": [
+            {
+                "name": "noteShapeKeystoneWhite"
+            },
+            {
+                "name": "noteShapeKeystoneWhiteWalker",
+                "alternate_of": "noteShapeKeystoneWhite"
+            }
+        ],
+        "noteheads.u2doWalker": [
+            {
+                "name": "noteShapeKeystoneBlack"
+            },
+            {
+                "name": "noteShapeKeystoneBlackWalker",
+                "alternate_of": "noteShapeKeystoneBlack"
+            }
+        ],
+        "noteheads.u1reWalker": [
+            {
+                "name": "noteShapeQuarterMoonWhite"
+            },
+            {
+                "name": "noteShapeQuarterMoonWhiteWalker",
+                "alternate_of": "noteShapeQuarterMoonWhite"
+            }
+        ],
+        "noteheads.u2reWalker": [
+            {
+                "name": "noteShapeQuarterMoonBlack"
+            },
+            {
+                "name": "noteShapeQuarterMoonBlackWalker",
+                "alternate_of": "noteShapeQuarterMoonBlack"
+            }
+        ],
+        "noteheads.s1miWalker": [
+            {
+                "name": "noteShapeDiamondWhiteWalker",
+                "alternate_of": "noteShapeDiamondWhite"
+            }
+        ],
+        "noteheads.s2miWalker": [
+            {
+                "name": "noteShapeDiamondBlackWalker",
+                "alternate_of": "noteShapeDiamondBlack"
+            }
+        ],
+        "noteheads.u1faWalker": [
+            {
+                "name": "noteShapeTriangleLeftWhiteWalker",
+                "alternate_of": "noteShapeTriangleLeftWhite"
+            }
+        ],
+        "noteheads.d1faWalker": [
+            {
+                "name": "noteShapeTriangleRightWhiteWalker",
+                "alternate_of": "noteShapeTriangleRightWhite"
+            }
+        ],
+        "noteheads.u2faWalker": [
+            {
+                "name": "noteShapeTriangleLeftBlackWalker",
+                "alternate_of": "noteShapeTriangleLeftBlack"
+            }
+        ],
+        "noteheads.d2faWalker": [
+            {
+                "name": "noteShapeTriangleRightBlackWalker",
+                "alternate_of": "noteShapeTriangleRightBlack"
+            }
+        ],
+        "noteheads.s1laWalker": [
+            {
+                "name": "noteShapeSquareWhiteWalker",
+                "alternate_of": "noteShapeSquareWhite"
+            }
+        ],
+        "noteheads.s2laWalker": [
+            {
+                "name": "noteShapeSquareBlackWalker",
+                "alternate_of": "noteShapeSquareBlack"
+            }
+        ],
+        "noteheads.d1tiWalker": [
+            {
+                "name": "noteShapeIsoscelesTriangleWhite"
+            },
+            {
+                "name": "noteShapeIsoscelesTriangleWhiteWalker",
+                "alternate_of": "noteShapeIsoscelesTriangleWhite"
+            }
+        ],
+        "noteheads.d2tiWalker": [
+            {
+                "name": "noteShapeIsoscelesTriangleBlack"
+            },
+            {
+                "name": "noteShapeIsoscelesTriangleBlackWalker",
+                "alternate_of": "noteShapeIsoscelesTriangleBlack"
+            }
+        ],
+        "rests.0": [
+            {
+                "name": "restWhole"
+            }
+        ],
+        "rests.1": [
+            {
+                "name": "restHalf"
+            }
+        ],
+        "rests.0o": [
+            {
+                "name": "restWholeLegerLine"
+            }
+        ],
+        "rests.1o": [
+            {
+                "name": "restHalfLegerLine"
+            }
+        ],
+        "rests.M3": [
+            {
+                "name": "restMaxima"
+            }
+        ],
+        "rests.M2": [
+            {
+                "name": "restLonga"
+            }
+        ],
+        "rests.M1": [
+            {
+                "name": "restDoubleWhole"
+            }
+        ],
+        "rests.M1o": [
+            {
+                "name": "restDoubleWholeLegerLine"
+            }
+        ],
+        "rests.2": [
+            {
+                "name": "restQuarter"
+            }
+        ],
+        "rests.2classical": [
+            {
+                "name": "restQuarterOld"
+            }
+        ],
+        "rests.2z": [
+            {
+                "name": "restQuarterZ"
+            }
+        ],
+        "rests.3": [
+            {
+                "name": "rest8th"
+            }
+        ],
+        "rests.4": [
+            {
+                "name": "rest16th"
+            }
+        ],
+        "rests.5": [
+            {
+                "name": "rest32nd"
+            }
+        ],
+        "rests.6": [
+            {
+                "name": "rest64th"
+            }
+        ],
+        "rests.7": [
+            {
+                "name": "rest128th"
+            }
+        ],
+        "rests.8": [
+            {
+                "name": "rest256th"
+            }
+        ],
+        "rests.9": [
+            {
+                "name": "rest512th"
+            }
+        ],
+        "rests.10": [
+            {
+                "name": "rest1024th"
+            }
+        ],
+        "flags.u3": [
+            {
+                "name": "flag8thUp"
+            }
+        ],
+        "flags.u4": [
+            {
+                "name": "flag16thUp"
+            }
+        ],
+        "flags.u5": [
+            {
+                "name": "flag32ndUp"
+            }
+        ],
+        "flags.u6": [
+            {
+                "name": "flag64thUp"
+            }
+        ],
+        "flags.u7": [
+            {
+                "name": "flag128thUp"
+            }
+        ],
+        "flags.u8": [
+            {
+                "name": "flag256thUp"
+            }
+        ],
+        "flags.u9": [
+            {
+                "name": "flag512thUp"
+            }
+        ],
+        "flags.u10": [
+            {
+                "name": "flag1024thUp"
+            }
+        ],
+        "flags.d3": [
+            {
+                "name": "flag8thDown"
+            }
+        ],
+        "flags.d4": [
+            {
+                "name": "flag16thDown"
+            }
+        ],
+        "flags.d5": [
+            {
+                "name": "flag32ndDown"
+            }
+        ],
+        "flags.d6": [
+            {
+                "name": "flag64thDown"
+            }
+        ],
+        "flags.d7": [
+            {
+                "name": "flag128thDown"
+            }
+        ],
+        "flags.d8": [
+            {
+                "name": "flag256thDown"
+            }
+        ],
+        "flags.d9": [
+            {
+                "name": "flag512thDown"
+            }
+        ],
+        "flags.d10": [
+            {
+                "name": "flag1024thDown"
+            }
+        ],
+        "flags.ugrace": [
+            {
+                "name": "graceNoteSlashStemUp"
+            }
+        ],
+        "flags.dgrace": [
+            {
+                "name": "graceNoteSlashStemDown"
+            }
+        ],
+        "dots.dot": [
+            {
+                "name": "augmentationDot"
+            }
+        ],
+        "space": [
+            {
+                "name": "dynamicCombinedSeparatorSpace"
+            }
+        ],
+        "f": [
+            {
+                "name": "dynamicForte"
+            }
+        ],
+        "m": [
+            {
+                "name": "dynamicMezzo"
+            }
+        ],
+        "n": [
+            {
+                "name": "dynamicNiente"
+            }
+        ],
+        "p": [
+            {
+                "name": "dynamicPiano"
+            }
+        ],
+        "r": [
+            {
+                "name": "dynamicRinforzando"
+            }
+        ],
+        "s": [
+            {
+                "name": "dynamicSforzando"
+            }
+        ],
+        "z": [
+            {
+                "name": "dynamicZ"
+            }
+        ],
+        "scripts.ufermata": [
+            {
+                "name": "fermataAbove"
+            }
+        ],
+        "scripts.dfermata": [
+            {
+                "name": "fermataBelow"
+            }
+        ],
+        "scripts.uhenzeshortfermata": [
+            {
+                "name": "fermataShortHenzeAbove"
+            }
+        ],
+        "scripts.dhenzeshortfermata": [
+            {
+                "name": "fermataShortHenzeBelow"
+            }
+        ],
+        "scripts.uhenzelongfermata": [
+            {
+                "name": "fermataLongHenzeAbove"
+            }
+        ],
+        "scripts.dhenzelongfermata": [
+            {
+                "name": "fermataLongHenzeBelow"
+            }
+        ],
+        "scripts.ushortfermata": [
+            {
+                "name": "fermataShortAbove"
+            }
+        ],
+        "scripts.dshortfermata": [
+            {
+                "name": "fermataShortBelow"
+            }
+        ],
+        "scripts.uveryshortfermata": [
+            {
+                "name": "fermataVeryShortAbove"
+            }
+        ],
+        "scripts.dveryshortfermata": [
+            {
+                "name": "fermataVeryShortBelow"
+            }
+        ],
+        "scripts.ulongfermata": [
+            {
+                "name": "fermataLongAbove"
+            }
+        ],
+        "scripts.dlongfermata": [
+            {
+                "name": "fermataLongBelow"
+            }
+        ],
+        "scripts.uverylongfermata": [
+            {
+                "name": "fermataVeryLongAbove"
+            }
+        ],
+        "scripts.dverylongfermata": [
+            {
+                "name": "fermataVeryLongBelow"
+            }
+        ],
+        "scripts.thumb": [
+            {
+                "name": "stringsThumbPosition"
+            }
+        ],
+        "scripts.sforzato": [
+            {
+                "name": "articAccentAbove"
+            },
+            {
+                "name": "articAccentBelow"
+            }
+        ],
+        "scripts.espr": [
+            {
+                "name": "articSoftAccentAbove"
+            },
+            {
+                "name": "articSoftAccentBelow"
+            }
+        ],
+        "scripts.staccato": [
+            {
+                "name": "articStaccatoAbove"
+            },
+            {
+                "name": "articStaccatoBelow"
+            }
+        ],
+        "scripts.ustaccatissimo": [
+            {
+                "name": "articStaccatissimoAbove"
+            }
+        ],
+        "scripts.dstaccatissimo": [
+            {
+                "name": "articStaccatissimoBelow"
+            }
+        ],
+        "scripts.tenuto": [
+            {
+                "name": "articTenutoAbove"
+            },
+            {
+                "name": "articTenutoBelow"
+            }
+        ],
+        "scripts.uportato": [
+            {
+                "name": "articTenutoStaccatoBelow"
+            }
+        ],
+        "scripts.dportato": [
+            {
+                "name": "articTenutoStaccatoAbove"
+            }
+        ],
+        "scripts.umarcato": [
+            {
+                "name": "articMarcatoAbove"
+            }
+        ],
+        "scripts.dmarcato": [
+            {
+                "name": "articMarcatoBelow"
+            }
+        ],
+        "scripts.open": [
+            {
+                "name": "brassMuteOpen"
+            }
+        ],
+        "scripts.halfopen": [
+            {
+                "name": "brassMuteHalfClosed"
+            }
+        ],
+        "scripts.halfopenvertical": [
+            {
+                "name": "brassMuteHalfClosedVertical",
+                "alternate_of": "brassMuteHalfClosed"
+            }
+        ],
+        "scripts.stopped": [
+            {
+                "name": "brassMuteClosed"
+            }
+        ],
+        "scripts.upbow": [
+            {
+                "name": "stringsUpBow"
+            }
+        ],
+        "scripts.downbow": [
+            {
+                "name": "stringsDownBow"
+            }
+        ],
+        "scripts.reverseturn": [
+            {
+                "name": "ornamentTurnInverted"
+            }
+        ],
+        "scripts.turn": [
+            {
+                "name": "ornamentTurn"
+            }
+        ],
+        "scripts.slashturn": [
+            {
+                "name": "ornamentTurnSlash"
+            }
+        ],
+        "scripts.haydnturn": [
+            {
+                "name": "ornamentHaydn"
+            }
+        ],
+        "scripts.trill": [
+            {
+                "name": "ornamentTrill"
+            }
+        ],
+        "scripts.upedalheel": [
+            {
+                "name": "keyboardPedalHeel1"
+            }
+        ],
+        "scripts.dpedalheel": [
+            {
+                "name": "keyboardPedalHeel2"
+            }
+        ],
+        "scripts.upedaltoe": [
+            {
+                "name": "keyboardPedalToe1"
+            }
+        ],
+        "scripts.dpedaltoe": [
+            {
+                "name": "keyboardPedalToe2"
+            }
+        ],
+        "scripts.flageolet": [
+            {
+                "name": "stringsHarmonic"
+            }
+        ],
+        "scripts.segno": [
+            {
+                "name": "segno"
+            }
+        ],
+        "scripts.varsegno": [
+            {
+                "name": "segnoSerpent1"
+            }
+        ],
+        "scripts.coda": [
+            {
+                "name": "coda"
+            }
+        ],
+        "scripts.varcoda": [
+            {
+                "name": "codaSquare"
+            }
+        ],
+        "scripts.rcomma": [
+            {
+                "name": "breathMarkComma"
+            },
+            {
+                "name": "chantVirgula"
+            }
+        ],
+        "scripts.lcomma": [
+            {
+                "name": "breathMarkCommaInverted",
+                "alternate_of": "breathMarkComma"
+            }
+        ],
+        "scripts.rvarcomma": [
+            {
+                "name": "chantCaesura"
+            }
+        ],
+        "scripts.lvarcomma": [
+            {
+                "name": "chantCaesuraInverted",
+                "alternate_of": "chantCaesura"
+            }
+        ],
+        "scripts.trill_element": [
+            {
+                "name": "ornamentZigZagLineNoRightEnd"
+            },
+            {
+                "name": "ornamentZigZagLineWithRightEnd"
+            }
+        ],
+        "scripts.prall": [
+            {
+                "name": "ornamentShortTrill"
+            }
+        ],
+        "scripts.mordent": [
+            {
+                "name": "ornamentMordent"
+            }
+        ],
+        "scripts.prallprall": [
+            {
+                "name": "ornamentTremblement"
+            }
+        ],
+        "scripts.prallmordent": [
+            {
+                "name": "ornamentPrecompTrillWithMordent"
+            }
+        ],
+        "scripts.upprall": [
+            {
+                "name": "ornamentPrecompSlideTrillDAnglebert"
+            }
+        ],
+        "scripts.upmordent": [
+            {
+                "name": "ornamentPrecompSlideTrillBach"
+            }
+        ],
+        "scripts.prallup": [
+            {
+                "name": "ornamentPrecompTrillSuffixDandrieu"
+            }
+        ],
+        "scripts.downprall": [
+            {
+                "name": "ornamentPrecompMordentUpperPrefix"
+            }
+        ],
+        "scripts.downmordent": [
+            {
+                "name": "ornamentPrecompInvertedMordentUpperPrefix"
+            }
+        ],
+        "scripts.lineprall": [
+            {
+                "name": "ornamentPrecompAppoggTrill"
+            }
+        ],
+        "scripts.caesura.curved": [
+            {
+                "name": "caesuraCurved"
+            }
+        ],
+        "scripts.caesura.straight": [
+            {
+                "name": "caesura"
+            }
+        ],
+        "scripts.tickmark": [
+            {
+                "name": "breathMarkTick"
+            }
+        ],
+        "scripts.snappizzicato": [
+            {
+                "name": "pluckedSnapPizzicatoAbove"
+            }
+        ],
+        "scripts.ictus": [
+            {
+                "name": "chantIctusAbove"
+            },
+            {
+                "name": "chantIctusBelow"
+            }
+        ],
+        "scripts.uaccentus": [
+            {
+                "name": "chantAccentusAbove"
+            }
+        ],
+        "scripts.daccentus": [
+            {
+                "name": "chantAccentusBelow"
+            }
+        ],
+        "scripts.usemicirculus": [
+            {
+                "name": "chantSemicirculusAbove"
+            }
+        ],
+        "scripts.dsemicirculus": [
+            {
+                "name": "chantSemicirculusBelow"
+            }
+        ],
+        "scripts.circulus": [
+            {
+                "name": "chantCirculusAbove"
+            },
+            {
+                "name": "chantCirculusBelow"
+            }
+        ],
+        "scripts.usignumcongruentiae": [
+            {
+                "name": "mensuralSignumUp"
+            }
+        ],
+        "scripts.dsignumcongruentiae": [
+            {
+                "name": "mensuralSignumDown"
+            }
+        ],
+        "arrowheads.open.01": [
+            {
+                "name": "arrowheadOpenRight"
+            }
+        ],
+        "arrowheads.open.0M1": [
+            {
+                "name": "arrowheadOpenLeft"
+            }
+        ],
+        "arrowheads.open.11": [
+            {
+                "name": "arrowheadOpenUp"
+            }
+        ],
+        "arrowheads.open.1M1": [
+            {
+                "name": "arrowheadOpenDown"
+            }
+        ],
+        "arrowheads.close.01": [
+            {
+                "name": "arrowheadBlackRight"
+            }
+        ],
+        "arrowheads.close.0M1": [
+            {
+                "name": "arrowheadBlackLeft"
+            }
+        ],
+        "arrowheads.close.11": [
+            {
+                "name": "arrowheadBlackUp"
+            }
+        ],
+        "arrowheads.close.1M1": [
+            {
+                "name": "arrowheadBlackDown"
+            }
+        ],
+        "brackettips.up": [
+            {
+                "name": "bracketTop"
+            }
+        ],
+        "brackettips.down": [
+            {
+                "name": "bracketBottom"
+            }
+        ],
+        "pedal.*": [
+            {
+                "name": "keyboardPedalUp"
+            }
+        ],
+        "pedal.M": [
+            {
+                "name": "keyboardPedalHyphen"
+            }
+        ],
+        "pedal..": [
+            {
+                "name": "keyboardPedalDot"
+            }
+        ],
+        "pedal.P": [
+            {
+                "name": "keyboardPedalP"
+            }
+        ],
+        "pedal.d": [
+            {
+                "name": "keyboardPedalD"
+            }
+        ],
+        "pedal.e": [
+            {
+                "name": "keyboardPedalE"
+            }
+        ],
+        "pedal.Ped": [
+            {
+                "name": "keyboardPedalPedNoDot",
+                "alternate_of": "keyboardPedalPed"
+            }
+        ],
+        "accordion.discant": [
+            {
+                "name": "accdnCombRH3RanksEmpty"
+            }
+        ],
+        "accordion.dot": [
+            {
+                "name": "accdnCombDot"
+            }
+        ],
+        "accordion.freebass": [
+            {
+                "name": "accdnCombLH2RanksEmpty"
+            }
+        ],
+        "accordion.stdbass": [
+            {
+                "name": "accdnCombRH4RanksEmpty"
+            }
+        ],
+        "accordion.bayanbass": [
+            {
+                "name": "accdnCombLH3RanksEmptySquare"
+            }
+        ],
+        "accordion.push": [
+            {
+                "name": "accdnPush"
+            }
+        ],
+        "accordion.pull": [
+            {
+                "name": "accdnPull"
+            }
+        ],
+        "ties.lyric.short": [
+            {
+                "name": "lyricsElisionNarrow"
+            }
+        ],
+        "ties.lyric.default": [
+            {
+                "name": "lyricsElision"
+            }
+        ],
+        "clefs.vaticana.do": [
+            {
+                "name": "chantCclef"
+            }
+        ],
+        "clefs.vaticana.do_change": [
+            {
+                "name": "chantCclefChange",
+                "ligature_of": [
+                    "chantCclef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.vaticana.fa": [
+            {
+                "name": "chantFclef"
+            }
+        ],
+        "clefs.vaticana.fa_change": [
+            {
+                "name": "chantFclefChange",
+                "ligature_of": [
+                    "chantFclef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "custodes.vaticana.u0": [
+            {
+                "name": "chantCustosStemUpStaffSpace",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.vaticana.u1": [
+            {
+                "name": "chantCustosStemUpStaffLine",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.vaticana.u2": [
+            {
+                "name": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.vaticana.d0": [
+            {
+                "name": "chantCustosStemDownStaffSpace",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.vaticana.d1": [
+            {
+                "name": "chantCustosStemDownStaffLine",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.vaticana.d2": [
+            {
+                "name": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "accidentals.vaticanaM1": [
+            {
+                "name": "medRenFlatSoftB"
+            }
+        ],
+        "accidentals.vaticana0": [
+            {
+                "name": "medRenNatural"
+            }
+        ],
+        "dots.dotvaticana": [
+            {
+                "name": "chantAugmentum"
+            }
+        ],
+        "noteheads.svaticana.punctum": [
+            {
+                "name": "chantPunctum"
+            }
+        ],
+        "noteheads.svaticana.punctum.cavum": [
+            {
+                "name": "chantPunctumCavum"
+            }
+        ],
+        "noteheads.svaticana.linea.punctum": [
+            {
+                "name": "chantPunctumLinea"
+            }
+        ],
+        "noteheads.svaticana.linea.punctum.cavum": [
+            {
+                "name": "chantPunctumLineaCavum"
+            }
+        ],
+        "noteheads.svaticana.inclinatum": [
+            {
+                "name": "chantPunctumInclinatum"
+            }
+        ],
+        "noteheads.svaticana.lpes": [
+            {
+                "name": "chantPodatusLower"
+            }
+        ],
+        "noteheads.svaticana.vlpes": [
+            {
+                "name": "chantPodatusLowerAdjacent",
+                "alternate_of": "chantPodatusLower"
+            }
+        ],
+        "noteheads.svaticana.upes": [
+            {
+                "name": "chantPodatusUpper"
+            }
+        ],
+        "noteheads.svaticana.vupes": [
+            {
+                "name": "chantPodatusUpperAdjacent",
+                "alternate_of": "chantPodatusUpper"
+            }
+        ],
+        "noteheads.svaticana.plica": [
+            {
+                "name": "chantDeminutumUpper"
+            }
+        ],
+        "noteheads.svaticana.vplica": [
+            {
+                "name": "chantDeminutumUpperAdjacent",
+                "alternate_of": "chantDeminutumUpper"
+            }
+        ],
+        "noteheads.svaticana.reverse.plica": [
+            {
+                "name": "chantDeminutumLower"
+            }
+        ],
+        "noteheads.svaticana.reverse.vplica": [
+            {
+                "name": "chantDeminutumLowerAdjacent",
+                "alternate_of": "chantDeminutumLower"
+            }
+        ],
+        "noteheads.svaticana.cephalicus": [
+            {
+                "name": "chantCephalicus"
+            }
+        ],
+        "noteheads.svaticana.quilisma": [
+            {
+                "name": "chantQuilisma"
+            }
+        ],
+        "clefs.medicaea.do": [
+            {
+                "name": "chantCclefMedicaea",
+                "alternate_of": "chantCclef"
+            }
+        ],
+        "clefs.medicaea.do_change": [
+            {
+                "name": "chantCclefMedicaeaChange",
+                "ligature_of": [
+                    "chantCclefMedicaea",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.medicaea.fa": [
+            {
+                "name": "chantFclefMedicaea",
+                "alternate_of": "chantFclef"
+            }
+        ],
+        "clefs.medicaea.fa_change": [
+            {
+                "name": "chantFclefMedicaeaChange",
+                "ligature_of": [
+                    "chantFclefMedicaea",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "custodes.medicaea.u0": [
+            {
+                "name": "chantCustosStemUpStaffSpaceMedicaea",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.medicaea.u1": [
+            {
+                "name": "chantCustosStemUpStaffLineMedicaea",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.medicaea.u2": [
+            {
+                "name": "chantCustosStemUpPosMiddleMedicaea",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.medicaea.d0": [
+            {
+                "name": "chantCustosStemDownStaffSpaceMedicaea",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.medicaea.d1": [
+            {
+                "name": "chantCustosStemDownStaffLineMedicaea",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.medicaea.d2": [
+            {
+                "name": "chantCustosStemDownPosMiddleMedicaea",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "accidentals.medicaeaM1": [
+            {
+                "name": "medRenFlatSoftBMedicaea",
+                "alternate_of": "medRenFlatSoftB"
+            }
+        ],
+        "noteheads.smedicaea.inclinatum": [
+            {
+                "name": "chantPunctumInclinatumMedicaea",
+                "alternate_of": "chantPunctumInclinatum"
+            }
+        ],
+        "noteheads.smedicaea.punctum": [
+            {
+                "name": "chantPunctumMedicaea",
+                "alternate_of": "chantPunctum"
+            }
+        ],
+        "noteheads.smedicaea.rvirga": [
+            {
+                "name": "chantPunctumVirgaInvertedMedicaea"
+            }
+        ],
+        "clefs.hufnagel.do": [
+            {
+                "name": "chantCclefHufnagel",
+                "alternate_of": "chantCclef"
+            }
+        ],
+        "clefs.hufnagel.do_change": [
+            {
+                "name": "chantCclefHufnagelChange",
+                "ligature_of": [
+                    "chantCclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.hufnagel.fa": [
+            {
+                "name": "chantFclefHufnagel",
+                "alternate_of": "chantFclef"
+            }
+        ],
+        "clefs.hufnagel.fa_change": [
+            {
+                "name": "chantFclefHufnagelChange",
+                "ligature_of": [
+                    "chantFclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.hufnagel.do.fa": [
+            {
+                "name": "chantCFclefHufnagel",
+                "alternate_of": "chantCclef"
+            }
+        ],
+        "clefs.hufnagel.do.fa_change": [
+            {
+                "name": "chantCFclefHufnagelChange",
+                "ligature_of": [
+                    "chantCFclefHufnagel",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "custodes.hufnagel.u0": [
+            {
+                "name": "chantCustosStemUpStaffSpaceHufnagel",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.hufnagel.u1": [
+            {
+                "name": "chantCustosStemUpStaffLineHufnagel",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.hufnagel.u2": [
+            {
+                "name": "mensuralCustosCheckmark"
+            },
+            {
+                "name": "chantCustosStemUpPosMiddleHufnagel",
+                "alternate_of": "chantCustosStemUpPosMiddle"
+            }
+        ],
+        "custodes.hufnagel.d0": [
+            {
+                "name": "chantCustosStemDownStaffSpaceHufnagel",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.hufnagel.d1": [
+            {
+                "name": "chantCustosStemDownStaffLineHufnagel",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "custodes.hufnagel.d2": [
+            {
+                "name": "chantCustosStemDownPosMiddleHufnagel",
+                "alternate_of": "chantCustosStemDownPosMiddle"
+            }
+        ],
+        "accidentals.hufnagelM1": [
+            {
+                "name": "medRenFlatSoftBHufnagel",
+                "alternate_of": "medRenFlatSoftB"
+            }
+        ],
+        "noteheads.shufnagel.punctum": [
+            {
+                "name": "chantPunctumHufnagel",
+                "alternate_of": "chantPunctum"
+            }
+        ],
+        "noteheads.shufnagel.virga": [
+            {
+                "name": "chantPunctumVirgaHufnagel"
+            }
+        ],
+        "noteheads.shufnagel.lpes": [
+            {
+                "name": "chantPodatusLowerHufnagel",
+                "alternate_of": "chantPodatusLower"
+            }
+        ],
+        "rests.M3mensural": [
+            {
+                "name": "mensuralRestLongaPerfecta"
+            }
+        ],
+        "rests.M2mensural": [
+            {
+                "name": "mensuralRestLongaImperfecta"
+            }
+        ],
+        "rests.M1mensural": [
+            {
+                "name": "mensuralRestBrevis"
+            }
+        ],
+        "rests.0mensural": [
+            {
+                "name": "mensuralRestSemibrevis"
+            }
+        ],
+        "rests.1mensural": [
+            {
+                "name": "mensuralRestMinima"
+            }
+        ],
+        "rests.2mensural": [
+            {
+                "name": "mensuralRestSemiminima"
+            }
+        ],
+        "rests.3mensural": [
+            {
+                "name": "mensuralRestFusa"
+            }
+        ],
+        "rests.4mensural": [
+            {
+                "name": "mensuralRestSemifusa"
+            }
+        ],
+        "clefs.mensural.c": [
+            {
+                "name": "mensuralCclefVoid",
+                "alternate_of": "mensuralCclef"
+            }
+        ],
+        "clefs.mensural.c_change": [
+            {
+                "name": "mensuralCclefVoidChange",
+                "ligature_of": [
+                    "mensuralCclefVoid",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.blackmensural.c": [
+            {
+                "name": "mensuralCclefBlack",
+                "alternate_of": "mensuralCclef"
+            }
+        ],
+        "clefs.blackmensural.c_change": [
+            {
+                "name": "mensuralCclefBlackChange",
+                "ligature_of": [
+                    "mensuralCclefBlack",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.mensural.f": [
+            {
+                "name": "mensuralFclef"
+            }
+        ],
+        "clefs.mensural.f_change": [
+            {
+                "name": "mensuralFclefChange",
+                "ligature_of": [
+                    "mensuralFclef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.mensural.g": [
+            {
+                "name": "mensuralGclef"
+            }
+        ],
+        "clefs.mensural.g_change": [
+            {
+                "name": "mensuralGclefChange",
+                "ligature_of": [
+                    "mensuralGclef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "custodes.mensural.u0": [
+            {
+                "name": "mensuralCustosUpStaffSpace",
+                "alternate_of": "mensuralCustosUp"
+            }
+        ],
+        "custodes.mensural.u1": [
+            {
+                "name": "mensuralCustosUpStaffLine",
+                "alternate_of": "mensuralCustosUp"
+            }
+        ],
+        "custodes.mensural.u2": [
+            {
+                "name": "mensuralCustosUp"
+            }
+        ],
+        "custodes.mensural.d0": [
+            {
+                "name": "mensuralCustosDownStaffSpace",
+                "alternate_of": "mensuralCustosDown"
+            }
+        ],
+        "custodes.mensural.d1": [
+            {
+                "name": "mensuralCustosDownStaffLine",
+                "alternate_of": "mensuralCustosDown"
+            }
+        ],
+        "custodes.mensural.d2": [
+            {
+                "name": "mensuralCustosDown"
+            }
+        ],
+        "accidentals.mensural1": [
+            {
+                "name": "medRenSharpCroix"
+            }
+        ],
+        "accidentals.mensuralM1": [
+            {
+                "name": "medRenFlatSoftBOld",
+                "alternate_of": "medRenFlatSoftB"
+            }
+        ],
+        "flags.mensuralu03": [
+            {
+                "name": "mensuralFlag8thUpStaffSpace",
+                "alternate_of": "flag8thUp"
+            }
+        ],
+        "flags.mensuralu13": [
+            {
+                "name": "mensuralFlag8thUpStaffLine",
+                "alternate_of": "flag8thUp"
+            }
+        ],
+        "flags.mensuralu23": [
+            {
+                "name": "mensuralFlag8thUp",
+                "alternate_of": "flag8thUp"
+            }
+        ],
+        "flags.mensurald03": [
+            {
+                "name": "mensuralFlag8thDownStaffSpace",
+                "alternate_of": "flag8thDown"
+            }
+        ],
+        "flags.mensurald13": [
+            {
+                "name": "mensuralFlag8thDownStaffLine",
+                "alternate_of": "flag8thDown"
+            }
+        ],
+        "flags.mensurald23": [
+            {
+                "name": "mensuralFlag8thDown",
+                "alternate_of": "flag8thDown"
+            }
+        ],
+        "flags.mensuralu04": [
+            {
+                "name": "mensuralFlag16thUpStaffSpace",
+                "alternate_of": "flag16thUp"
+            }
+        ],
+        "flags.mensuralu14": [
+            {
+                "name": "mensuralFlag16thUpStaffLine",
+                "alternate_of": "flag16thUp"
+            }
+        ],
+        "flags.mensuralu24": [
+            {
+                "name": "mensuralFlag16thUp",
+                "alternate_of": "flag16thUp"
+            }
+        ],
+        "flags.mensurald04": [
+            {
+                "name": "mensuralFlag16thDownStaffSpace",
+                "alternate_of": "flag16thDown"
+            }
+        ],
+        "flags.mensurald14": [
+            {
+                "name": "mensuralFlag16thDownStaffLine",
+                "alternate_of": "flag16thDown"
+            }
+        ],
+        "flags.mensurald24": [
+            {
+                "name": "mensuralFlag16thDown",
+                "alternate_of": "flag16thDown"
+            }
+        ],
+        "flags.mensuralu05": [
+            {
+                "name": "mensuralFlag32ndUpStaffSpace",
+                "alternate_of": "flag32ndUp"
+            }
+        ],
+        "flags.mensuralu15": [
+            {
+                "name": "mensuralFlag32ndUpStaffLine",
+                "alternate_of": "flag32ndUp"
+            }
+        ],
+        "flags.mensuralu25": [
+            {
+                "name": "mensuralFlag32ndUp",
+                "alternate_of": "flag32ndUp"
+            }
+        ],
+        "flags.mensurald05": [
+            {
+                "name": "mensuralFlag32ndDownStaffSpace",
+                "alternate_of": "flag32ndDown"
+            }
+        ],
+        "flags.mensurald15": [
+            {
+                "name": "mensuralFlag32ndDownStaffLine",
+                "alternate_of": "flag32ndDown"
+            }
+        ],
+        "flags.mensurald25": [
+            {
+                "name": "mensuralFlag32ndDown",
+                "alternate_of": "flag32ndDown"
+            }
+        ],
+        "flags.mensuralu06": [
+            {
+                "name": "mensuralFlag64thUpStaffSpace",
+                "alternate_of": "flag64thUp"
+            }
+        ],
+        "flags.mensuralu16": [
+            {
+                "name": "mensuralFlag64thUpStaffLine",
+                "alternate_of": "flag64thUp"
+            }
+        ],
+        "flags.mensuralu26": [
+            {
+                "name": "mensuralFlag64thUp",
+                "alternate_of": "flag64thUp"
+            }
+        ],
+        "flags.mensurald06": [
+            {
+                "name": "mensuralFlag64thDownStaffSpace",
+                "alternate_of": "flag64thDown"
+            }
+        ],
+        "flags.mensurald16": [
+            {
+                "name": "mensuralFlag64thDownStaffLine",
+                "alternate_of": "flag64thDown"
+            }
+        ],
+        "flags.mensurald26": [
+            {
+                "name": "mensuralFlag64thDown",
+                "alternate_of": "flag64thDown"
+            }
+        ],
+        "timesig.mensural44": [
+            {
+                "name": "mensuralProlation6"
+            }
+        ],
+        "timesig.mensural22": [
+            {
+                "name": "mensuralProlation9"
+            }
+        ],
+        "timesig.mensural32": [
+            {
+                "name": "mensuralProlation2"
+            }
+        ],
+        "timesig.mensural64": [
+            {
+                "name": "mensuralProlation5"
+            }
+        ],
+        "timesig.mensural94": [
+            {
+                "name": "mensuralProlation1"
+            }
+        ],
+        "timesig.mensural34": [
+            {
+                "name": "mensuralProlation3"
+            }
+        ],
+        "timesig.mensural68": [
+            {
+                "name": "mensuralProlation8"
+            }
+        ],
+        "timesig.mensural98": [
+            {
+                "name": "mensuralProlation4"
+            }
+        ],
+        "timesig.mensural48": [
+            {
+                "name": "mensuralProlation7"
+            }
+        ],
+        "timesig.mensural68alt": [
+            {
+                "name": "mensuralProlation11"
+            }
+        ],
+        "timesig.mensural24": [
+            {
+                "name": "mensuralProlation10"
+            }
+        ],
+        "noteheads.uM3mensural": [
+            {
+                "name": "mensuralMaximaVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM3mensural": [
+            {
+                "name": "mensuralMaximaVoidStemDownRight"
+            }
+        ],
+        "noteheads.sM3ligmensural": [
+            {
+                "name": "mensuralNoteheadMaximaVoid"
+            }
+        ],
+        "noteheads.uM2mensural": [
+            {
+                "name": "mensuralLongaVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM2mensural": [
+            {
+                "name": "mensuralLongaVoidStemDownRight"
+            }
+        ],
+        "noteheads.sM2ligmensural": [
+            {
+                "name": "mensuralLongaVoidLigature"
+            }
+        ],
+        "noteheads.sM1mensural": [
+            {
+                "name": "mensuralNoteheadLongaVoid"
+            }
+        ],
+        "noteheads.urM3mensural": [
+            {
+                "name": "mensuralMaximaVoidStemUpRightStaffSpace",
+                "alternate_of": "mensuralMaximaVoidStemUpRight"
+            }
+        ],
+        "noteheads.drM3mensural": [
+            {
+                "name": "mensuralMaximaVoidStemDownRightStaffSpace",
+                "alternate_of": "mensuralMaximaVoidStemDownRight"
+            }
+        ],
+        "noteheads.srM3ligmensural": [
+            {
+                "name": "mensuralNoteheadMaximaVoidStaffSpace",
+                "alternate_of": "mensuralNoteheadMaximaVoid"
+            }
+        ],
+        "noteheads.urM2mensural": [
+            {
+                "name": "mensuralLongaVoidStemUpRightStaffSpace",
+                "alternate_of": "mensuralLongaVoidStemUpRight"
+            }
+        ],
+        "noteheads.drM2mensural": [
+            {
+                "name": "mensuralLongaVoidStemDownRightStaffSpace",
+                "alternate_of": "mensuralLongaVoidStemDownRight"
+            }
+        ],
+        "noteheads.srM2ligmensural": [
+            {
+                "name": "mensuralLongaVoidLigatureStaffSpace",
+                "alternate_of": "mensuralLongaVoidLigature"
+            }
+        ],
+        "noteheads.srM1mensural": [
+            {
+                "name": "mensuralNoteheadLongaVoidStaffSpace",
+                "alternate_of": "mensuralNoteheadLongaVoid"
+            }
+        ],
+        "noteheads.uM3semimensural": [
+            {
+                "name": "mensuralMaximaBlackVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM3semimensural": [
+            {
+                "name": "mensuralMaximaBlackVoidStemDownRight"
+            }
+        ],
+        "noteheads.sM3semiligmensural": [
+            {
+                "name": "mensuralNoteheadMaximaBlackVoid"
+            }
+        ],
+        "noteheads.uM2semimensural": [
+            {
+                "name": "mensuralLongaBlackVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM2semimensural": [
+            {
+                "name": "mensuralLongaBlackVoidStemDownRight"
+            }
+        ],
+        "noteheads.sM2semiligmensural": [
+            {
+                "name": "mensuralLongaBlackVoidLigature"
+            }
+        ],
+        "noteheads.sM1semimensural": [
+            {
+                "name": "mensuralNoteheadLongaBlackVoid"
+            }
+        ],
+        "noteheads.urM3semimensural": [
+            {
+                "name": "mensuralMaximaBlackVoidStemUpRightStaffSpace",
+                "alternate_of": "mensuralMaximaBlackVoidStemUpRight"
+            }
+        ],
+        "noteheads.drM3semimensural": [
+            {
+                "name": "mensuralMaximaBlackVoidStemDownRightStaffSpace",
+                "alternate_of": "mensuralMaximaBlackVoidStemDownRight"
+            }
+        ],
+        "noteheads.srM3semiligmensural": [
+            {
+                "name": "mensuralNoteheadMaximaBlackVoidStaffSpace",
+                "alternate_of": "mensuralNoteheadMaximaBlackVoid"
+            }
+        ],
+        "noteheads.urM2semimensural": [
+            {
+                "name": "mensuralLongaBlackVoidStemUpRightStaffSpace",
+                "alternate_of": "mensuralLongaBlackVoidStemUpRight"
+            }
+        ],
+        "noteheads.drM2semimensural": [
+            {
+                "name": "mensuralLongaBlackVoidStemDownRightStaffSpace",
+                "alternate_of": "mensuralLongaBlackVoidStemDownRight"
+            }
+        ],
+        "noteheads.srM2semiligmensural": [
+            {
+                "name": "mensuralLongaBlackVoidLigatureStaffSpace",
+                "alternate_of": "mensuralLongaBlackVoidLigature"
+            }
+        ],
+        "noteheads.srM1semimensural": [
+            {
+                "name": "mensuralNoteheadLongaBlackVoidStaffSpace",
+                "alternate_of": "mensuralNoteheadLongaBlackVoid"
+            }
+        ],
+        "noteheads.uM3blackmensural": [
+            {
+                "name": "mensuralMaximaBlackStemUpRight"
+            }
+        ],
+        "noteheads.dM3blackmensural": [
+            {
+                "name": "mensuralMaximaBlackStemDownRight"
+            }
+        ],
+        "noteheads.sM3blackligmensural": [
+            {
+                "name": "mensuralNoteheadMaximaBlack"
+            }
+        ],
+        "noteheads.uM2blackmensural": [
+            {
+                "name": "mensuralLongaBlackStemUpRight"
+            }
+        ],
+        "noteheads.dM2blackmensural": [
+            {
+                "name": "mensuralLongaBlackStemDownRight"
+            }
+        ],
+        "noteheads.sM2blackligmensural": [
+            {
+                "name": "mensuralNoteheadLongaBlackLigature"
+            }
+        ],
+        "noteheads.sM1blackmensural": [
+            {
+                "name": "mensuralNoteheadLongaBlack"
+            }
+        ],
+        "noteheads.s0mensural": [
+            {
+                "name": "mensuralNoteheadSemibrevisVoid"
+            }
+        ],
+        "noteheads.s1mensural": [
+            {
+                "name": "mensuralNoteheadMinimaWhite"
+            }
+        ],
+        "noteheads.s2mensural": [
+            {
+                "name": "mensuralNoteheadSemiminimaWhite"
+            }
+        ],
+        "noteheads.s0blackmensural": [
+            {
+                "name": "mensuralNoteheadSemibrevisBlack"
+            }
+        ],
+        "rests.M3neomensural": [
+            {
+                "name": "neomensuralRestMaxima",
+                "ligature_of": [
+                    "neomensuralRestLongaImperfecta",
+                    "neomensuralRestLongaImperfecta"
+                ]
+            }
+        ],
+        "rests.M2neomensural": [
+            {
+                "name": "neomensuralRestLongaImperfecta",
+                "alternate_of": "mensuralRestLongaImperfecta"
+            }
+        ],
+        "rests.M1neomensural": [
+            {
+                "name": "neomensuralRestBrevis",
+                "alternate_of": "mensuralRestBrevis"
+            }
+        ],
+        "rests.0neomensural": [
+            {
+                "name": "neomensuralRestSemibrevis",
+                "alternate_of": "mensuralRestSemibrevis"
+            }
+        ],
+        "rests.1neomensural": [
+            {
+                "name": "neomensuralRestMinima",
+                "alternate_of": "mensuralRestMinima"
+            }
+        ],
+        "rests.2neomensural": [
+            {
+                "name": "neomensuralRestSemiminima",
+                "alternate_of": "mensuralRestSemiminima"
+            }
+        ],
+        "rests.3neomensural": [
+            {
+                "name": "neomensuralRestFusa",
+                "alternate_of": "mensuralRestFusa"
+            }
+        ],
+        "rests.4neomensural": [
+            {
+                "name": "neomensuralRestSemifusa",
+                "alternate_of": "mensuralRestSemifusa"
+            }
+        ],
+        "clefs.neomensural.c": [
+            {
+                "name": "mensuralCclef"
+            }
+        ],
+        "clefs.neomensural.c_change": [
+            {
+                "name": "mensuralCclefChange",
+                "ligature_of": [
+                    "mensuralCclef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "timesig.neomensural44": [
+            {
+                "name": "neomensuralProlation6",
+                "alternate_of": "mensuralProlation6"
+            }
+        ],
+        "timesig.neomensural22": [
+            {
+                "name": "neomensuralProlation9",
+                "alternate_of": "mensuralProlation9"
+            }
+        ],
+        "timesig.neomensural32": [
+            {
+                "name": "neomensuralProlation2",
+                "alternate_of": "mensuralProlation2"
+            }
+        ],
+        "timesig.neomensural64": [
+            {
+                "name": "neomensuralProlation5",
+                "alternate_of": "mensuralProlation5"
+            }
+        ],
+        "timesig.neomensural94": [
+            {
+                "name": "neomensuralProlation1",
+                "alternate_of": "mensuralProlation1"
+            }
+        ],
+        "timesig.neomensural34": [
+            {
+                "name": "neomensuralProlation3",
+                "alternate_of": "mensuralProlation3"
+            }
+        ],
+        "timesig.neomensural68": [
+            {
+                "name": "neomensuralProlation8",
+                "alternate_of": "mensuralProlation8"
+            }
+        ],
+        "timesig.neomensural98": [
+            {
+                "name": "neomensuralProlation4",
+                "alternate_of": "mensuralProlation4"
+            }
+        ],
+        "timesig.neomensural48": [
+            {
+                "name": "neomensuralProlation7",
+                "alternate_of": "mensuralProlation7"
+            }
+        ],
+        "timesig.neomensural68alt": [
+            {
+                "name": "neomensuralProlation11",
+                "alternate_of": "mensuralProlation11"
+            }
+        ],
+        "timesig.neomensural24": [
+            {
+                "name": "neomensuralProlation10",
+                "alternate_of": "mensuralProlation10"
+            }
+        ],
+        "noteheads.uM3neomensural": [
+            {
+                "name": "neomensuralMaximaVoidStemUpRight",
+                "alternate_of": "mensuralMaximaVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM3neomensural": [
+            {
+                "name": "neomensuralMaximaVoidStemDownRight",
+                "alternate_of": "mensuralMaximaVoidStemDownRight"
+            }
+        ],
+        "noteheads.uM2neomensural": [
+            {
+                "name": "neomensuralLongaVoidStemUpRight",
+                "alternate_of": "mensuralLongaVoidStemUpRight"
+            }
+        ],
+        "noteheads.dM2neomensural": [
+            {
+                "name": "neomensuralLongaVoidStemDownRight",
+                "alternate_of": "mensuralLongaVoidStemDownRight"
+            }
+        ],
+        "noteheads.sM1neomensural": [
+            {
+                "name": "neomensuralNoteheadLongaVoid",
+                "alternate_of": "mensuralNoteheadLongaVoid"
+            }
+        ],
+        "noteheads.s0neomensural": [
+            {
+                "name": "neomensuralNoteheadSemibrevisVoid",
+                "alternate_of": "mensuralNoteheadSemibrevisVoid"
+            }
+        ],
+        "noteheads.s1neomensural": [
+            {
+                "name": "neomensuralNoteheadMinimaWhite",
+                "alternate_of": "mensuralNoteheadMinimaWhite"
+            }
+        ],
+        "noteheads.s2neomensural": [
+            {
+                "name": "neomensuralNoteheadSemiminimaWhite",
+                "alternate_of": "mensuralNoteheadSemiminimaWhite"
+            }
+        ],
+        "clefs.petrucci.c1": [
+            {
+                "name": "mensuralCclefPetrucciPosLowest"
+            }
+        ],
+        "clefs.petrucci.c1_change": [
+            {
+                "name": "mensuralCclefPetrucciPosLowestChange",
+                "ligature_of": [
+                    "mensuralCclefPetrucciPosLowest",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.c2": [
+            {
+                "name": "mensuralCclefPetrucciPosLow"
+            }
+        ],
+        "clefs.petrucci.c2_change": [
+            {
+                "name": "mensuralCclefPetrucciPosLowChange",
+                "ligature_of": [
+                    "mensuralCclefPetrucciPosLow",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.c3": [
+            {
+                "name": "mensuralCclefPetrucciPosMiddle"
+            }
+        ],
+        "clefs.petrucci.c3_change": [
+            {
+                "name": "mensuralCclefPetrucciPosMiddleChange",
+                "ligature_of": [
+                    "mensuralCclefPetrucciPosMiddle",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.c4": [
+            {
+                "name": "mensuralCclefPetrucciPosHigh"
+            }
+        ],
+        "clefs.petrucci.c4_change": [
+            {
+                "name": "mensuralCclefPetrucciPosHighChange",
+                "ligature_of": [
+                    "mensuralCclefPetrucciPosHigh",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.c5": [
+            {
+                "name": "mensuralCclefPetrucciPosHighest"
+            }
+        ],
+        "clefs.petrucci.c5_change": [
+            {
+                "name": "mensuralCclefPetrucciPosHighestChange",
+                "ligature_of": [
+                    "mensuralCclefPetrucciPosHighest",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.f": [
+            {
+                "name": "mensuralFclefPetrucci"
+            }
+        ],
+        "clefs.petrucci.f_change": [
+            {
+                "name": "mensuralFclefPetrucciChange",
+                "ligature_of": [
+                    "mensuralFclefPetrucci",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "clefs.petrucci.g": [
+            {
+                "name": "mensuralGclefPetrucci"
+            }
+        ],
+        "clefs.petrucci.g_change": [
+            {
+                "name": "mensuralGclefPetrucciChange",
+                "ligature_of": [
+                    "mensuralGclefPetrucci",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "noteheads.s0petrucci": [
+            {
+                "name": "mensuralNoteheadSemibrevisVoidPetrucci",
+                "alternate_of": "mensuralNoteheadSemibrevisVoid"
+            }
+        ],
+        "noteheads.s1petrucci": [
+            {
+                "name": "mensuralNoteheadMinimaWhitePetrucci",
+                "alternate_of": "mensuralNoteheadMinimaWhite"
+            }
+        ],
+        "noteheads.s2petrucci": [
+            {
+                "name": "mensuralNoteheadSemiminimaWhitePetrucci",
+                "alternate_of": "mensuralNoteheadSemiminimaWhite"
+            }
+        ],
+        "noteheads.s0blackpetrucci": [
+            {
+                "name": "mensuralNoteheadSemibrevisBlackPetrucci",
+                "alternate_of": "mensuralNoteheadSemibrevisBlack"
+            }
+        ],
+        "noteheads.s1blackpetrucci": [
+            {
+                "name": "mensuralNoteheadMinimaBlackPetrucci"
+            }
+        ],
+        "noteheads.s2blackpetrucci": [
+            {
+                "name": "mensuralNoteheadSemiminimaBlackPetrucci"
+            }
+        ],
+        "noteheads.ssolesmes.incl.parvum": [
+            {
+                "name": "chantPunctumInclinatumDeminutum"
+            }
+        ],
+        "noteheads.ssolesmes.auct.asc": [
+            {
+                "name": "chantAuctumAsc"
+            }
+        ],
+        "noteheads.ssolesmes.auct.desc": [
+            {
+                "name": "chantAuctumDesc"
+            }
+        ],
+        "noteheads.ssolesmes.incl.auctum": [
+            {
+                "name": "chantPunctumInclinatumAuctum"
+            }
+        ],
+        "noteheads.ssolesmes.stropha": [
+            {
+                "name": "chantStrophicus"
+            }
+        ],
+        "noteheads.ssolesmes.stropha.aucta": [
+            {
+                "name": "chantStrophicusAuctus"
+            }
+        ],
+        "noteheads.ssolesmes.oriscus": [
+            {
+                "name": "chantOriscusAscending"
+            }
+        ],
+        "clefs.kievan.do": [
+            {
+                "name": "kievanCClef"
+            }
+        ],
+        "clefs.kievan.do_change": [
+            {
+                "name": "kievanCClefChange",
+                "ligature_of": [
+                    "kievanCClef",
+                    "clefChangeCombining"
+                ]
+            }
+        ],
+        "accidentals.kievan1": [
+            {
+                "name": "kievanAccidentalSharp"
+            }
+        ],
+        "accidentals.kievanM1": [
+            {
+                "name": "kievanAccidentalFlat"
+            }
+        ],
+        "scripts.barline.kievan": [
+            {
+                "name": "kievanEndingSymbol"
+            }
+        ],
+        "dots.dotkievan": [
+            {
+                "name": "kievanAugmentationDot"
+            }
+        ],
+        "noteheads.sM2kievan": [
+            {
+                "name": "kievanNoteWholeFinal"
+            }
+        ],
+        "noteheads.sM1kievan": [
+            {
+                "name": "kievanNoteReciting"
+            }
+        ],
+        "noteheads.s0kievan": [
+            {
+                "name": "kievanNoteWhole"
+            }
+        ],
+        "noteheads.d2kievan": [
+            {
+                "name": "kievanNoteQuarterStemDown"
+            }
+        ],
+        "noteheads.u2kievan": [
+            {
+                "name": "kievanNoteQuarterStemUp"
+            }
+        ],
+        "noteheads.s1kievan": [
+            {
+                "name": "kievanNoteHalfStaffLine"
+            }
+        ],
+        "noteheads.sr1kievan": [
+            {
+                "name": "kievanNoteHalfStaffSpace"
+            }
+        ],
+        "noteheads.d3kievan": [
+            {
+                "name": "kievanNote8thStemDown"
+            }
+        ],
+        "noteheads.u3kievan": [
+            {
+                "name": "kievanNote8thStemUp"
+            }
+        ]
+    }
+}
